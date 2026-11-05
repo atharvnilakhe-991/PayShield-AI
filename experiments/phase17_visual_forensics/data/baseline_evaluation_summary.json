@@ -1,0 +1,150 @@
+{
+  "sample_count": 108,
+  "clean_count": 54,
+  "edited_count": 54,
+  "field_metrics": {
+    "amount": {
+      "laplacian_energy": {
+        "clean_mean": 1077.844901851852,
+        "clean_std": 357.47694322752375,
+        "edited_mean": 1085.4038777777778,
+        "edited_std": 360.9441294738105,
+        "roc_auc": 0.5053,
+        "pr_auc": 0.5108,
+        "mean_diff": 7.559
+      },
+      "edge_mean": {
+        "clean_mean": 7.489775925925926,
+        "clean_std": 0.5897773094913107,
+        "edited_mean": 7.453640740740741,
+        "edited_std": 0.5854364220529142,
+        "roc_auc": 0.4786,
+        "pr_auc": 0.4895,
+        "mean_diff": -0.0361
+      },
+      "edge_std": {
+        "clean_mean": 22.96758888888889,
+        "clean_std": 0.9977601117589758,
+        "edited_mean": 22.939566666666664,
+        "edited_std": 0.9721138023990888,
+        "roc_auc": 0.4865,
+        "pr_auc": 0.495,
+        "mean_diff": -0.028
+      },
+      "ela_mean": {
+        "clean_mean": 0.5074277777777778,
+        "clean_std": 0.058143256723967016,
+        "edited_mean": 0.5058907407407407,
+        "edited_std": 0.05583151329875522,
+        "roc_auc": 0.4919,
+        "pr_auc": 0.481,
+        "mean_diff": -0.0015
+      },
+      "bg_noise_std": {
+        "clean_mean": 2.261159259259259,
+        "clean_std": 0.21563808802449233,
+        "edited_mean": 2.245687037037037,
+        "edited_std": 0.218637451508958,
+        "roc_auc": 0.4775,
+        "pr_auc": 0.4898,
+        "mean_diff": -0.0155
+      }
+    },
+    "receiver": {
+      "laplacian_energy": {
+        "clean_mean": 253.59881666666666,
+        "clean_std": 103.21002515423434,
+        "edited_mean": 253.6012888888889,
+        "edited_std": 102.84342326046958,
+        "roc_auc": 0.4997,
+        "pr_auc": 0.5071,
+        "mean_diff": 0.0025
+      },
+      "edge_mean": {
+        "clean_mean": 6.379124074074074,
+        "clean_std": 0.35796198532659507,
+        "edited_mean": 6.347509259259258,
+        "edited_std": 0.48633577497997943,
+        "roc_auc": 0.5024,
+        "pr_auc": 0.5056,
+        "mean_diff": -0.0316
+      },
+      "edge_std": {
+        "clean_mean": 17.424946296296294,
+        "clean_std": 1.269038627628099,
+        "edited_mean": 17.377879629629632,
+        "edited_std": 1.5464471307771086,
+        "roc_auc": 0.501,
+        "pr_auc": 0.507,
+        "mean_diff": -0.0471
+      },
+      "ela_mean": {
+        "clean_mean": 0.2963425925925926,
+        "clean_std": 0.02233876054995203,
+        "edited_mean": 0.2954481481481481,
+        "edited_std": 0.02861457632138079,
+        "roc_auc": 0.5069,
+        "pr_auc": 0.5176,
+        "mean_diff": -0.0009
+      },
+      "bg_noise_std": {
+        "clean_mean": 2.8449537037037036,
+        "clean_std": 0.2516015115901149,
+        "edited_mean": 2.8419870370370375,
+        "edited_std": 0.24396662723071766,
+        "roc_auc": 0.4991,
+        "pr_auc": 0.4957,
+        "mean_diff": -0.003
+      }
+    },
+    "transaction_id": {
+      "laplacian_energy": {
+        "clean_mean": 190.2258222222223,
+        "clean_std": 52.86064318110286,
+        "edited_mean": 189.94347037037036,
+        "edited_std": 53.09808858919998,
+        "roc_auc": 0.4974,
+        "pr_auc": 0.5062,
+        "mean_diff": -0.2824
+      },
+      "edge_mean": {
+        "clean_mean": 4.622214814814814,
+        "clean_std": 0.29002172613853106,
+        "edited_mean": 4.618535185185185,
+        "edited_std": 0.2904709427409523,
+        "roc_auc": 0.505,
+        "pr_auc": 0.5061,
+        "mean_diff": -0.0037
+      },
+      "edge_std": {
+        "clean_mean": 12.83601851851852,
+        "clean_std": 0.8485754197420509,
+        "edited_mean": 12.826005555555556,
+        "edited_std": 0.8486307907701734,
+        "roc_auc": 0.5015,
+        "pr_auc": 0.5087,
+        "mean_diff": -0.01
+      },
+      "ela_mean": {
+        "clean_mean": 0.2936185185185185,
+        "clean_std": 0.02194849251614193,
+        "edited_mean": 0.2924962962962963,
+        "edited_std": 0.021526426162268922,
+        "roc_auc": 0.4767,
+        "pr_auc": 0.4797,
+        "mean_diff": -0.0011
+      },
+      "bg_noise_std": {
+        "clean_mean": 2.827096296296295,
+        "clean_std": 0.20178317475922564,
+        "edited_mean": 2.8279111111111113,
+        "edited_std": 0.20212681815455352,
+        "roc_auc": 0.5036,
+        "pr_auc": 0.5032,
+        "mean_diff": 0.0008
+      }
+    }
+  },
+  "combined_laplacian_roc_auc": 0.5045,
+  "combined_laplacian_pr_auc": 0.5128
+}

@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments (top-level and nested)
+.venv/
+.venv_mac/
+.venv_phase7/
+**/.venv/
+**/.venv_mac/
+**/.venv_phase7/
+**/venv/
+**/ENV/
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+cbl04-frontend/dist/
+**/dist/
+
+# Logs, Cache & Generated Artifacts
+*.log
+**/*.log
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+scratch_*.json
+test_whatsapp.jpeg
+backups/
+**/backups/
+**/crops/
+**/patches/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+__MACOSX/
+**/__MACOSX/
+
+# Environment & Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Large Model Checkpoints (>100MB GitHub limit)
+*.pt.large
+experiments/**/checkpoints/*.pt
+**/phase5_model_training/artifacts/*.pt
+**/best_crop_resnet18.pt
+**/best_model.pt
+**/last_model.pt

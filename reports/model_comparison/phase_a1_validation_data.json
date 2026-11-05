@@ -1,0 +1,2657 @@
+{
+  "dataset": "metadata/phase6/validation_manifest.csv",
+  "sample_counts": {
+    "total": 108,
+    "clean_total": 54,
+    "edited_total": 54
+  },
+  "confusion_matrix": {
+    "clean": {
+      "GENUINE (TN)": 0,
+      "EDITED (FP)": 0,
+      "INCONCLUSIVE": 54
+    },
+    "edited": {
+      "EDITED (TP)": 0,
+      "GENUINE (FN)": 0,
+      "INCONCLUSIVE": 54
+    }
+  },
+  "rates": {
+    "false_positive_rate_overall": 0.0,
+    "false_positive_rate_decisive": 0.0,
+    "false_negative_rate_overall": 0.0,
+    "false_negative_rate_decisive": 0.0,
+    "coverage": 0.0,
+    "accuracy_decisive": 0.0,
+    "accuracy_overall": 0.0
+  },
+  "edit_category_breakdown": {
+    "transaction_id": {
+      "INCONCLUSIVE": 13
+    },
+    "date_time": {
+      "INCONCLUSIVE": 6
+    },
+    "recipient": {
+      "INCONCLUSIVE": 14
+    },
+    "other": {
+      "INCONCLUSIVE": 16
+    },
+    "amount": {
+      "INCONCLUSIVE": 5
+    }
+  },
+  "samples": [
+    {
+      "image_id": "P4-0446_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9962,
+      "manipulation_probability": 0.4981,
+      "cnn_score": 0.768392,
+      "stacker_score": 0.4981,
+      "semantic_score": 0.2,
+      "ocr_amount": "3999",
+      "ocr_amount_numeric": 3999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4981) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0005_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9772,
+      "manipulation_probability": 0.4886,
+      "cnn_score": 0.717334,
+      "stacker_score": 0.4886,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4886) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0129_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9844,
+      "manipulation_probability": 0.4922,
+      "cnn_score": 0.601796,
+      "stacker_score": 0.4922,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4922) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0221_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9062,
+      "manipulation_probability": 0.5469,
+      "cnn_score": 0.729486,
+      "stacker_score": 0.5469,
+      "semantic_score": 0.55,
+      "ocr_amount": "3450",
+      "ocr_amount_numeric": 3450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "UPI_ID_SYNTAX_INVALID"
+      ],
+      "warnings": [
+        "Stacker score (0.5469) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0365_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9756,
+      "manipulation_probability": 0.4878,
+      "cnn_score": 0.722186,
+      "stacker_score": 0.4878,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4878) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0076_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4859,
+      "cnn_score": 0.765809,
+      "stacker_score": 0.4859,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0006_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.973,
+      "manipulation_probability": 0.4865,
+      "cnn_score": 0.735768,
+      "stacker_score": 0.4865,
+      "semantic_score": 0.0,
+      "ocr_amount": "{450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4865) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0418_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9944,
+      "manipulation_probability": 0.4972,
+      "cnn_score": 0.736942,
+      "stacker_score": 0.4972,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4972) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0170_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9544,
+      "manipulation_probability": 0.4772,
+      "cnn_score": 0.697288,
+      "stacker_score": 0.4772,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4772) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0084_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9962,
+      "manipulation_probability": 0.5019,
+      "cnn_score": 0.753994,
+      "stacker_score": 0.5019,
+      "semantic_score": 0.2,
+      "ocr_amount": "3280",
+      "ocr_amount_numeric": 3280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.5019) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0076_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9972,
+      "manipulation_probability": 0.4986,
+      "cnn_score": 0.766737,
+      "stacker_score": 0.4986,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.4986) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0460_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.5002,
+      "cnn_score": 0.752625,
+      "stacker_score": 0.5002,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0475_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9644,
+      "manipulation_probability": 0.4822,
+      "cnn_score": 0.732946,
+      "stacker_score": 0.4822,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4822) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0142_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.987,
+      "manipulation_probability": 0.4935,
+      "cnn_score": 0.744295,
+      "stacker_score": 0.4935,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4935) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0236_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9788,
+      "manipulation_probability": 0.4894,
+      "cnn_score": 0.627635,
+      "stacker_score": 0.4894,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4894) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0135_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9914,
+      "manipulation_probability": 0.4957,
+      "cnn_score": 0.703087,
+      "stacker_score": 0.4957,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.4957) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0153_edited",
+      "label": "edited",
+      "category": "amount",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.988,
+      "manipulation_probability": 0.494,
+      "cnn_score": 0.73477,
+      "stacker_score": 0.494,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,036",
+      "ocr_amount_numeric": 1036.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4940) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0221_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.907,
+      "manipulation_probability": 0.5465,
+      "cnn_score": 0.729516,
+      "stacker_score": 0.5465,
+      "semantic_score": 0.55,
+      "ocr_amount": "3450",
+      "ocr_amount_numeric": 3450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "UPI_ID_SYNTAX_INVALID"
+      ],
+      "warnings": [
+        "Stacker score (0.5465) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0187_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9852,
+      "manipulation_probability": 0.4926,
+      "cnn_score": 0.743688,
+      "stacker_score": 0.4926,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4926) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0293_edited",
+      "label": "edited",
+      "category": "amount",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.976,
+      "manipulation_probability": 0.488,
+      "cnn_score": 0.750527,
+      "stacker_score": 0.488,
+      "semantic_score": 0.2,
+      "ocr_amount": "?555",
+      "ocr_amount_numeric": 555.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4880) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0449_edited",
+      "label": "edited",
+      "category": "amount",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9594,
+      "manipulation_probability": 0.4797,
+      "cnn_score": 0.60632,
+      "stacker_score": 0.4797,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,461",
+      "ocr_amount_numeric": 2461.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4797) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0466_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.978,
+      "manipulation_probability": 0.489,
+      "cnn_score": 0.622472,
+      "stacker_score": 0.489,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4890) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0150_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.954,
+      "manipulation_probability": 0.523,
+      "cnn_score": 0.694167,
+      "stacker_score": 0.523,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5230) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0212_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9746,
+      "manipulation_probability": 0.4873,
+      "cnn_score": 0.701512,
+      "stacker_score": 0.4873,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4873) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0008_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.982,
+      "manipulation_probability": 0.509,
+      "cnn_score": 0.775728,
+      "stacker_score": 0.509,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5090) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0466_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9792,
+      "manipulation_probability": 0.4896,
+      "cnn_score": 0.621791,
+      "stacker_score": 0.4896,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4896) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0005_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9742,
+      "manipulation_probability": 0.4871,
+      "cnn_score": 0.718287,
+      "stacker_score": 0.4871,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4871) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0293_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9712,
+      "manipulation_probability": 0.4856,
+      "cnn_score": 0.750609,
+      "stacker_score": 0.4856,
+      "semantic_score": 0.2,
+      "ocr_amount": "7450",
+      "ocr_amount_numeric": 7450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4856) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0230_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9954,
+      "manipulation_probability": 0.5023,
+      "cnn_score": 0.622248,
+      "stacker_score": 0.5023,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5023) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0251_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9244,
+      "manipulation_probability": 0.5378,
+      "cnn_score": 0.623671,
+      "stacker_score": 0.5378,
+      "semantic_score": 0.35,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "UPI_ID_SYNTAX_INVALID"
+      ],
+      "warnings": [
+        "Stacker score (0.5378) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0168_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9776,
+      "manipulation_probability": 0.4888,
+      "cnn_score": 0.676766,
+      "stacker_score": 0.4888,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4888) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0037_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9982,
+      "manipulation_probability": 0.4991,
+      "cnn_score": 0.618626,
+      "stacker_score": 0.4991,
+      "semantic_score": 0.2,
+      "ocr_amount": "?999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4991) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0449_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.96,
+      "manipulation_probability": 0.48,
+      "cnn_score": 0.622,
+      "stacker_score": 0.48,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4800) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0249_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.995,
+      "manipulation_probability": 0.4975,
+      "cnn_score": 0.61638,
+      "stacker_score": 0.4975,
+      "semantic_score": 0.2,
+      "ocr_amount": "3280",
+      "ocr_amount_numeric": 3280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4975) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0116_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9906,
+      "manipulation_probability": 0.4953,
+      "cnn_score": 0.708552,
+      "stacker_score": 0.4953,
+      "semantic_score": 0.0,
+      "ocr_amount": "{450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4953) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0418_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9972,
+      "manipulation_probability": 0.4986,
+      "cnn_score": 0.738206,
+      "stacker_score": 0.4986,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4986) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0473_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9834,
+      "manipulation_probability": 0.5083,
+      "cnn_score": 0.711506,
+      "stacker_score": 0.5083,
+      "semantic_score": 0.2,
+      "ocr_amount": "3125",
+      "ocr_amount_numeric": 3125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5083) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0236_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.975,
+      "manipulation_probability": 0.4875,
+      "cnn_score": 0.628306,
+      "stacker_score": 0.4875,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4875) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0401_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.993,
+      "manipulation_probability": 0.5035,
+      "cnn_score": 0.637534,
+      "stacker_score": 0.5035,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5035) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0460_edited",
+      "label": "edited",
+      "category": "amount",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.5018,
+      "cnn_score": 0.75316,
+      "stacker_score": 0.5018,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,287",
+      "ocr_amount_numeric": 1287.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0383_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9994,
+      "manipulation_probability": 0.4997,
+      "cnn_score": 0.726722,
+      "stacker_score": 0.4997,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4997) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0337_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9944,
+      "manipulation_probability": 0.5028,
+      "cnn_score": 0.710517,
+      "stacker_score": 0.5028,
+      "semantic_score": 0.2,
+      "ocr_amount": "?450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.5028) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0482_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9896,
+      "manipulation_probability": 0.5052,
+      "cnn_score": 0.721709,
+      "stacker_score": 0.5052,
+      "semantic_score": 0.2,
+      "ocr_amount": "2450",
+      "ocr_amount_numeric": 2450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5052) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0008_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.984,
+      "manipulation_probability": 0.508,
+      "cnn_score": 0.775967,
+      "stacker_score": 0.508,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5080) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0009_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4881,
+      "cnn_score": 0.751477,
+      "stacker_score": 0.4881,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0332_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9924,
+      "manipulation_probability": 0.4962,
+      "cnn_score": 0.721956,
+      "stacker_score": 0.4962,
+      "semantic_score": 0.2,
+      "ocr_amount": "3125",
+      "ocr_amount_numeric": 3125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.4962) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0365_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.997,
+      "manipulation_probability": 0.5015,
+      "cnn_score": 0.727912,
+      "stacker_score": 0.5015,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5015) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0332_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9928,
+      "manipulation_probability": 0.4964,
+      "cnn_score": 0.721444,
+      "stacker_score": 0.4964,
+      "semantic_score": 0.2,
+      "ocr_amount": "3125",
+      "ocr_amount_numeric": 3125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.4964) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0024_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9888,
+      "manipulation_probability": 0.4944,
+      "cnn_score": 0.639603,
+      "stacker_score": 0.4944,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4944) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0279_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9812,
+      "manipulation_probability": 0.4906,
+      "cnn_score": 0.622495,
+      "stacker_score": 0.4906,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4906) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0037_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9976,
+      "manipulation_probability": 0.4988,
+      "cnn_score": 0.617945,
+      "stacker_score": 0.4988,
+      "semantic_score": 0.2,
+      "ocr_amount": "?999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4988) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0250_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4964,
+      "cnn_score": 0.771657,
+      "stacker_score": 0.4964,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0049_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9402,
+      "manipulation_probability": 0.5299,
+      "cnn_score": 0.72184,
+      "stacker_score": 0.5299,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5299) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0168_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9748,
+      "manipulation_probability": 0.4874,
+      "cnn_score": 0.679399,
+      "stacker_score": 0.4874,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4874) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0206_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9708,
+      "manipulation_probability": 0.5146,
+      "cnn_score": 0.608673,
+      "stacker_score": 0.5146,
+      "semantic_score": 0.2,
+      "ocr_amount": "?999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5146) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0480_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9952,
+      "manipulation_probability": 0.4976,
+      "cnn_score": 0.698078,
+      "stacker_score": 0.4976,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4976) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0212_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9744,
+      "manipulation_probability": 0.4872,
+      "cnn_score": 0.701354,
+      "stacker_score": 0.4872,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4872) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0049_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9434,
+      "manipulation_probability": 0.5283,
+      "cnn_score": 0.721966,
+      "stacker_score": 0.5283,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5283) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0093_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9996,
+      "manipulation_probability": 0.5002,
+      "cnn_score": 0.743622,
+      "stacker_score": 0.5002,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5002) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0401_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.999,
+      "manipulation_probability": 0.5005,
+      "cnn_score": 0.639061,
+      "stacker_score": 0.5005,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5005) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0079_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 1.0,
+      "manipulation_probability": 0.5,
+      "cnn_score": 0.732081,
+      "stacker_score": 0.5,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5000) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0246_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9894,
+      "manipulation_probability": 0.4947,
+      "cnn_score": 0.745652,
+      "stacker_score": 0.4947,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4947) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0246_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9926,
+      "manipulation_probability": 0.4963,
+      "cnn_score": 0.744591,
+      "stacker_score": 0.4963,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4963) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0279_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.982,
+      "manipulation_probability": 0.491,
+      "cnn_score": 0.619772,
+      "stacker_score": 0.491,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4910) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0009_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4894,
+      "cnn_score": 0.751833,
+      "stacker_score": 0.4894,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0205_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9922,
+      "manipulation_probability": 0.4961,
+      "cnn_score": 0.633704,
+      "stacker_score": 0.4961,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4961) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0044_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9516,
+      "manipulation_probability": 0.5242,
+      "cnn_score": 0.712057,
+      "stacker_score": 0.5242,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5242) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0002_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.997,
+      "manipulation_probability": 0.5015,
+      "cnn_score": 0.599827,
+      "stacker_score": 0.5015,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5015) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0230_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9958,
+      "manipulation_probability": 0.5021,
+      "cnn_score": 0.622404,
+      "stacker_score": 0.5021,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5021) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0153_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9932,
+      "manipulation_probability": 0.4966,
+      "cnn_score": 0.744828,
+      "stacker_score": 0.4966,
+      "semantic_score": 0.2,
+      "ocr_amount": "3999",
+      "ocr_amount_numeric": 3999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4966) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0079_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9986,
+      "manipulation_probability": 0.4993,
+      "cnn_score": 0.732713,
+      "stacker_score": 0.4993,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.4993) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0187_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9828,
+      "manipulation_probability": 0.4914,
+      "cnn_score": 0.743569,
+      "stacker_score": 0.4914,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4914) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0024_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.99,
+      "manipulation_probability": 0.495,
+      "cnn_score": 0.639803,
+      "stacker_score": 0.495,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4950) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0205_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9966,
+      "manipulation_probability": 0.4983,
+      "cnn_score": 0.633132,
+      "stacker_score": 0.4983,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4983) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0041_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9904,
+      "manipulation_probability": 0.4952,
+      "cnn_score": 0.701302,
+      "stacker_score": 0.4952,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4952) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0480_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9952,
+      "manipulation_probability": 0.4976,
+      "cnn_score": 0.69791,
+      "stacker_score": 0.4976,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4976) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0110_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9714,
+      "manipulation_probability": 0.4857,
+      "cnn_score": 0.709291,
+      "stacker_score": 0.4857,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4857) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0129_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9846,
+      "manipulation_probability": 0.4923,
+      "cnn_score": 0.601752,
+      "stacker_score": 0.4923,
+      "semantic_score": 0.0,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4923) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0477_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4959,
+      "cnn_score": 0.761067,
+      "stacker_score": 0.4959,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0150_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9548,
+      "manipulation_probability": 0.5226,
+      "cnn_score": 0.693582,
+      "stacker_score": 0.5226,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5226) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0084_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9962,
+      "manipulation_probability": 0.5019,
+      "cnn_score": 0.754117,
+      "stacker_score": 0.5019,
+      "semantic_score": 0.2,
+      "ocr_amount": "3280",
+      "ocr_amount_numeric": 3280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.5019) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0027_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9844,
+      "manipulation_probability": 0.4922,
+      "cnn_score": 0.748688,
+      "stacker_score": 0.4922,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4922) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0002_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 1.0,
+      "manipulation_probability": 0.5,
+      "cnn_score": 0.599135,
+      "stacker_score": 0.5,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5000) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0337_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9936,
+      "manipulation_probability": 0.5032,
+      "cnn_score": 0.709462,
+      "stacker_score": 0.5032,
+      "semantic_score": 0.2,
+      "ocr_amount": "?450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.5032) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0210_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9998,
+      "manipulation_probability": 0.4999,
+      "cnn_score": 0.749247,
+      "stacker_score": 0.4999,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4999) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0110_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9706,
+      "manipulation_probability": 0.4853,
+      "cnn_score": 0.708733,
+      "stacker_score": 0.4853,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4853) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0189_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9998,
+      "manipulation_probability": 0.4999,
+      "cnn_score": 0.604069,
+      "stacker_score": 0.4999,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4999) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0093_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9952,
+      "manipulation_probability": 0.5024,
+      "cnn_score": 0.745437,
+      "stacker_score": 0.5024,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5024) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0044_edited",
+      "label": "edited",
+      "category": "other",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9528,
+      "manipulation_probability": 0.5236,
+      "cnn_score": 0.712423,
+      "stacker_score": 0.5236,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5236) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0041_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9896,
+      "manipulation_probability": 0.4948,
+      "cnn_score": 0.701262,
+      "stacker_score": 0.4948,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4948) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0027_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.982,
+      "manipulation_probability": 0.491,
+      "cnn_score": 0.74898,
+      "stacker_score": 0.491,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4910) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0482_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9824,
+      "manipulation_probability": 0.4912,
+      "cnn_score": 0.720543,
+      "stacker_score": 0.4912,
+      "semantic_score": 0.2,
+      "ocr_amount": "2450",
+      "ocr_amount_numeric": 2450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4912) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0475_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9642,
+      "manipulation_probability": 0.4821,
+      "cnn_score": 0.730609,
+      "stacker_score": 0.4821,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4821) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0135_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9806,
+      "manipulation_probability": 0.4903,
+      "cnn_score": 0.703918,
+      "stacker_score": 0.4903,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4903) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0006_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9732,
+      "manipulation_probability": 0.4866,
+      "cnn_score": 0.736226,
+      "stacker_score": 0.4866,
+      "semantic_score": 0.0,
+      "ocr_amount": "{450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4866) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0210_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9968,
+      "manipulation_probability": 0.4984,
+      "cnn_score": 0.749239,
+      "stacker_score": 0.4984,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4984) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0189_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9966,
+      "manipulation_probability": 0.4983,
+      "cnn_score": 0.60472,
+      "stacker_score": 0.4983,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4983) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0170_edited",
+      "label": "edited",
+      "category": "transaction_id",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9546,
+      "manipulation_probability": 0.4773,
+      "cnn_score": 0.696734,
+      "stacker_score": 0.4773,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4773) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0142_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9866,
+      "manipulation_probability": 0.4933,
+      "cnn_score": 0.743559,
+      "stacker_score": 0.4933,
+      "semantic_score": 0.0,
+      "ocr_amount": "{280",
+      "ocr_amount_numeric": 280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4933) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0383_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.996,
+      "manipulation_probability": 0.502,
+      "cnn_score": 0.723167,
+      "stacker_score": 0.502,
+      "semantic_score": 0.0,
+      "ocr_amount": "{1,250",
+      "ocr_amount_numeric": 1250.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.5020) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0446_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9958,
+      "manipulation_probability": 0.4979,
+      "cnn_score": 0.768474,
+      "stacker_score": 0.4979,
+      "semantic_score": 0.2,
+      "ocr_amount": "3999",
+      "ocr_amount_numeric": 3999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4979) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0250_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.4968,
+      "cnn_score": 0.772168,
+      "stacker_score": 0.4968,
+      "semantic_score": 0.0,
+      "ocr_amount": "{125",
+      "ocr_amount_numeric": 125.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0477_clean",
+      "label": "clean",
+      "category": "clean",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.5,
+      "manipulation_probability": 0.494,
+      "cnn_score": 0.760627,
+      "stacker_score": 0.494,
+      "semantic_score": 0.0,
+      "ocr_amount": "{2,400",
+      "ocr_amount_numeric": 2400.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "TEXT_LAYOUT_INCONSISTENCY",
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Severe branch disagreement: CNN predicts visual artifact, but semantic consistency confirms authentic layout and text.",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0116_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9932,
+      "manipulation_probability": 0.4966,
+      "cnn_score": 0.704584,
+      "stacker_score": 0.4966,
+      "semantic_score": 0.0,
+      "ocr_amount": "{450",
+      "ocr_amount_numeric": 450.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "INTEGRITY_VERIFIED_CLEAN"
+      ],
+      "warnings": [
+        "Stacker score (0.4966) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0473_edited",
+      "label": "edited",
+      "category": "amount",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9964,
+      "manipulation_probability": 0.5018,
+      "cnn_score": 0.719198,
+      "stacker_score": 0.5018,
+      "semantic_score": 0.0,
+      "ocr_amount": "{186",
+      "ocr_amount_numeric": 186.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5018) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0206_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.973,
+      "manipulation_probability": 0.5135,
+      "cnn_score": 0.609012,
+      "stacker_score": 0.5135,
+      "semantic_score": 0.2,
+      "ocr_amount": "?999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH",
+        "SENDER_RECEIVER_IDENTICAL"
+      ],
+      "warnings": [
+        "Stacker score (0.5135) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0251_edited",
+      "label": "edited",
+      "category": "date_time",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.922,
+      "manipulation_probability": 0.539,
+      "cnn_score": 0.624421,
+      "stacker_score": 0.539,
+      "semantic_score": 0.35,
+      "ocr_amount": "{999",
+      "ocr_amount_numeric": 999.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "UPI_ID_SYNTAX_INVALID"
+      ],
+      "warnings": [
+        "Stacker score (0.5390) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    },
+    {
+      "image_id": "P4-0249_edited",
+      "label": "edited",
+      "category": "recipient",
+      "layout_family": "bank_progress",
+      "verdict": "INCONCLUSIVE",
+      "confidence": 0.9848,
+      "manipulation_probability": 0.4924,
+      "cnn_score": 0.619472,
+      "stacker_score": 0.4924,
+      "semantic_score": 0.2,
+      "ocr_amount": "3280",
+      "ocr_amount_numeric": 3280.0,
+      "decision_rule": null,
+      "reason_codes": [
+        "AMOUNT_CURRENCY_SYMBOL_MISMATCH"
+      ],
+      "warnings": [
+        "Stacker score (0.4924) is within ambiguity margin [0.45, 0.55].",
+        "Notice: Screenshot OCR extracts visible receipt text for auditing and semantic parsing; it does not verify bank-side ledger entries or confirm banking settlement.",
+        "CNN score and stacker score are uncalibrated experimental model outputs.",
+        "Spatial mask localization remains disabled due to low segmentation IoU (0.059)."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "module": "member2/phase2_preprocessing",
+  "status": "PASSED",
+  "phase_readiness": "READY_FOR_PHASE_3",
+  "dataset_dimension_summary": {
+    "total_synthetic_images": 1000,
+    "width_min": 279,
+    "width_max": 738,
+    "width_mean": 583.1,
+    "height_min": 1261,
+    "height_max": 1601,
+    "height_mean": 1441.3,
+    "aspect_ratio_min": 1.759,
+    "aspect_ratio_max": 5.205,
+    "aspect_ratio_mean": 2.556,
+    "by_layout_family": {
+      "compact": {
+        "count": 436,
+        "width_range": [
+          540,
+          731
+        ],
+        "height_range": [
+          1319,
+          1596
+        ]
+      },
+      "bank_progress": {
+        "count": 108,
+        "width_range": [
+          355,
+          477
+        ],
+        "height_range": [
+          1280,
+          1596
+        ]
+      },
+      "enriched": {
+        "count": 432,
+        "width_range": [
+          420,
+          738
+        ],
+        "height_range": [
+          1280,
+          1601
+        ]
+      },
+      "recharge": {
+        "count": 24,
+        "width_range": [
+          279,
+          470
+        ],
+        "height_range": [
+          1261,
+          1520
+        ]
+      }
+    }
+  },
+  "image_mode_distribution": {
+    "RGB": 1000
+  },
+  "mask_mode_distribution": {
+    "L": 1000
+  },
+  "preprocessing_verification": {
+    "pairs_tested": 100,
+    "alignment_verified": 100,
+    "binary_mask_values_verified": 100,
+    "clean_masks_all_zero": 100,
+    "edited_masks_has_foreground": 100,
+    "real_unlabeled_tested": 50,
+    "real_mask_is_none": 50,
+    "real_rgb_converted": 50,
+    "reproducibility_verified": true
+  },
+  "configuration": {
+    "preserve_native_resolution": true,
+    "jpeg_quality": null,
+    "gaussian_sigma": null,
+    "brightness_factor": null,
+    "contrast_factor": null,
+    "alpha_fill_color": [
+      17,
+      17,
+      17
+    ],
+    "mask_foreground_value": 1,
+    "normalize_to_float": false,
+    "seed": null
+  },
+  "immutability_verified": true
+}

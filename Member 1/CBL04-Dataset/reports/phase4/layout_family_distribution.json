@@ -1,0 +1,22 @@
+{
+  "reference_counts": {
+    "compact": 169,
+    "enriched": 167,
+    "bank_progress": 42,
+    "recharge": 9
+  },
+  "reference_total": 387,
+  "target_pairs": 500,
+  "pair_counts": {
+    "compact": 218,
+    "bank_progress": 54,
+    "enriched": 216,
+    "recharge": 12
+  },
+  "target_pair_counts": {
+    "compact": 218,
+    "enriched": 216,
+    "bank_progress": 54,
+    "recharge": 12
+  }
+}

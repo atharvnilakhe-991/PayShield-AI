@@ -1,0 +1,29 @@
+{
+  "source_id": "SYN-20261103-018",
+  "edited_field": "recipient",
+  "original_synthetic_value": "Rohan Desai",
+  "replacement_synthetic_value": "Vikram Sen",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      257,
+      129,
+      283,
+      159
+    ],
+    [
+      183,
+      207,
+      356,
+      226
+    ],
+    [
+      90,
+      857,
+      207,
+      872
+    ]
+  ],
+  "seed": 20261121,
+  "template_version": "gpay-dark-demo-v1"
+}

@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0482",
+  "batch": 5,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "recipient",
+  "original_fictional_value": "Anaya Joshi",
+  "replacement_fictional_value": "Aarav Mehta",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      238,
+      182,
+      258,
+      183
+    ],
+    [
+      131,
+      182,
+      263,
+      203
+    ],
+    [
+      78,
+      828,
+      141,
+      842
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      102,
+      77,
+      293,
+      183
+    ],
+    [
+      0,
+      149,
+      395,
+      236
+    ],
+    [
+      0,
+      805,
+      185,
+      866
+    ]
+  ],
+  "random_seed": 20261204482,
+  "width": 395,
+  "height": 1441,
+  "font_scale": 0.982,
+  "spacing_scale": 0.978,
+  "margin": 45,
+  "show_pay_again": true,
+  "show_action_strip": true,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

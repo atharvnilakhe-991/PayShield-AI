@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0066",
+  "batch": 1,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "amount",
+  "original_fictional_value": "999",
+  "replacement_fictional_value": "1104",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "amount",
+  "bounding_boxes_xyxy": [
+    [
+      192,
+      291,
+      397,
+      351
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      23,
+      237,
+      565,
+      369
+    ]
+  ],
+  "random_seed": 20261204066,
+  "width": 588,
+  "height": 1533,
+  "font_scale": 0.983,
+  "spacing_scale": 0.95,
+  "margin": 44,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

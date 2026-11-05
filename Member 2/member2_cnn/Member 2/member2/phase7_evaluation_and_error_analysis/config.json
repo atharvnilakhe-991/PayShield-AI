@@ -1,0 +1,20 @@
+{
+  "improved_checkpoint": "member2/performance_improvement/artifacts/best_improved_model.pt",
+  "baseline_phase5_checkpoint": "member2/phase5_model_training/artifacts/best_model.pt",
+  "baseline_phase5_metrics": "member2/phase5_model_training/artifacts/metrics_test.json",
+  "baseline_phase6_metrics": "member2/phase6_heatmap_reconstruction/artifacts/pixel_metrics_test.json",
+  "split_manifest": "member2/phase5_model_training/artifacts/split_manifest.json",
+  "optimal_threshold": 0.80,
+  "optimal_min_area": 50,
+  "classification_pixel_threshold": 1000,
+  "robustness": {
+    "jpeg_qualities": [95, 85, 70, 50],
+    "resize_scales": [0.75, 0.50],
+    "gaussian_blur_sigmas": [0.5, 1.0, 1.5],
+    "brightness_factors": [0.90, 1.10],
+    "contrast_factors": [0.90, 1.10]
+  },
+  "random_seed": 42,
+  "device": "cpu"
+}
+

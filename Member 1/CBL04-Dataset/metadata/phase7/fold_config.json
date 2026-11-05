@@ -1,0 +1,29 @@
+{
+  "seed": 20261207,
+  "strategy": "leave-one-layout-family-out with distinct whole-family validation group",
+  "phash_threshold_hamming": 6,
+  "family_rotation": [
+    {
+      "fold": 1,
+      "test": "compact",
+      "validation": "bank_progress"
+    },
+    {
+      "fold": 2,
+      "test": "enriched",
+      "validation": "recharge"
+    },
+    {
+      "fold": 3,
+      "test": "bank_progress",
+      "validation": "compact"
+    },
+    {
+      "fold": 4,
+      "test": "recharge",
+      "validation": "enriched"
+    }
+  ],
+  "fold_pair_source_id_unique": "pair_id remains intact across all samples in any fold; every pair is test exactly once",
+  "phase6_manifests_modified": false
+}

@@ -1,0 +1,1138 @@
+{
+  "oof_overall": {
+    "Model C (Mean Pooling)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 434,
+          "fp": 434,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5002442183949543,
+          "pr_auc": 0.5004930131992174
+        },
+        {
+          "threshold": 0.5,
+          "tp": 168,
+          "fp": 170,
+          "tn": 264,
+          "fn": 266,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.4976958525345622,
+          "precision": 0.4970414201183432,
+          "recall": 0.3870967741935484,
+          "specificity": 0.6082949308755761,
+          "fpr": 0.391705069124424,
+          "fnr": 0.6129032258064516,
+          "macro_f1": 0.4914755014727066,
+          "roc_auc": 0.5002442183949543,
+          "pr_auc": 0.5004930131992174
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 434,
+          "fn": 434,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5002442183949543,
+          "pr_auc": 0.5004930131992174
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 868,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.49927084326469406,
+      "mean_edited": 0.49926757386752535,
+      "delta_mean": -3.2693971687147716e-06
+    },
+    "Model D (Max Pooling)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 434,
+          "fp": 434,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5030261844592154,
+          "pr_auc": 0.5004387798506572
+        },
+        {
+          "threshold": 0.5,
+          "tp": 199,
+          "fp": 192,
+          "tn": 242,
+          "fn": 235,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5080645161290323,
+          "precision": 0.5089514066496164,
+          "recall": 0.45852534562211983,
+          "specificity": 0.5576036866359447,
+          "fpr": 0.4423963133640553,
+          "fnr": 0.5414746543778802,
+          "macro_f1": 0.5068542726940093,
+          "roc_auc": 0.5030261844592154,
+          "pr_auc": 0.5004387798506572
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 434,
+          "fn": 434,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5030261844592154,
+          "pr_auc": 0.5004387798506572
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 868,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.4996871470306326,
+      "mean_edited": 0.4997012714087139,
+      "delta_mean": 1.4124378081292743e-05
+    },
+    "Model E (Attention MIL)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 434,
+          "fp": 434,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5007432733759476,
+          "pr_auc": 0.5005502932183243
+        },
+        {
+          "threshold": 0.5,
+          "tp": 191,
+          "fp": 191,
+          "tn": 243,
+          "fn": 243,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.4400921658986175,
+          "specificity": 0.5599078341013825,
+          "fpr": 0.4400921658986175,
+          "fnr": 0.5599078341013825,
+          "macro_f1": 0.49819906223358906,
+          "roc_auc": 0.5007432733759476,
+          "pr_auc": 0.5005502932183243
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 434,
+          "fn": 434,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5007432733759476,
+          "pr_auc": 0.5005502932183243
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 868,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.5006886025727619,
+      "mean_edited": 0.5006893895188784,
+      "delta_mean": 7.869461164933256e-07
+    },
+    "Model F (Multi-Scale MIL)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 434,
+          "fp": 434,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5023837838985751,
+          "pr_auc": 0.49967133639147293
+        },
+        {
+          "threshold": 0.5,
+          "tp": 278,
+          "fp": 273,
+          "tn": 161,
+          "fn": 156,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5057603686635944,
+          "precision": 0.5045372050816697,
+          "recall": 0.6405529953917051,
+          "specificity": 0.3709677419354839,
+          "fpr": 0.6290322580645161,
+          "fnr": 0.35944700460829493,
+          "macro_f1": 0.49661432810398315,
+          "roc_auc": 0.5023837838985751,
+          "pr_auc": 0.49967133639147293
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 434,
+          "fn": 434,
+          "n_pos": 434,
+          "n_neg": 434,
+          "total": 868,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5023837838985751,
+          "pr_auc": 0.49967133639147293
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 868,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.500246064179504,
+      "mean_edited": 0.5002530287899729,
+      "delta_mean": 6.964610468895849e-06
+    }
+  },
+  "val_overall": {
+    "Model C (Mean Pooling)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5085733882030179,
+          "pr_auc": 0.5002785133784127
+        },
+        {
+          "threshold": 0.5,
+          "tp": 2,
+          "fp": 2,
+          "tn": 52,
+          "fn": 52,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.037037037037037035,
+          "specificity": 0.9629629629629629,
+          "fpr": 0.037037037037037035,
+          "fnr": 0.9629629629629629,
+          "macro_f1": 0.3635966826713226,
+          "roc_auc": 0.5085733882030179,
+          "pr_auc": 0.5002785133784127
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 54,
+          "fn": 54,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5085733882030179,
+          "pr_auc": 0.5002785133784127
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 108,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.49965461172439435,
+      "mean_edited": 0.49966056357931204,
+      "delta_mean": 5.951854917696231e-06
+    },
+    "Model D (Max Pooling)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.49211248285322357,
+          "pr_auc": 0.49022389466559463
+        },
+        {
+          "threshold": 0.5,
+          "tp": 43,
+          "fp": 42,
+          "tn": 12,
+          "fn": 11,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5092592592592593,
+          "precision": 0.5058823529411764,
+          "recall": 0.7962962962962963,
+          "specificity": 0.2222222222222222,
+          "fpr": 0.7777777777777778,
+          "fnr": 0.2037037037037037,
+          "macro_f1": 0.46519667382976737,
+          "roc_auc": 0.49211248285322357,
+          "pr_auc": 0.49022389466559463
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 54,
+          "fn": 54,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.49211248285322357,
+          "pr_auc": 0.49022389466559463
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 108,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.5003338979350196,
+      "mean_edited": 0.5003295780332001,
+      "delta_mean": -4.31990181948283e-06
+    },
+    "Model E (Attention MIL)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5,
+          "pr_auc": 0.4992822055026088
+        },
+        {
+          "threshold": 0.5,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5,
+          "pr_auc": 0.4992822055026088
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 54,
+          "fn": 54,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.5,
+          "pr_auc": 0.4992822055026088
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 108,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.5007758269707362,
+      "mean_edited": 0.5007756242045649,
+      "delta_mean": -2.0276617129777463e-07
+    },
+    "Model F (Multi-Scale MIL)": {
+      "metrics": [
+        {
+          "threshold": 0.3,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.49005486968449935,
+          "pr_auc": 0.47946725583077265
+        },
+        {
+          "threshold": 0.5,
+          "tp": 54,
+          "fp": 54,
+          "tn": 0,
+          "fn": 0,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0,
+          "fpr": 1.0,
+          "fnr": 0.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.49005486968449935,
+          "pr_auc": 0.47946725583077265
+        },
+        {
+          "threshold": 0.7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 54,
+          "fn": 54,
+          "n_pos": 54,
+          "n_neg": 54,
+          "total": 108,
+          "accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "fpr": 0.0,
+          "fnr": 1.0,
+          "macro_f1": 0.3333333333333333,
+          "roc_auc": 0.49005486968449935,
+          "pr_auc": 0.47946725583077265
+        }
+      ],
+      "decisive_count": 0,
+      "total_count": 108,
+      "decisive_coverage": 0.0,
+      "mean_clean": 0.500307535683667,
+      "mean_edited": 0.5003041176884264,
+      "delta_mean": -3.4179952406176994e-06
+    }
+  },
+  "category_breakdown_oof": {
+    "Model C (Mean Pooling)": {
+      "amount": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.4871372866764571,
+        "pr_auc": 0.17125305367245347,
+        "recall_05": 0.3516483516483517,
+        "fpr_05": 0.391705069124424,
+        "mean_clean": 0.49927084326469406,
+        "mean_edited": 0.4992208333460839,
+        "delta": -5.000991861014992e-05
+      },
+      "date_time": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.5120271433635488,
+        "pr_auc": 0.18313571906216658,
+        "recall_05": 0.3956043956043956,
+        "fpr_05": 0.391705069124424,
+        "mean_clean": 0.49927084326469406,
+        "mean_edited": 0.49933986021922183,
+        "delta": 6.901695452776746e-05
+      },
+      "other": {
+        "n_edited": 84,
+        "n_clean": 434,
+        "roc_auc": 0.49849133201667767,
+        "pr_auc": 0.16015970061816845,
+        "recall_05": 0.39285714285714285,
+        "fpr_05": 0.391705069124424,
+        "mean_clean": 0.49927084326469406,
+        "mean_edited": 0.499241325826872,
+        "delta": -2.951743782209082e-05
+      },
+      "recipient": {
+        "n_edited": 85,
+        "n_clean": 434,
+        "roc_auc": 0.5035510978584983,
+        "pr_auc": 0.1668872443431333,
+        "recall_05": 0.38823529411764707,
+        "fpr_05": 0.391705069124424,
+        "mean_clean": 0.49927084326469406,
+        "mean_edited": 0.49929432132664847,
+        "delta": 2.347806195440727e-05
+      },
+      "transaction_id": {
+        "n_edited": 83,
+        "n_clean": 434,
+        "roc_auc": 0.500138804064183,
+        "pr_auc": 0.15766487349626868,
+        "recall_05": 0.40963855421686746,
+        "fpr_05": 0.391705069124424,
+        "mean_clean": 0.49927084326469406,
+        "mean_edited": 0.4992387380944677,
+        "delta": -3.210517022633752e-05
+      }
+    },
+    "Model D (Max Pooling)": {
+      "amount": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.4929862763964147,
+        "pr_auc": 0.17193584286575286,
+        "recall_05": 0.46153846153846156,
+        "fpr_05": 0.4423963133640553,
+        "mean_clean": 0.4996871470306326,
+        "mean_edited": 0.49963107934364903,
+        "delta": -5.6067686983574117e-05
+      },
+      "date_time": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.49984807818909205,
+        "pr_auc": 0.1683305548640943,
+        "recall_05": 0.3956043956043956,
+        "fpr_05": 0.4423963133640553,
+        "mean_clean": 0.4996871470306326,
+        "mean_edited": 0.49974951442781385,
+        "delta": 6.236739718123996e-05
+      },
+      "other": {
+        "n_edited": 84,
+        "n_clean": 434,
+        "roc_auc": 0.5325597981127935,
+        "pr_auc": 0.17621105272094145,
+        "recall_05": 0.5238095238095238,
+        "fpr_05": 0.4423963133640553,
+        "mean_clean": 0.4996871470306326,
+        "mean_edited": 0.4998279355821155,
+        "delta": 0.0001407885514829177
+      },
+      "recipient": {
+        "n_edited": 85,
+        "n_clean": 434,
+        "roc_auc": 0.4946055841691515,
+        "pr_auc": 0.17214945605537563,
+        "recall_05": 0.43529411764705883,
+        "fpr_05": 0.4423963133640553,
+        "mean_clean": 0.4996871470306326,
+        "mean_edited": 0.4996613204479218,
+        "delta": -2.5826582710830603e-05
+      },
+      "transaction_id": {
+        "n_edited": 83,
+        "n_clean": 434,
+        "roc_auc": 0.49625229026705897,
+        "pr_auc": 0.1574618788822713,
+        "recall_05": 0.4819277108433735,
+        "fpr_05": 0.4423963133640553,
+        "mean_clean": 0.4996871470306326,
+        "mean_edited": 0.49963805941214046,
+        "delta": -4.90876184921496e-05
+      }
+    },
+    "Model E (Attention MIL)": {
+      "amount": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.45771509596394383,
+        "pr_auc": 0.16524067807350515,
+        "recall_05": 0.37362637362637363,
+        "fpr_05": 0.4400921658986175,
+        "mean_clean": 0.5006886025727619,
+        "mean_edited": 0.5005927789997269,
+        "delta": -9.582357303505873e-05
+      },
+      "date_time": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.5281308553197954,
+        "pr_auc": 0.18530833563401672,
+        "recall_05": 0.46153846153846156,
+        "fpr_05": 0.4400921658986175,
+        "mean_clean": 0.5006886025727619,
+        "mean_edited": 0.5007129445835784,
+        "delta": 2.434201081646936e-05
+      },
+      "other": {
+        "n_edited": 84,
+        "n_clean": 434,
+        "roc_auc": 0.48299319727891155,
+        "pr_auc": 0.15497285293440743,
+        "recall_05": 0.39285714285714285,
+        "fpr_05": 0.4400921658986175,
+        "mean_clean": 0.5006886025727619,
+        "mean_edited": 0.500663868018559,
+        "delta": -2.4734554202932024e-05
+      },
+      "recipient": {
+        "n_edited": 85,
+        "n_clean": 434,
+        "roc_auc": 0.5358633776091082,
+        "pr_auc": 0.17922806433628524,
+        "recall_05": 0.5058823529411764,
+        "fpr_05": 0.4400921658986175,
+        "mean_clean": 0.5006886025727619,
+        "mean_edited": 0.5007721904446097,
+        "delta": 8.358787184781225e-05
+      },
+      "transaction_id": {
+        "n_edited": 83,
+        "n_clean": 434,
+        "roc_auc": 0.5037199489201043,
+        "pr_auc": 0.15897384938017753,
+        "recall_05": 0.46987951807228917,
+        "fpr_05": 0.4400921658986175,
+        "mean_clean": 0.5006886025727619,
+        "mean_edited": 0.5007105193224298,
+        "delta": 2.191674966789403e-05
+      }
+    },
+    "Model F (Multi-Scale MIL)": {
+      "amount": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.5086342229199372,
+        "pr_auc": 0.1779587570160306,
+        "recall_05": 0.6483516483516484,
+        "fpr_05": 0.6290322580645161,
+        "mean_clean": 0.500246064179504,
+        "mean_edited": 0.5002615798960676,
+        "delta": 1.5515716563552218e-05
+      },
+      "date_time": {
+        "n_edited": 91,
+        "n_clean": 434,
+        "roc_auc": 0.4857953106801033,
+        "pr_auc": 0.16232587580143626,
+        "recall_05": 0.6153846153846154,
+        "fpr_05": 0.6290322580645161,
+        "mean_clean": 0.500246064179504,
+        "mean_edited": 0.5002172641701751,
+        "delta": -2.8800009328922016e-05
+      },
+      "other": {
+        "n_edited": 84,
+        "n_clean": 434,
+        "roc_auc": 0.5050197498354181,
+        "pr_auc": 0.177510721731349,
+        "recall_05": 0.6428571428571429,
+        "fpr_05": 0.6290322580645161,
+        "mean_clean": 0.500246064179504,
+        "mean_edited": 0.500262910766261,
+        "delta": 1.6846586756935622e-05
+      },
+      "recipient": {
+        "n_edited": 85,
+        "n_clean": 434,
+        "roc_auc": 0.5238004879371103,
+        "pr_auc": 0.17232084455935753,
+        "recall_05": 0.6588235294117647,
+        "fpr_05": 0.6290322580645161,
+        "mean_clean": 0.500246064179504,
+        "mean_edited": 0.5002955152707942,
+        "delta": 4.9451091290175775e-05
+      },
+      "transaction_id": {
+        "n_edited": 83,
+        "n_clean": 434,
+        "roc_auc": 0.4891177613680528,
+        "pr_auc": 0.1531029756668741,
+        "recall_05": 0.6385542168674698,
+        "fpr_05": 0.6290322580645161,
+        "mean_clean": 0.500246064179504,
+        "mean_edited": 0.500229354005262,
+        "delta": -1.6710174241985065e-05
+      }
+    }
+  },
+  "category_breakdown_val": {
+    "Model C (Mean Pooling)": {
+      "amount": {
+        "n_edited": 5,
+        "n_clean": 54,
+        "roc_auc": 0.5185185185185185,
+        "pr_auc": 0.09316668847204836,
+        "recall_05": 0.0,
+        "fpr_05": 0.037037037037037035,
+        "mean_clean": 0.49965461172439435,
+        "mean_edited": 0.49967429637908933,
+        "delta": 1.9684654694984705e-05
+      },
+      "date_time": {
+        "n_edited": 6,
+        "n_clean": 54,
+        "roc_auc": 0.54320987654321,
+        "pr_auc": 0.11271681458249966,
+        "recall_05": 0.0,
+        "fpr_05": 0.037037037037037035,
+        "mean_clean": 0.49965461172439435,
+        "mean_edited": 0.49967701733112335,
+        "delta": 2.240560672900349e-05
+      },
+      "other": {
+        "n_edited": 16,
+        "n_clean": 54,
+        "roc_auc": 0.5254629629629629,
+        "pr_auc": 0.26572864833008647,
+        "recall_05": 0.125,
+        "fpr_05": 0.037037037037037035,
+        "mean_clean": 0.49965461172439435,
+        "mean_edited": 0.4996711522340775,
+        "delta": 1.654050968313836e-05
+      },
+      "recipient": {
+        "n_edited": 14,
+        "n_clean": 54,
+        "roc_auc": 0.5383597883597883,
+        "pr_auc": 0.2168343792306457,
+        "recall_05": 0.0,
+        "fpr_05": 0.037037037037037035,
+        "mean_clean": 0.49965461172439435,
+        "mean_edited": 0.4996833171163287,
+        "delta": 2.8705391934336077e-05
+      },
+      "transaction_id": {
+        "n_edited": 13,
+        "n_clean": 54,
+        "roc_auc": 0.4358974358974359,
+        "pr_auc": 0.1592270655752936,
+        "recall_05": 0.0,
+        "fpr_05": 0.037037037037037035,
+        "mean_clean": 0.49965461172439435,
+        "mean_edited": 0.4996101516943711,
+        "delta": -4.446003002323007e-05
+      }
+    },
+    "Model D (Max Pooling)": {
+      "amount": {
+        "n_edited": 5,
+        "n_clean": 54,
+        "roc_auc": 0.5222222222222223,
+        "pr_auc": 0.1173278471153531,
+        "recall_05": 0.8,
+        "fpr_05": 0.7777777777777778,
+        "mean_clean": 0.5003338979350196,
+        "mean_edited": 0.5004293394088745,
+        "delta": 9.544147385487367e-05
+      },
+      "date_time": {
+        "n_edited": 6,
+        "n_clean": 54,
+        "roc_auc": 0.7006172839506173,
+        "pr_auc": 0.17681896172088424,
+        "recall_05": 1.0,
+        "fpr_05": 0.7777777777777778,
+        "mean_clean": 0.5003338979350196,
+        "mean_edited": 0.5006378362576167,
+        "delta": 0.0003039383225971193
+      },
+      "other": {
+        "n_edited": 16,
+        "n_clean": 54,
+        "roc_auc": 0.41087962962962965,
+        "pr_auc": 0.18823491282554988,
+        "recall_05": 0.6875,
+        "fpr_05": 0.7777777777777778,
+        "mean_clean": 0.5003338979350196,
+        "mean_edited": 0.500198918581009,
+        "delta": -0.00013497935401063366
+      },
+      "recipient": {
+        "n_edited": 14,
+        "n_clean": 54,
+        "roc_auc": 0.48148148148148145,
+        "pr_auc": 0.19130356213432168,
+        "recall_05": 0.8571428571428571,
+        "fpr_05": 0.7777777777777778,
+        "mean_clean": 0.5003338979350196,
+        "mean_edited": 0.5003150876079288,
+        "delta": -1.8810327090834633e-05
+      },
+      "transaction_id": {
+        "n_edited": 13,
+        "n_clean": 54,
+        "roc_auc": 0.4957264957264958,
+        "pr_auc": 0.18441385122479373,
+        "recall_05": 0.7692307692307693,
+        "fpr_05": 0.7777777777777778,
+        "mean_clean": 0.5003338979350196,
+        "mean_edited": 0.5003253519535064,
+        "delta": -8.545981513230494e-06
+      }
+    },
+    "Model E (Attention MIL)": {
+      "amount": {
+        "n_edited": 5,
+        "n_clean": 54,
+        "roc_auc": 0.3592592592592593,
+        "pr_auc": 0.06373594728857887,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.5007758269707362,
+        "mean_edited": 0.5006704461574555,
+        "delta": -0.00010538081328070881
+      },
+      "date_time": {
+        "n_edited": 6,
+        "n_clean": 54,
+        "roc_auc": 0.6265432098765432,
+        "pr_auc": 0.12868015648060888,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.5007758269707362,
+        "mean_edited": 0.5008396486441296,
+        "delta": 6.382167339336053e-05
+      },
+      "other": {
+        "n_edited": 16,
+        "n_clean": 54,
+        "roc_auc": 0.47337962962962965,
+        "pr_auc": 0.23901803680737552,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.5007758269707362,
+        "mean_edited": 0.5007693082094193,
+        "delta": -6.518761316853805e-06
+      },
+      "recipient": {
+        "n_edited": 14,
+        "n_clean": 54,
+        "roc_auc": 0.5,
+        "pr_auc": 0.19893252504166095,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.5007758269707362,
+        "mean_edited": 0.5007731071540287,
+        "delta": -2.719816707519307e-06
+      },
+      "transaction_id": {
+        "n_edited": 13,
+        "n_clean": 54,
+        "roc_auc": 0.5284900284900285,
+        "pr_auc": 0.20448799722420336,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.5007758269707362,
+        "mean_edited": 0.5007970117605649,
+        "delta": 2.118478982870986e-05
+      }
+    },
+    "Model F (Multi-Scale MIL)": {
+      "amount": {
+        "n_edited": 5,
+        "n_clean": 54,
+        "roc_auc": 0.362962962962963,
+        "pr_auc": 0.06374125291144558,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.500307535683667,
+        "mean_edited": 0.5002312326431275,
+        "delta": -7.630304053951598e-05
+      },
+      "date_time": {
+        "n_edited": 6,
+        "n_clean": 54,
+        "roc_auc": 0.5802469135802469,
+        "pr_auc": 0.12861914320247653,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.500307535683667,
+        "mean_edited": 0.5003307223320008,
+        "delta": 2.318664833378392e-05
+      },
+      "other": {
+        "n_edited": 16,
+        "n_clean": 54,
+        "roc_auc": 0.4872685185185185,
+        "pr_auc": 0.20463525263067733,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.500307535683667,
+        "mean_edited": 0.5003013055771589,
+        "delta": -6.230106508131605e-06
+      },
+      "recipient": {
+        "n_edited": 14,
+        "n_clean": 54,
+        "roc_auc": 0.5158730158730158,
+        "pr_auc": 0.1937884948849886,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.500307535683667,
+        "mean_edited": 0.5003121026924678,
+        "delta": 4.567008800804295e-06
+      },
+      "transaction_id": {
+        "n_edited": 13,
+        "n_clean": 54,
+        "roc_auc": 0.472934472934473,
+        "pr_auc": 0.21331075206941577,
+        "recall_05": 1.0,
+        "fpr_05": 1.0,
+        "mean_clean": 0.500307535683667,
+        "mean_edited": 0.5003147331567911,
+        "delta": 7.197473124054277e-06
+      }
+    }
+  },
+  "pair_separation_oof": {
+    "Model C (Mean Pooling)": {
+      "mean_delta": -3.269397168664888e-06,
+      "std_delta": 0.00010750053551503929,
+      "positive_separation_rate": 0.5092165898617511,
+      "category_mean_deltas": {
+        "date_time": -1.438960924253359e-05,
+        "amount": -5.865490043556298e-07,
+        "other": -5.3094256491888135e-06,
+        "transaction_id": 3.4983617713652463e-06,
+        "recipient": 1.1710559620576747e-06
+      }
+    },
+    "Model D (Max Pooling)": {
+      "mean_delta": 1.4124378081290953e-05,
+      "std_delta": 0.0003221213243127966,
+      "positive_separation_rate": 0.5253456221198156,
+      "category_mean_deltas": {
+        "date_time": 2.850379262651716e-05,
+        "amount": 1.2396128623040168e-05,
+        "other": 4.412872450692313e-06,
+        "transaction_id": 2.8194433235260378e-05,
+        "recipient": -3.561552833108341e-06
+      }
+    },
+    "Model E (Attention MIL)": {
+      "mean_delta": 7.869461165045813e-07,
+      "std_delta": 1.023313617752654e-05,
+      "positive_separation_rate": 0.37327188940092165,
+      "category_mean_deltas": {
+        "date_time": 1.575265611921038e-07,
+        "amount": 7.837028293819218e-07,
+        "other": 1.8449056716192337e-08,
+        "transaction_id": -3.662454076560147e-08,
+        "recipient": 3.0279159545898436e-06
+      }
+    },
+    "Model F (Multi-Scale MIL)": {
+      "mean_delta": 6.964610468956732e-06,
+      "std_delta": 6.733723157805715e-05,
+      "positive_separation_rate": 0.511520737327189,
+      "category_mean_deltas": {
+        "date_time": 4.383233877328726e-06,
+        "amount": 8.948229171417572e-06,
+        "other": -3.5301560447329566e-06,
+        "transaction_id": 2.142176570662533e-06,
+        "recipient": 2.2684826570398666e-05
+      }
+    }
+  },
+  "pair_separation_val": {
+    "Model C (Mean Pooling)": {
+      "mean_delta": 5.951854917740434e-06,
+      "std_delta": 4.930953476959615e-05,
+      "positive_separation_rate": 0.48148148148148145,
+      "category_mean_deltas": {
+        "transaction_id": -7.918247809789703e-06,
+        "other": 8.38860869410013e-06,
+        "date_time": 3.457069396981908e-06,
+        "recipient": 1.1395982333588834e-05,
+        "amount": 2.1966695785502476e-05
+      }
+    },
+    "Model D (Max Pooling)": {
+      "mean_delta": -4.31990181960002e-06,
+      "std_delta": 0.00014239542192120245,
+      "positive_separation_rate": 0.4444444444444444,
+      "category_mean_deltas": {
+        "transaction_id": 1.9248173787033398e-05,
+        "other": 3.414973616572975e-06,
+        "date_time": -2.524455388390005e-05,
+        "recipient": -2.192599432810995e-05,
+        "amount": -1.5941858291612653e-05
+      }
+    },
+    "Model E (Attention MIL)": {
+      "mean_delta": -2.0276617120320007e-07,
+      "std_delta": 3.379453216281958e-06,
+      "positive_separation_rate": 0.5185185185185185,
+      "category_mean_deltas": {
+        "transaction_id": 2.9160426211312267e-07,
+        "other": 7.860362532391418e-08,
+        "date_time": 3.665685653723531e-07,
+        "recipient": -1.8992594310041078e-06,
+        "amount": 1.678466796839473e-06
+      }
+    },
+    "Model F (Multi-Scale MIL)": {
+      "mean_delta": -3.4179952409322625e-06,
+      "std_delta": 3.1959010178618355e-05,
+      "positive_separation_rate": 0.46296296296296297,
+      "category_mean_deltas": {
+        "transaction_id": -3.574444697426097e-06,
+        "other": 1.1749565601383571e-05,
+        "date_time": 1.2302398681644325e-05,
+        "recipient": -2.5582739285069855e-05,
+        "amount": -8.350610732965614e-06
+      }
+    }
+  },
+  "attention_spatial_distribution_model_e": {
+    "grid_shape": [
+      4,
+      2
+    ],
+    "mean_attention_clean": [
+      0.020850587718849702,
+      0.004162030304596472,
+      0.0016228930317125636,
+      0.004741665782305801,
+      0.0016353255958810838,
+      0.6535465459120439,
+      0.22280328364239163,
+      0.09063767036208496
+    ],
+    "mean_attention_edited": [
+      0.020861837701106976,
+      0.004255400266721501,
+      0.0016220506029992153,
+      0.004770399721921154,
+      0.0016431047932762804,
+      0.6535022483992686,
+      0.2227369467234282,
+      0.09060801321443188
+    ],
+    "grid_positions": [
+      "(0,0)",
+      "(0,1)",
+      "(1,0)",
+      "(1,1)",
+      "(2,0)",
+      "(2,1)",
+      "(3,0)",
+      "(3,1)"
+    ]
+  }
+}

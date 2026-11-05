@@ -1,0 +1,217 @@
+{
+  "status": "SUCCESS",
+  "elapsed_seconds": 324.5391089916229,
+  "config": {
+    "random_seed": 42,
+    "model_architecture": "resnet18",
+    "pretrained": false,
+    "num_classes": 2,
+    "tile_size": 256,
+    "stride": 128,
+    "tampered_threshold": 16,
+    "ambiguous_min": 1,
+    "ambiguous_max": 15,
+    "normalization": "imagenet",
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs": 5,
+    "early_stopping_patience": 3,
+    "early_stopping_min_delta": 0.001,
+    "early_stopping_metric": "val_f1",
+    "use_class_weights": true,
+    "use_weighted_sampler": false,
+    "max_train_samples_per_epoch": 1500,
+    "max_val_samples": 400,
+    "max_test_samples": 400,
+    "split_proportions": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    }
+  },
+  "training": {
+    "best_epoch": 3,
+    "best_val_loss": 0.599903846581777,
+    "best_val_f1": 0.2666666666666667,
+    "best_val_accuracy": 0.78,
+    "best_val_precision": 0.18461538461538463,
+    "best_val_recall": 0.48,
+    "total_epochs_trained": 3,
+    "stopped_early": false,
+    "best_model_path": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\best_model.pt",
+    "last_model_path": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\last_model.pt",
+    "training_history": [
+      {
+        "epoch": 1,
+        "lr": 0.0001,
+        "train_loss": 0.7318371706008912,
+        "train_accuracy": 0.678,
+        "train_precision": 0.11875,
+        "train_recall": 0.48717948717948717,
+        "train_f1": 0.19095477386934673,
+        "val_loss": 0.6711617803573608,
+        "val_accuracy": 0.9166666666666666,
+        "val_precision": 0.0,
+        "val_recall": 0.0,
+        "val_f1": 0.0
+      },
+      {
+        "epoch": 2,
+        "lr": 7.500000000000001e-05,
+        "train_loss": 0.5214043536186218,
+        "train_accuracy": 0.769,
+        "train_precision": 0.21561338289962825,
+        "train_recall": 0.7435897435897436,
+        "train_f1": 0.33429394812680113,
+        "val_loss": 0.8772734580437342,
+        "val_accuracy": 0.9033333333333333,
+        "val_precision": 0.16666666666666666,
+        "val_recall": 0.04,
+        "val_f1": 0.06451612903225806
+      },
+      {
+        "epoch": 3,
+        "lr": 2.5000000000000015e-05,
+        "train_loss": 0.39480952072143555,
+        "train_accuracy": 0.874,
+        "train_precision": 0.36363636363636365,
+        "train_recall": 0.8205128205128205,
+        "train_f1": 0.5039370078740159,
+        "val_loss": 0.599903846581777,
+        "val_accuracy": 0.78,
+        "val_precision": 0.18461538461538463,
+        "val_recall": 0.48,
+        "val_f1": 0.2666666666666667
+      }
+    ],
+    "config": {
+      "random_seed": 42,
+      "model_architecture": "resnet18",
+      "pretrained": false,
+      "num_classes": 2,
+      "tile_size": 256,
+      "stride": 128,
+      "tampered_threshold": 16,
+      "ambiguous_min": 1,
+      "ambiguous_max": 15,
+      "normalization": "imagenet",
+      "batch_size": 32,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "num_epochs": 5,
+      "early_stopping_patience": 3,
+      "early_stopping_min_delta": 0.001,
+      "early_stopping_metric": "val_f1",
+      "use_class_weights": true,
+      "use_weighted_sampler": false,
+      "max_train_samples_per_epoch": 1500,
+      "max_val_samples": 400,
+      "max_test_samples": 400,
+      "split_proportions": {
+        "train": 0.7,
+        "val": 0.15,
+        "test": 0.15
+      }
+    }
+  },
+  "evaluation": {
+    "total_samples": 300,
+    "num_clean": 277,
+    "num_tampered": 23,
+    "accuracy": 0.7766666666666666,
+    "precision": 0.1206896551724138,
+    "recall": 0.30434782608695654,
+    "f1": 0.1728395061728395,
+    "roc_auc": 0.7287709935645895,
+    "pr_auc": 0.15630402531502033,
+    "confusion_matrix": {
+      "tn": 226,
+      "fp": 51,
+      "fn": 16,
+      "tp": 7
+    },
+    "false_positive_rate": 0.18411552346570398,
+    "false_negative_rate": 0.6956521739130435,
+    "per_family": {
+      "bank_progress": {
+        "support": 26,
+        "clean_support": 23,
+        "tampered_support": 3,
+        "accuracy": 0.6538461538461539,
+        "precision": 0.125,
+        "recall": 0.3333333333333333,
+        "f1": 0.18181818181818182,
+        "confusion_matrix": {
+          "tn": 16,
+          "fp": 7,
+          "fn": 2,
+          "tp": 1
+        }
+      },
+      "compact": {
+        "support": 130,
+        "clean_support": 122,
+        "tampered_support": 8,
+        "accuracy": 0.8076923076923077,
+        "precision": 0.09523809523809523,
+        "recall": 0.25,
+        "f1": 0.13793103448275862,
+        "confusion_matrix": {
+          "tn": 103,
+          "fp": 19,
+          "fn": 6,
+          "tp": 2
+        }
+      },
+      "enriched": {
+        "support": 140,
+        "clean_support": 128,
+        "tampered_support": 12,
+        "accuracy": 0.7714285714285715,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333,
+        "f1": 0.2,
+        "confusion_matrix": {
+          "tn": 104,
+          "fp": 24,
+          "fn": 8,
+          "tp": 4
+        }
+      },
+      "recharge": {
+        "support": 4,
+        "clean_support": 4,
+        "tampered_support": 0,
+        "accuracy": 0.75,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": {
+          "tn": 3,
+          "fp": 1,
+          "fn": 0,
+          "tp": 0
+        }
+      }
+    },
+    "baseline_comparison": {
+      "baseline_overall_accuracy": 0.5046,
+      "tile_model_accuracy": 0.7766666666666666,
+      "accuracy_improvement": 0.27206666666666657,
+      "baseline_overall_f1": 0.5243,
+      "tile_model_f1": 0.1728395061728395,
+      "f1_improvement": -0.3514604938271605,
+      "baseline_model": "ResNet-18 Multi-Task (Global Downsampling)",
+      "baseline_defect": "Global downsampling destroyed text anti-aliasing and micro-artifacts, causing the model to collapse into degenerate majority-class or layout-memorization guessing.",
+      "tile_advantage": "Preserving native resolution (256x256 uncompressed patches) allows the CNN to recognize anti-aliasing distortions, JPEG grid discontinuity, and splice boundaries."
+    },
+    "artifacts": {
+      "metrics_json": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\metrics_test.json",
+      "confusion_matrix_json": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\confusion_matrix.json",
+      "confusion_matrix_png": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\confusion_matrix.png",
+      "comparison_json": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\baseline_vs_tile_comparison.json",
+      "predictions_csv": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\member2\\phase5_model_training\\artifacts\\predictions_test.csv"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0492",
+  "batch": 5,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Neel Patil",
+  "replacement_fictional_value": "Aarav Mehta",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      324,
+      135,
+      350,
+      168
+    ],
+    [
+      244,
+      212,
+      429,
+      236
+    ],
+    [
+      102,
+      827,
+      204,
+      844
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      208,
+      88,
+      466,
+      202
+    ],
+    [
+      0,
+      169,
+      674,
+      262
+    ],
+    [
+      12,
+      801,
+      259,
+      865
+    ]
+  ],
+  "random_seed": 20261204492,
+  "width": 674,
+  "height": 1528,
+  "font_scale": 1.037,
+  "spacing_scale": 1.028,
+  "margin": 38,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

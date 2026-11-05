@@ -1,0 +1,30 @@
+{
+  "version": "gpay-dark-v2",
+  "theme": "Google Pay dark only",
+  "canvas_presets": [[540, 1324], [540, 1600], [600, 1600], [637, 1600], [478, 1599], [432, 1440]],
+  "families": {
+    "compact": {
+      "title": "Compact transaction details",
+      "components": ["profile", "amount", "pay_again_variant", "completed", "date", "bank_account_header", "upi_details", "google_transaction_id"]
+    },
+    "enriched": {
+      "title": "Merchant/context-enriched details",
+      "components": ["merchant_context_chip", "completion_summary", "bank_account_header", "bank_confirmation_message", "upi_details", "google_transaction_id"]
+    },
+    "bank_progress": {
+      "title": "Bank payment-progress timeline",
+      "components": ["profile", "amount", "completed", "date", "bank_header", "payment_progress_timeline", "upi_details", "google_transaction_id", "optional_gpay_action_strip"]
+    },
+    "recharge": {
+      "title": "Recharge/utility detail summary",
+      "components": ["fictional_service_identity", "total_amount", "repeat_action", "completed", "plan_fee_summary", "recharge_progress", "payer_and_transaction_ids"]
+    }
+  },
+  "safety": {
+    "synthetic_marker": "SYNTHETIC / DEMO",
+    "marker_required_on_clean_and_edited": true,
+    "real_personal_or_payment_values": false,
+    "other_payment_app_screens": false,
+    "light_theme": false
+  }
+}

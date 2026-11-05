@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0271",
+  "batch": 3,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Anaya Joshi",
+  "replacement_fictional_value": "Neel Patil",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      304,
+      121,
+      328,
+      150
+    ],
+    [
+      234,
+      148,
+      398,
+      214
+    ],
+    [
+      85,
+      737,
+      169,
+      754
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      192,
+      77,
+      440,
+      182
+    ],
+    [
+      0,
+      148,
+      632,
+      235
+    ],
+    [
+      8,
+      711,
+      215,
+      773
+    ]
+  ],
+  "random_seed": 20261204271,
+  "width": 632,
+  "height": 1387,
+  "font_scale": 1.019,
+  "spacing_scale": 1.009,
+  "margin": 31,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

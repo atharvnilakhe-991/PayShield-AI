@@ -1,0 +1,290 @@
+{
+  "model_summaries_oof": {
+    "model_c_mean_pooling": {
+      "oof_roc_auc": 0.5002442183949543,
+      "oof_pr_auc": 0.5004930131992174,
+      "oof_accuracy": 0.4976958525345622,
+      "oof_precision": 0.4970414201183432,
+      "oof_recall": 0.3870967741935484,
+      "oof_specificity": 0.6082949308755761,
+      "oof_fpr": 0.391705069124424,
+      "oof_fnr": 0.6129032258064516,
+      "oof_macro_f1": 0.4914755014727066,
+      "oof_decisive_coverage": 0.0,
+      "fold_checkpoints": [
+        {
+          "fold": 0,
+          "checkpoint": "best_model_c_mean_pooling_fold0.pt",
+          "sha256": "743373beef4d635f6bff6b6cf90165c087d242d54bb8bb2f6587fd61121c09d5",
+          "best_epoch": 6,
+          "val_loss": 0.6931452804736877,
+          "val_roc_auc": 0.5054917308420653,
+          "val_pr_auc": 0.4953609104316946
+        },
+        {
+          "fold": 1,
+          "checkpoint": "best_model_c_mean_pooling_fold1.pt",
+          "sha256": "a468317dccbd557ed64a1bd4e664b58f20ea0ea54b4211ba985b3f8ec0a76eeb",
+          "best_epoch": 11,
+          "val_loss": 0.6931868921751263,
+          "val_roc_auc": 0.5019157088122604,
+          "val_pr_auc": 0.5039059919857676
+        },
+        {
+          "fold": 2,
+          "checkpoint": "best_model_c_mean_pooling_fold2.pt",
+          "sha256": "b3e4c524821becfcbacfdafde7cc611c9a59b00563968668a35aa02648d5d080",
+          "best_epoch": 2,
+          "val_loss": 0.6931754515088838,
+          "val_roc_auc": 0.49636675914916106,
+          "val_pr_auc": 0.48820103538577375
+        },
+        {
+          "fold": 3,
+          "checkpoint": "best_model_c_mean_pooling_fold3.pt",
+          "sha256": "23b435a21b74e558c2f95c29fc2a5e43201175683a160188e445519bc8fe4c5f",
+          "best_epoch": 21,
+          "val_loss": 0.6931483911913495,
+          "val_roc_auc": 0.49188750676041104,
+          "val_pr_auc": 0.49729765338850074
+        },
+        {
+          "fold": 4,
+          "checkpoint": "best_model_c_mean_pooling_fold4.pt",
+          "sha256": "4753e4b6e2d569a10a0967f4cd112bfb35dc998ae14da41240efd0c257d290cb",
+          "best_epoch": 10,
+          "val_loss": 0.693163635450251,
+          "val_roc_auc": 0.5013148788927335,
+          "val_pr_auc": 0.5024561904862923
+        }
+      ]
+    },
+    "model_d_max_pooling": {
+      "oof_roc_auc": 0.5030261844592154,
+      "oof_pr_auc": 0.5004387798506572,
+      "oof_accuracy": 0.5080645161290323,
+      "oof_precision": 0.5089514066496164,
+      "oof_recall": 0.45852534562211983,
+      "oof_specificity": 0.5576036866359447,
+      "oof_fpr": 0.4423963133640553,
+      "oof_fnr": 0.5414746543778802,
+      "oof_macro_f1": 0.5068542726940093,
+      "oof_decisive_coverage": 0.0,
+      "fold_checkpoints": [
+        {
+          "fold": 0,
+          "checkpoint": "best_model_d_max_pooling_fold0.pt",
+          "sha256": "7e27210d26c88d0516a3ce70c2bc28c0db2983b133eed2c624dcff6bddb89d5e",
+          "best_epoch": 7,
+          "val_loss": 0.6930933882681172,
+          "val_roc_auc": 0.5116778184572656,
+          "val_pr_auc": 0.5117513281610837
+        },
+        {
+          "fold": 1,
+          "checkpoint": "best_model_d_max_pooling_fold1.pt",
+          "sha256": "f644170d3825c16ec3c808b6738636afd2795f1ec0ebabb2db88e2b1b81d16b5",
+          "best_epoch": 14,
+          "val_loss": 0.6931329945038105,
+          "val_roc_auc": 0.5001981767736822,
+          "val_pr_auc": 0.5104903507420404
+        },
+        {
+          "fold": 2,
+          "checkpoint": "best_model_d_max_pooling_fold2.pt",
+          "sha256": "524aca73a66b1c9fd477df5cf170bfe33457e722da690009816e82d1f93bf774",
+          "best_epoch": 16,
+          "val_loss": 0.6931803048342123,
+          "val_roc_auc": 0.48355132778438364,
+          "val_pr_auc": 0.49610618968765574
+        },
+        {
+          "fold": 3,
+          "checkpoint": "best_model_d_max_pooling_fold3.pt",
+          "sha256": "96f3e1c096a75287aef69f83df9088157204a3ecabac7a227f5e66714bb843da",
+          "best_epoch": 24,
+          "val_loss": 0.6931481804958609,
+          "val_roc_auc": 0.5058139534883721,
+          "val_pr_auc": 0.52156118478205
+        },
+        {
+          "fold": 4,
+          "checkpoint": "best_model_d_max_pooling_fold4.pt",
+          "sha256": "f88084f8b196cda102ad62d5268cb53a26eb15f9edcc91991b13ea5d40d7db90",
+          "best_epoch": 8,
+          "val_loss": 0.6931346290251788,
+          "val_roc_auc": 0.5108650519031142,
+          "val_pr_auc": 0.4933577757484597
+        }
+      ]
+    },
+    "model_e_attention_mil": {
+      "oof_roc_auc": 0.5007432733759476,
+      "oof_pr_auc": 0.5005502932183243,
+      "oof_accuracy": 0.5,
+      "oof_precision": 0.5,
+      "oof_recall": 0.4400921658986175,
+      "oof_specificity": 0.5599078341013825,
+      "oof_fpr": 0.4400921658986175,
+      "oof_fnr": 0.5599078341013825,
+      "oof_macro_f1": 0.49819906223358906,
+      "oof_decisive_coverage": 0.0,
+      "fold_checkpoints": [
+        {
+          "fold": 0,
+          "checkpoint": "best_model_e_attention_mil_fold0.pt",
+          "sha256": "120da2437a53017553aa3a7d12fb1fbbe6a32160cef4134c16050c9420f262fe",
+          "best_epoch": 15,
+          "val_loss": 0.6931443864040161,
+          "val_roc_auc": 0.5001893700290367,
+          "val_pr_auc": 0.5120229248793314
+        },
+        {
+          "fold": 1,
+          "checkpoint": "best_model_e_attention_mil_fold1.pt",
+          "sha256": "18d0acab9e76508bb3b40e8ece6b0e0ab7c123b9173b8d996187f01b61f9867b",
+          "best_epoch": 24,
+          "val_loss": 0.6931747218658184,
+          "val_roc_auc": 0.5241115074646585,
+          "val_pr_auc": 0.5072393374843576
+        },
+        {
+          "fold": 2,
+          "checkpoint": "best_model_e_attention_mil_fold2.pt",
+          "sha256": "44371008cb2bbbf94aae92737cc687ae3b8188edf2056cbb1dfdc5100d856fb5",
+          "best_epoch": 15,
+          "val_loss": 0.6931477257575112,
+          "val_roc_auc": 0.4992733518298321,
+          "val_pr_auc": 0.49763551843401604
+        },
+        {
+          "fold": 3,
+          "checkpoint": "best_model_e_attention_mil_fold3.pt",
+          "sha256": "95f1dff8f7642d195d1623b297c1e658897d01f99b80e2f3cf4e0861abf6cbf0",
+          "best_epoch": 10,
+          "val_loss": 0.6931469287983206,
+          "val_roc_auc": 0.5010816657652785,
+          "val_pr_auc": 0.5090005220577962
+        },
+        {
+          "fold": 4,
+          "checkpoint": "best_model_e_attention_mil_fold4.pt",
+          "sha256": "735c57739e6fdf78827e0c6a93fdb164af2c419b83ee5989f3dc5e0c0a23b776",
+          "best_epoch": 8,
+          "val_loss": 0.693146984016194,
+          "val_roc_auc": 0.5007612456747405,
+          "val_pr_auc": 0.5050600522324621
+        }
+      ]
+    },
+    "model_f_multiscale_mil": {
+      "oof_roc_auc": 0.5023837838985751,
+      "oof_pr_auc": 0.49967133639147293,
+      "oof_accuracy": 0.5057603686635944,
+      "oof_precision": 0.5045372050816697,
+      "oof_recall": 0.6405529953917051,
+      "oof_specificity": 0.3709677419354839,
+      "oof_fpr": 0.6290322580645161,
+      "oof_fnr": 0.35944700460829493,
+      "oof_macro_f1": 0.49661432810398315,
+      "oof_decisive_coverage": 0.0,
+      "fold_checkpoints": [
+        {
+          "fold": 0,
+          "checkpoint": "best_model_f_multiscale_mil_fold0.pt",
+          "sha256": "5b7b4ab23a0442006205e92644f0242ba75ff93c2c89c8aed12d21fb680d01e9",
+          "best_epoch": 8,
+          "val_loss": 0.6931296419561579,
+          "val_roc_auc": 0.5139502588057064,
+          "val_pr_auc": 0.5191216433189428
+        },
+        {
+          "fold": 1,
+          "checkpoint": "best_model_f_multiscale_mil_fold1.pt",
+          "sha256": "46e3747782a5d2cc7e07420263aa48d8bc47dc5610debc43e45624fe75c149ef",
+          "best_epoch": 16,
+          "val_loss": 0.6931259789686094,
+          "val_roc_auc": 0.5175056150085876,
+          "val_pr_auc": 0.5018135941360431
+        },
+        {
+          "fold": 2,
+          "checkpoint": "best_model_f_multiscale_mil_fold2.pt",
+          "sha256": "0199357f467ce5ba4085ce06d6d49b89dda5ce8c855834663e7d845243f4b4f3",
+          "best_epoch": 7,
+          "val_loss": 0.6931472413841335,
+          "val_roc_auc": 0.501123001717532,
+          "val_pr_auc": 0.5066700014644235
+        },
+        {
+          "fold": 3,
+          "checkpoint": "best_model_f_multiscale_mil_fold3.pt",
+          "sha256": "9068f446f542c6094f555ee4b0b93142dcac801f1e479da521cb7e70bcb59a91",
+          "best_epoch": 6,
+          "val_loss": 0.6931576285251352,
+          "val_roc_auc": 0.4902650081124932,
+          "val_pr_auc": 0.48947122715027935
+        },
+        {
+          "fold": 4,
+          "checkpoint": "best_model_f_multiscale_mil_fold4.pt",
+          "sha256": "a26ab628ff55f8be503c7e2e2be3604ce1c5010419516e6fa1e8151aa5fa8a5e",
+          "best_epoch": 12,
+          "val_loss": 0.6931454216732699,
+          "val_roc_auc": 0.49937716262975773,
+          "val_pr_auc": 0.4932196121532405
+        }
+      ]
+    }
+  },
+  "model_summaries_val": {
+    "model_c_mean_pooling": {
+      "val_roc_auc": 0.5085733882030179,
+      "val_pr_auc": 0.5002785133784127,
+      "val_accuracy": 0.5,
+      "val_precision": 0.5,
+      "val_recall": 0.037037037037037035,
+      "val_specificity": 0.9629629629629629,
+      "val_fpr": 0.037037037037037035,
+      "val_fnr": 0.9629629629629629,
+      "val_macro_f1": 0.3635966826713226,
+      "val_decisive_coverage": 0.0
+    },
+    "model_d_max_pooling": {
+      "val_roc_auc": 0.49211248285322357,
+      "val_pr_auc": 0.49022389466559463,
+      "val_accuracy": 0.5092592592592593,
+      "val_precision": 0.5058823529411764,
+      "val_recall": 0.7962962962962963,
+      "val_specificity": 0.2222222222222222,
+      "val_fpr": 0.7777777777777778,
+      "val_fnr": 0.2037037037037037,
+      "val_macro_f1": 0.46519667382976737,
+      "val_decisive_coverage": 0.0
+    },
+    "model_e_attention_mil": {
+      "val_roc_auc": 0.5,
+      "val_pr_auc": 0.4992822055026088,
+      "val_accuracy": 0.5,
+      "val_precision": 0.5,
+      "val_recall": 1.0,
+      "val_specificity": 0.0,
+      "val_fpr": 1.0,
+      "val_fnr": 0.0,
+      "val_macro_f1": 0.3333333333333333,
+      "val_decisive_coverage": 0.0
+    },
+    "model_f_multiscale_mil": {
+      "val_roc_auc": 0.49005486968449935,
+      "val_pr_auc": 0.47946725583077265,
+      "val_accuracy": 0.5,
+      "val_precision": 0.5,
+      "val_recall": 1.0,
+      "val_specificity": 0.0,
+      "val_fpr": 1.0,
+      "val_fnr": 0.0,
+      "val_macro_f1": 0.3333333333333333,
+      "val_decisive_coverage": 0.0
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0035",
+  "batch": 1,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "transaction_id",
+  "original_fictional_value": "DEMO-UPI-66374333",
+  "replacement_fictional_value": "DEMO-UPI-17819081",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "transaction_id",
+  "bounding_boxes_xyxy": [
+    [
+      147,
+      812,
+      218,
+      826
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      6,
+      784,
+      598,
+      848
+    ]
+  ],
+  "random_seed": 20261204035,
+  "width": 604,
+  "height": 1556,
+  "font_scale": 0.968,
+  "spacing_scale": 0.978,
+  "margin": 39,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

@@ -1,0 +1,85 @@
+/**
+ * CBL-04: Global Light Design System & Tokens
+ * Strict Light Theme Specification for all project phases.
+ */
+
+:root {
+  /* Core Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Monaco, monospace;
+
+  /* Global Color Tokens (Light Theme Mandatory) */
+  --color-background: #f8fafc;        /* Very light slate / off-white background */
+  --color-surface: #ffffff;           /* Clean white card & panel surfaces */
+  --color-surface-hover: #f1f5f9;     /* Subtle light hover surface */
+  --color-surface-muted: #f8fafc;     /* Soft inset surfaces (code blocks, toggles) */
+
+  --color-primary: #2563eb;           /* Professional Blue (Primary action) */
+  --color-primary-hover: #1d4ed8;     /* Darker blue hover */
+  --color-primary-light: #eff6ff;     /* Soft blue tint for active pills & icons */
+  --color-primary-border: #bfdbfe;    /* Subtle blue border */
+
+  --color-accent: #4f46e5;            /* Secondary accent indigo */
+  --color-accent-light: #eef2ff;
+  --color-accent-border: #c7d2fe;
+
+  --color-text-primary: #0f172a;      /* Dark charcoal / navy for high contrast readability */
+  --color-text-secondary: #475569;    /* Muted slate for subtitles, labels & hints */
+  --color-text-muted: #64748b;        /* Lighter muted for captions & footers */
+
+  --color-border: #e2e8f0;            /* Subtle light gray border */
+  --color-border-subtle: #f1f5f9;     /* Ultra-subtle dividers */
+
+  /* Semantic Feedback Tokens */
+  --color-success: #15803d;           /* Accessible soft green */
+  --color-success-bg: #f0fdf4;        /* Light green tint */
+  --color-success-border: #bbf7d0;
+
+  --color-warning: #b45309;           /* Accessible amber / warning */
+  --color-warning-bg: #fffbeb;        /* Light amber tint */
+  --color-warning-border: #fde68a;
+
+  --color-danger: #b91c1c;            /* Accessible soft red / error */
+  --color-danger-bg: #fef2f2;         /* Light red tint */
+  --color-danger-border: #fecaca;
+
+  /* Geometry & Elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Subtle, clean drop shadows for light backgrounds */
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+}
+
+/* CSS Reset & Global Layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: light;
+  background-color: var(--color-background);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

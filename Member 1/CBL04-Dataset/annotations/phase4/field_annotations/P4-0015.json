@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0015",
+  "batch": 1,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Isha Kulkarni",
+  "replacement_fictional_value": "Neel Patil",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      223,
+      110,
+      242,
+      135
+    ],
+    [
+      164,
+      171,
+      300,
+      189
+    ],
+    [
+      79,
+      733,
+      156,
+      746
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      129,
+      70,
+      336,
+      171
+    ],
+    [
+      0,
+      137,
+      465,
+      220
+    ],
+    [
+      0,
+      710,
+      186,
+      768
+    ]
+  ],
+  "random_seed": 20261204015,
+  "width": 465,
+  "height": 1319,
+  "font_scale": 1.011,
+  "spacing_scale": 0.99,
+  "margin": 40,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

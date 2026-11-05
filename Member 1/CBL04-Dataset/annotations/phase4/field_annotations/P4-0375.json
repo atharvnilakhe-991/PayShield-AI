@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0375",
+  "batch": 4,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Tara Iyer",
+  "replacement_fictional_value": "Dev Malhotra",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      316,
+      137,
+      340,
+      169
+    ],
+    [
+      228,
+      215,
+      424,
+      245
+    ],
+    [
+      102,
+      829,
+      211,
+      849
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      200,
+      88,
+      454,
+      203
+    ],
+    [
+      0,
+      169,
+      654,
+      262
+    ],
+    [
+      10,
+      802,
+      263,
+      867
+    ]
+  ],
+  "random_seed": 20261204375,
+  "width": 654,
+  "height": 1516,
+  "font_scale": 1.04,
+  "spacing_scale": 1.04,
+  "margin": 39,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

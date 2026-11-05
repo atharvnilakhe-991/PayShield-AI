@@ -1,0 +1,16 @@
+{
+  "pair_counts": {
+    "other": 100,
+    "transaction_id": 100,
+    "date_time": 100,
+    "recipient": 100,
+    "amount": 100
+  },
+  "target_pair_counts": {
+    "amount": 125,
+    "recipient": 125,
+    "date_time": 125,
+    "transaction_id": 125,
+    "other": 125
+  }
+}

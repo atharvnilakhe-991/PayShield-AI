@@ -1,0 +1,29 @@
+{
+  "source_id": "SYN-20261103-006",
+  "edited_field": "recipient",
+  "original_synthetic_value": "Tara Iyer",
+  "replacement_synthetic_value": "Om Prakash",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      255,
+      129,
+      284,
+      159
+    ],
+    [
+      186,
+      207,
+      353,
+      232
+    ],
+    [
+      90,
+      857,
+      202,
+      877
+    ]
+  ],
+  "seed": 20261109,
+  "template_version": "gpay-dark-demo-v1"
+}

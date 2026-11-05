@@ -1,0 +1,32 @@
+{
+  "source_id": "P3-enriched-20261130-02",
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "amount",
+  "original_fictional_value": "999",
+  "replacement_fictional_value": "1060",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      194,
+      322,
+      408,
+      386
+    ]
+  ],
+  "random_seed": 20262132,
+  "allowed_regions_xyxy": [
+    [
+      72,
+      278,
+      528,
+      388
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 600,
+  "height": 1600,
+  "font_scale": 1.0,
+  "spacing_scale": 1.0,
+  "margin": 35
+}

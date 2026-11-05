@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0091",
+  "batch": 1,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Mira Nair",
+  "replacement_fictional_value": "Kabir Sharma",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      188,
+      105,
+      320,
+      163
+    ],
+    [
+      188,
+      129,
+      347,
+      177
+    ],
+    [
+      79,
+      715,
+      166,
+      727
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      155,
+      66,
+      381,
+      163
+    ],
+    [
+      0,
+      129,
+      536,
+      210
+    ],
+    [
+      0,
+      691,
+      227,
+      749
+    ]
+  ],
+  "random_seed": 20261204091,
+  "width": 536,
+  "height": 1305,
+  "font_scale": 1.032,
+  "spacing_scale": 0.949,
+  "margin": 31,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

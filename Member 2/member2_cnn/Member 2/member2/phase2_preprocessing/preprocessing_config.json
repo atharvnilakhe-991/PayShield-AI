@@ -1,0 +1,22 @@
+{
+  "preserve_native_resolution": true,
+  "jpeg_quality": null,
+  "gaussian_sigma": null,
+  "brightness_factor": null,
+  "contrast_factor": null,
+  "alpha_fill_color": [17, 17, 17],
+  "mask_foreground_value": 1,
+  "normalize_to_float": false,
+  "seed": 20261103,
+  "robustness_ranges": {
+    "jpeg_quality_range": [75, 95],
+    "gaussian_sigma_range": [0.2, 0.6],
+    "brightness_factor_range": [0.95, 1.05],
+    "contrast_factor_range": [0.95, 1.05]
+  },
+  "alpha_policy": "Composite RGBA over dark background RGB(17, 17, 17) to match GPay dark-theme canvas (#111111).",
+  "grayscale_policy": "Replicate single luminance channel L across all 3 RGB channels (R=G=B).",
+  "mask_policy": "Binary representation where background=0 and tampered foreground=1 (array) / 255 (display). Dimensions must strictly match screenshot.",
+  "interpolation_policy": "No spatial resizing or cropping is performed in Phase 2. If mask resizing is ever explicitly requested in future workflows, nearest-neighbor interpolation only."
+}
+

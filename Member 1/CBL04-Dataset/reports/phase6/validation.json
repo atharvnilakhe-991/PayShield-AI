@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "manifest_rows": 1387,
+  "synthetic_rows": 1000,
+  "synthetic_pairs": 500,
+  "real_unique_unlabeled_rows": 387,
+  "real_family_counts": {
+    "compact": 169,
+    "enriched": 167,
+    "bank_progress": 42,
+    "recharge": 9
+  },
+  "split_counts": {
+    "train": {
+      "pairs": 434,
+      "synthetic_screenshots": 868,
+      "clean": 434,
+      "edited": 434
+    },
+    "validation": {
+      "pairs": 54,
+      "synthetic_screenshots": 108,
+      "clean": 54,
+      "edited": 54
+    },
+    "test": {
+      "pairs": 12,
+      "synthetic_screenshots": 24,
+      "clean": 12,
+      "edited": 12
+    }
+  },
+  "split_ratios": {
+    "train": {
+      "pair_ratio": "86.8%",
+      "screenshot_ratio": "86.8%"
+    },
+    "validation": {
+      "pair_ratio": "10.8%",
+      "screenshot_ratio": "10.8%"
+    },
+    "test": {
+      "pair_ratio": "2.4%",
+      "screenshot_ratio": "2.4%"
+    }
+  },
+  "family_distribution_per_split": {
+    "train": {
+      "compact": 218,
+      "enriched": 216
+    },
+    "validation": {
+      "bank_progress": 54
+    },
+    "test": {
+      "recharge": 12
+    }
+  },
+  "edit_categories_per_split": {
+    "train": {
+      "date_time": 91,
+      "amount": 91,
+      "transaction_id": 83,
+      "other": 84,
+      "recipient": 85
+    },
+    "validation": {
+      "transaction_id": 13,
+      "date_time": 6,
+      "recipient": 14,
+      "other": 16,
+      "amount": 5
+    },
+    "test": {
+      "amount": 4,
+      "date_time": 3,
+      "transaction_id": 4,
+      "recipient": 1
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0168",
+  "batch": 2,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "recipient",
+  "original_fictional_value": "Isha Kulkarni",
+  "replacement_fictional_value": "Neel Patil",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      174,
+      115,
+      188,
+      136
+    ],
+    [
+      126,
+      188,
+      235,
+      204
+    ],
+    [
+      63,
+      800,
+      121,
+      810
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      89,
+      76,
+      273,
+      182
+    ],
+    [
+      0,
+      148,
+      362,
+      234
+    ],
+    [
+      0,
+      777,
+      153,
+      838
+    ]
+  ],
+  "random_seed": 20261204168,
+  "width": 362,
+  "height": 1329,
+  "font_scale": 0.912,
+  "spacing_scale": 1.049,
+  "margin": 42,
+  "show_pay_again": true,
+  "show_action_strip": true,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

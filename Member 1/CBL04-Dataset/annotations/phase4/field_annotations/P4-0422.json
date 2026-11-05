@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0422",
+  "batch": 5,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "date_time",
+  "original_fictional_value": "07 Dec 2025, 8:40pm",
+  "replacement_fictional_value": "07 Dec 2025, 10:40pm",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "date_time",
+  "bounding_boxes_xyxy": [
+    [
+      192,
+      549,
+      371,
+      569
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      20,
+      522,
+      543,
+      591
+    ]
+  ],
+  "random_seed": 20261204422,
+  "width": 563,
+  "height": 1476,
+  "font_scale": 0.966,
+  "spacing_scale": 1.013,
+  "margin": 34,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

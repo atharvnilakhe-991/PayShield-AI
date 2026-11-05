@@ -1,0 +1,12 @@
+{
+  "seed": 20261204,
+  "target_pairs": 500,
+  "batch_size": 100,
+  "batch_count": 5,
+  "reference_family_counts": {"compact": 169, "enriched": 167, "bank_progress": 42, "recharge": 9},
+  "generated_family_counts": {"compact": 218, "enriched": 216, "bank_progress": 54, "recharge": 12},
+  "generated_edit_category_counts": {"amount": 100, "recipient": 100, "date_time": 100, "transaction_id": 100, "other": 100},
+  "dimensions_sampled_by_family": {"compact": [540, 732, 1319, 1600], "enriched": [420, 738, 1280, 1601], "bank_progress": [353, 478, 1280, 1600], "recharge": [270, 471, 1248, 1603]},
+  "synthetic_marker": "SYNTHETIC / DEMO",
+  "bulk_generation_complete": true
+}

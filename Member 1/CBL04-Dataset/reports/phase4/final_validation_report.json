@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "pairs": 500,
+  "clean_screenshots": 500,
+  "edited_screenshots": 500,
+  "clean_masks": 500,
+  "edited_masks": 500,
+  "batch_size": 100,
+  "batches_passed": 5,
+  "family_counts": {
+    "compact": 218,
+    "bank_progress": 54,
+    "enriched": 216,
+    "recharge": 12
+  },
+  "edit_category_counts": {
+    "other": 100,
+    "transaction_id": 100,
+    "date_time": 100,
+    "recipient": 100,
+    "amount": 100
+  },
+  "duplicate_screenshots": 0,
+  "validation_reports": [
+    "reports/phase4/batches/batch_01_validation.json",
+    "reports/phase4/batches/batch_02_validation.json",
+    "reports/phase4/batches/batch_03_validation.json",
+    "reports/phase4/batches/batch_04_validation.json",
+    "reports/phase4/batches/batch_05_validation.json"
+  ]
+}

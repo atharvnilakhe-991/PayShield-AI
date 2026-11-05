@@ -1,0 +1,50 @@
+{
+  "fold_assignments_path": "experiments/phase19_local_branch_redevelopment/data/fold_assignments.csv",
+  "sha256": "3dd116367fde72b2a37a425920b9813c631bc65c867146be51b197bb33a70acc",
+  "total_pairs": 434,
+  "total_images": 868,
+  "fold_total_pairs": {
+    "0": 89,
+    "1": 87,
+    "2": 87,
+    "3": 86,
+    "4": 85
+  },
+  "category_stratification": {
+    "0": {
+      "amount": 19,
+      "date_time": 19,
+      "other": 17,
+      "recipient": 17,
+      "transaction_id": 17
+    },
+    "1": {
+      "amount": 18,
+      "date_time": 18,
+      "other": 17,
+      "recipient": 17,
+      "transaction_id": 17
+    },
+    "2": {
+      "amount": 18,
+      "date_time": 18,
+      "other": 17,
+      "recipient": 17,
+      "transaction_id": 17
+    },
+    "3": {
+      "amount": 18,
+      "date_time": 18,
+      "other": 17,
+      "recipient": 17,
+      "transaction_id": 16
+    },
+    "4": {
+      "amount": 18,
+      "date_time": 18,
+      "other": 16,
+      "recipient": 17,
+      "transaction_id": 16
+    }
+  }
+}

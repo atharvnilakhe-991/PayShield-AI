@@ -1,0 +1,14 @@
+{
+  "explanation": "The difference between 0.174612 and 0.175582 (reported as 0.1756) is entirely due to sample size: the main evaluation evaluates all 150 test screenshots (75 clean, 75 edited), whereas the 14-condition robustness suite evaluated a 10-screenshot balanced subset (5 clean, 5 edited) to maintain tractable CPU execution time.",
+  "sample_size_main_eval": 150,
+  "dice_main_eval": 0.1746116742885397,
+  "tp_main_eval": 42554,
+  "fp_main_eval": 309665,
+  "fn_main_eval": 92640,
+  "sample_size_robustness_baseline": 10,
+  "dice_robustness_baseline": 0.17558249583126775,
+  "tp_robustness_baseline": 1948,
+  "fp_robustness_baseline": 14949,
+  "fn_robustness_baseline": 3344,
+  "reconciliation_status": "VERIFIED_MATHEMATICALLY_CONSISTENT"
+}

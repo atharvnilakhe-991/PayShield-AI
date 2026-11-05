@@ -1,0 +1,11 @@
+{
+  "baseline_overall_accuracy": 0.5046,
+  "tile_model_accuracy": 0.7766666666666666,
+  "accuracy_improvement": 0.27206666666666657,
+  "baseline_overall_f1": 0.5243,
+  "tile_model_f1": 0.1728395061728395,
+  "f1_improvement": -0.3514604938271605,
+  "baseline_model": "ResNet-18 Multi-Task (Global Downsampling)",
+  "baseline_defect": "Global downsampling destroyed text anti-aliasing and micro-artifacts, causing the model to collapse into degenerate majority-class or layout-memorization guessing.",
+  "tile_advantage": "Preserving native resolution (256x256 uncompressed patches) allows the CNN to recognize anti-aliasing distortions, JPEG grid discontinuity, and splice boundaries."
+}

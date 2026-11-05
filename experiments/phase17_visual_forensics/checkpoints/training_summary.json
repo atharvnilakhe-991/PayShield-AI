@@ -1,0 +1,79 @@
+{
+  "training_time_seconds": 58.34,
+  "best_epoch": 8,
+  "best_val_roc_auc": 0.6677,
+  "checkpoint_path": "experiments/phase17_visual_forensics/checkpoints/best_crop_resnet18.pt",
+  "checkpoint_sha256": "852f8189e47f6f1f62f5a43f46d30ca8aee2aaf1f235b05fcf5efad7c71d5533",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.698,
+      "train_acc": 0.5276,
+      "val_acc": 0.5093,
+      "val_roc_auc": 0.5638
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5589,
+      "train_acc": 0.6705,
+      "val_acc": 0.5926,
+      "val_roc_auc": 0.6629
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.47,
+      "train_acc": 0.7742,
+      "val_acc": 0.5741,
+      "val_roc_auc": 0.6334
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3626,
+      "train_acc": 0.856,
+      "val_acc": 0.5926,
+      "val_roc_auc": 0.62
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2981,
+      "train_acc": 0.871,
+      "val_acc": 0.537,
+      "val_roc_auc": 0.5981
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.2948,
+      "train_acc": 0.8756,
+      "val_acc": 0.5093,
+      "val_roc_auc": 0.6128
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.1889,
+      "train_acc": 0.9205,
+      "val_acc": 0.5278,
+      "val_roc_auc": 0.6149
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.2162,
+      "train_acc": 0.9182,
+      "val_acc": 0.6204,
+      "val_roc_auc": 0.6677
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.1443,
+      "train_acc": 0.9528,
+      "val_acc": 0.6204,
+      "val_roc_auc": 0.6303
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.1576,
+      "train_acc": 0.9435,
+      "val_acc": 0.5556,
+      "val_roc_auc": 0.6427
+    }
+  ]
+}

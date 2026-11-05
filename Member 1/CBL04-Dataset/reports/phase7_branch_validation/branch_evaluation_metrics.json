@@ -1,0 +1,82 @@
+{
+  "cnn_branch": {
+    "evaluated_samples": 868,
+    "evaluated_families": [
+      "compact",
+      "enriched"
+    ],
+    "accuracy": 0.5046,
+    "precision": 0.5043,
+    "recall": 0.5461,
+    "f1": 0.5243,
+    "macro_f1": 0.4093,
+    "confusion_matrix": {
+      "tn": 201,
+      "fp": 233,
+      "fn": 197,
+      "tp": 237
+    },
+    "per_fold": {
+      "fold_1_compact": {
+        "support": 436,
+        "accuracy": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "fold_2_enriched": {
+        "support": 432,
+        "accuracy": 0.5093,
+        "recall": 0.088,
+        "f1": 0.152
+      }
+    },
+    "uncalibrated_score_warning": "ResNet-18 baseline model predictions are raw uncalibrated sigmoid probabilities (~50.5% accuracy).",
+    "missing_coverage_count": 132,
+    "missing_coverage_families": [
+      "bank_progress",
+      "recharge"
+    ]
+  },
+  "ocr_branch": {
+    "engine": "EasyOCR 1.7.2",
+    "evaluated_samples": 100,
+    "mean_token_confidence": 0.8808,
+    "mean_latency_ms": 1288.72,
+    "field_coverage": {
+      "amount": 100.0,
+      "transaction_id": 100.0,
+      "receiver": 100.0,
+      "status": 100.0,
+      "date": 76.0
+    },
+    "ground_truth_matches": {
+      "transaction_id": "20/20 (100.0%)",
+      "recipient": "20/20 (100.0%)",
+      "other_bank_suffix": "20/20 (100.0%)",
+      "date_time": "16/20 (80.0%)",
+      "amount": "14/20 (70.0%)"
+    }
+  },
+  "semantic_branch": {
+    "engine_version": "v1.0.0-phase6",
+    "evaluated_samples": 100,
+    "strict_test_exclusion": "12 test samples excluded",
+    "mean_latency_ms": 0.15,
+    "clean_false_positive_rate": 0.56,
+    "clean_fp_explanation": "48% of receipts had OCR font variation on Rupee symbol ({ instead of literal \u20b9), tripping R_AMT_004.",
+    "mean_clean_manipulation_score": 0.099,
+    "mean_edited_manipulation_score": 0.107,
+    "feature_availability": {
+      "amount_valid_format": "82 available, 0 missing, 18 invalid",
+      "amount_numeric_value_reasonable": "100 available, 0 missing, 0 invalid",
+      "upi_handle_valid_format": "92 available, 6 missing, 2 invalid",
+      "ref_id_length_valid": "100 available, 0 missing, 0 invalid",
+      "status_text_authentic": "100 available, 0 missing, 0 invalid"
+    }
+  },
+  "branch_independence": {
+    "branches_combined": false,
+    "stacker_implemented": false,
+    "explanation": "Branches evaluated strictly in isolation. Zero stacking meta-model trained or executed in Phase 7."
+  }
+}

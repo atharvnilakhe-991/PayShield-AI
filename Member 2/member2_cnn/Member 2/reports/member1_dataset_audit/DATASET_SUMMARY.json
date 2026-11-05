@@ -1,0 +1,103 @@
+{
+  "audit_metadata": {
+    "project": "CBL-04: Google Pay Dark-Theme Transaction Screenshot Tampering Detection",
+    "auditor_role": "Senior Machine Learning Engineer and Dataset Auditor",
+    "audit_timestamp": "2026-11-03T18:14:00+05:30",
+    "workspace_root": "c:\\Users\\athar\\OneDrive\\Desktop\\Member 2",
+    "dataset_root": "c:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\Hackathon-VIT\\CBL04-Dataset"
+  },
+  "image_counts": {
+    "total_workspace_image_files": 5494,
+    "total_active_dataset_image_files": 2522,
+    "breakdown_active_dataset": {
+      "real_raw_screenshots": 394,
+      "synthetic_pilot1_screenshots": 40,
+      "synthetic_pilot1_masks": 40,
+      "synthetic_phase3_screenshots": 24,
+      "synthetic_phase3_masks": 24,
+      "synthetic_phase4_screenshots": 1000,
+      "synthetic_phase4_masks": 1000
+    },
+    "non_dataset_image_files": {
+      "backups_images": 2912,
+      "reports_contact_sheets_and_plots": 60
+    },
+    "total_dataset_screenshots": 1458,
+    "clean_screenshots": 532,
+    "edited_screenshots": 532,
+    "unlabeled_real_screenshots": 394,
+    "mask_count": 1064,
+    "clean_masks": 532,
+    "edited_masks": 532
+  },
+  "source_and_pair_metrics": {
+    "unique_synthetic_source_ids": 532,
+    "unique_real_source_images_sha256": 387,
+    "total_unique_source_transactions": 919,
+    "verified_clean_edited_pairs": 532,
+    "unmatched_or_broken_pairs": 0,
+    "clean_images_without_valid_source_id": 0,
+    "edited_images_without_bounding_boxes": 0,
+    "images_without_corresponding_masks": 0
+  },
+  "annotations_and_manifests": {
+    "bounding_box_annotation_rows": {
+      "pilot1_csv": 30,
+      "phase3_csv": 17,
+      "phase4_csv": 707,
+      "total_bbox_rows": 754
+    },
+    "field_annotation_json_files": {
+      "pilot1": 20,
+      "phase3": 12,
+      "phase4": 500,
+      "total_json_files": 532
+    },
+    "manifest_records": {
+      "pilot1_manifest_csv": 40,
+      "phase3_manifest_csv": 24,
+      "phase4_manifest_csv": 1000,
+      "phase6_combined_manifest_csv": 1387,
+      "phase6_train_manifest_csv": 868,
+      "phase6_validation_manifest_csv": 108,
+      "phase6_test_manifest_csv": 24,
+      "phase6_restricted_real_holdout_csv": 387,
+      "phase7_fold_manifest_csv": 4000,
+      "total_manifest_records_across_all_csvs": 12874
+    }
+  },
+  "quality_and_integrity": {
+    "exact_duplicate_files": 7,
+    "exact_duplicate_groups": 7,
+    "duplicate_description": "7 redundant copies in real_gpay/raw/Dataset-Hackathon (14 files involved). 0 duplicates in synthetic datasets.",
+    "near_duplicate_risk": "pHash analysis identified high template similarity (38,654 of 96,740 same-family pairs at Hamming distance <= 6).",
+    "invalid_or_corrupt_files": 0,
+    "missing_annotation_count": 0,
+    "unreferenced_annotation_files": 0,
+    "missing_or_broken_file_paths": 0,
+    "mask_convention_verified": {
+      "black_pixels_0": "Unmodified / background regions (100% verified)",
+      "white_pixels_255": "Manipulated / edited regions (100% verified)",
+      "mask_dimensions_match_screenshot": "100% verified (0 mismatches)",
+      "masks_align_with_pixel_difference": "100% verified (0 mismatches)"
+    },
+    "bounding_box_format": "[x_min, y_min, x_max, y_max] absolute pixel coordinates, tightly enclosing manipulated pixels",
+    "bbox_coverage_verified": "100% of manipulated pixels enclosed within bounding boxes"
+  },
+  "split_and_leakage_audit": {
+    "split_policy": "Leave-One-Family-Out (LOFO) family-level clustering",
+    "cross_split_source_leakage": 0,
+    "pair_separation_leakage": 0,
+    "template_shortcut_risk": "CRITICAL. Out-of-family generalization failure caused ResNet-18 baseline to collapse to ~50.5% accuracy (Fold 1 predicted 100% edited, Fold 2 predicted ~96% clean).",
+    "synthetic_to_real_domain_gap": "HIGH. Training set is 100% synthetic Pillow text-rendered screens with 'SYNTHETIC / DEMO' markers; real screenshots are 100% held out with unknown labels.",
+    "folds_completed": [
+      1,
+      2
+    ],
+    "folds_not_completed": [
+      3,
+      4
+    ]
+  },
+  "validation_status": "PASSED_WITH_CONSTRAINTS"
+}

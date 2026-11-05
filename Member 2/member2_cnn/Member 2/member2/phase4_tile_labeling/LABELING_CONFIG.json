@@ -1,0 +1,9 @@
+{
+  "tampered_threshold": 16,
+  "ambiguous_min": 1,
+  "ambiguous_max": 15,
+  "mask_foreground_threshold": 0,
+  "tile_size": 256,
+  "stride": 128
+}
+

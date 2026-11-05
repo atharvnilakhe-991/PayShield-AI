@@ -1,0 +1,29 @@
+{
+  "random_seed": 42,
+  "model_architecture": "resnet18",
+  "pretrained": false,
+  "num_classes": 2,
+  "tile_size": 256,
+  "stride": 128,
+  "tampered_threshold": 16,
+  "ambiguous_min": 1,
+  "ambiguous_max": 15,
+  "normalization": "imagenet",
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "num_epochs": 5,
+  "early_stopping_patience": 3,
+  "early_stopping_min_delta": 0.001,
+  "early_stopping_metric": "val_f1",
+  "use_class_weights": true,
+  "use_weighted_sampler": false,
+  "max_train_samples_per_epoch": 1500,
+  "max_val_samples": 400,
+  "max_test_samples": 400,
+  "split_proportions": {
+    "train": 0.70,
+    "val": 0.15,
+    "test": 0.15
+  }
+}

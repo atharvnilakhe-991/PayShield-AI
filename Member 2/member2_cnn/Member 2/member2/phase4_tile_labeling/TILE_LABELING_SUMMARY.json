@@ -1,0 +1,94 @@
+{
+  "module": "member2/phase4_tile_labeling",
+  "status": "PASSED",
+  "phase_readiness": "READY_FOR_PHASE_5",
+  "labeling_configuration": {
+    "tampered_threshold": 16,
+    "ambiguous_min": 1,
+    "ambiguous_max": 15,
+    "mask_foreground_threshold": 0,
+    "tile_size": 256,
+    "stride": 128
+  },
+  "synthetic_tile_census": {
+    "total_tiles": 43510,
+    "labeled_tiles_total": 43510,
+    "clean_tiles": 40058,
+    "tampered_tiles": 3428,
+    "ambiguous_tiles": 24,
+    "unlabelled_tiles": 0,
+    "clean_percentage": 92.07,
+    "tampered_percentage": 7.88,
+    "ambiguous_percentage": 0.06,
+    "class_imbalance_ratio_clean_to_tampered": 11.69,
+    "edited_screenshots_audited": 500,
+    "edited_screenshots_with_zero_positive_tiles": 0,
+    "edited_screenshots_with_zero_positive_percentage": 0.0,
+    "by_layout_family": {
+      "compact": {
+        "clean": 19765,
+        "tampered": 1510,
+        "ambiguous": 11,
+        "unlabelled": 0,
+        "total": 21286
+      },
+      "bank_progress": {
+        "clean": 2927,
+        "tampered": 331,
+        "ambiguous": 2,
+        "unlabelled": 0,
+        "total": 3260
+      },
+      "enriched": {
+        "clean": 16804,
+        "tampered": 1505,
+        "ambiguous": 11,
+        "unlabelled": 0,
+        "total": 18320
+      },
+      "recharge": {
+        "clean": 562,
+        "tampered": 82,
+        "ambiguous": 0,
+        "unlabelled": 0,
+        "total": 644
+      }
+    },
+    "clean_screenshots_audited": 500,
+    "clean_screenshots_with_false_positives": 0
+  },
+  "real_holdout_census": {
+    "real_screenshots_audited": 387,
+    "total_real_tiles": 17044,
+    "strictly_unlabelled_tiles": 17044,
+    "erroneous_label_count": 0
+  },
+  "leakage_prevention_audit": {
+    "pairs_evaluated": 100,
+    "group_id_matches": 100,
+    "leakage_risk_detected": 0
+  },
+  "grand_total_tiles": 60554,
+  "metadata_fields_verified": [
+    "tile_id",
+    "source_id",
+    "pair_id",
+    "image_path",
+    "mask_path",
+    "tile_x",
+    "tile_y",
+    "tile_width",
+    "tile_height",
+    "tile_index",
+    "original_width",
+    "original_height",
+    "split_group_id",
+    "tile_label",
+    "label_status",
+    "tampered_pixel_count",
+    "tampered_pixel_ratio",
+    "label_threshold",
+    "layout_family"
+  ],
+  "immutability_verified": true
+}

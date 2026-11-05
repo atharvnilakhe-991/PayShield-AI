@@ -1,0 +1,126 @@
+{
+  "fold_1_resnet18_multitask.pt": {
+    "file_path": "models/phase7/fold_1_resnet18_multitask.pt",
+    "sha256": "44b654aa846fddfde7be6dab44ceada6687d8dfd35e2c83edbcb60fed909f62a",
+    "size_bytes": 57727691,
+    "fold": 1,
+    "train_layout_families": [
+      "enriched",
+      "recharge"
+    ],
+    "validation_layout_families": [
+      "bank_progress"
+    ],
+    "held_out_test_family": "compact",
+    "tag": "baseline",
+    "status": "available"
+  },
+  "fold_2_resnet18_multitask.pt": {
+    "file_path": "models/phase7/fold_2_resnet18_multitask.pt",
+    "sha256": "4c5f97684a64553d117983c21b55a8ca874c855f9023b3e9732d1c70cb6403a4",
+    "size_bytes": 57727691,
+    "fold": 2,
+    "train_layout_families": [
+      "bank_progress",
+      "compact"
+    ],
+    "validation_layout_families": [
+      "recharge"
+    ],
+    "held_out_test_family": "enriched",
+    "tag": "baseline",
+    "status": "available"
+  },
+  "EXP1_MACRO_F1_fold_1_best.pt": {
+    "file_path": "models/phase9_improved/EXP1_MACRO_F1_fold_1_best.pt",
+    "sha256": "18e932ea5bf3ece82e4f9495452154d10e9828e0ed1db03a037290e74ba29ef1",
+    "size_bytes": 57729291,
+    "fold": 1,
+    "train_layout_families": [
+      "enriched",
+      "recharge"
+    ],
+    "validation_layout_families": [
+      "bank_progress"
+    ],
+    "held_out_test_family": "compact",
+    "tag": "candidate_exp1",
+    "status": "available"
+  },
+  "EXP1_MACRO_F1_fold_2_best.pt": {
+    "file_path": "models/phase9_improved/EXP1_MACRO_F1_fold_2_best.pt",
+    "sha256": "e338f07f7d80046a62ef6d25ed5b753b267f1adc67b04dc8ceb31f42795da751",
+    "size_bytes": 57729291,
+    "fold": 2,
+    "train_layout_families": [
+      "bank_progress",
+      "compact"
+    ],
+    "validation_layout_families": [
+      "recharge"
+    ],
+    "held_out_test_family": "enriched",
+    "tag": "candidate_exp1",
+    "status": "available"
+  },
+  "EXP2_CLS_PRIORITY_fold_1_best.pt": {
+    "file_path": "models/phase9_improved/EXP2_CLS_PRIORITY_fold_1_best.pt",
+    "sha256": "b8bb46e6db984cff96038053520888613dcf78b181ac87c11edd9e67d537b0f0",
+    "size_bytes": 57730027,
+    "fold": 1,
+    "train_layout_families": [
+      "enriched",
+      "recharge"
+    ],
+    "validation_layout_families": [
+      "bank_progress"
+    ],
+    "held_out_test_family": "compact",
+    "tag": "candidate_exp2",
+    "status": "available"
+  },
+  "EXP2_CLS_PRIORITY_fold_2_best.pt": {
+    "file_path": "models/phase9_improved/EXP2_CLS_PRIORITY_fold_2_best.pt",
+    "sha256": "3839c6aef7fc6f1af395c0e1b74e072e908f48914f7f0675b5caea01a71b28d3",
+    "size_bytes": 57730027,
+    "fold": 2,
+    "train_layout_families": [
+      "bank_progress",
+      "compact"
+    ],
+    "validation_layout_families": [
+      "recharge"
+    ],
+    "held_out_test_family": "enriched",
+    "tag": "candidate_exp2",
+    "status": "available"
+  },
+  "fold_3_resnet18_multitask.pt": {
+    "file_path": "models/phase7/fold_3_resnet18_multitask.pt",
+    "fold": 3,
+    "train_layout_families": [
+      "enriched",
+      "recharge"
+    ],
+    "validation_layout_families": [
+      "compact"
+    ],
+    "held_out_test_family": "bank_progress",
+    "status": "never_trained",
+    "explanation": "Fold 3 training was never launched in Phase 7; no checkpoint exists."
+  },
+  "fold_4_resnet18_multitask.pt": {
+    "file_path": "models/phase7/fold_4_resnet18_multitask.pt",
+    "fold": 4,
+    "train_layout_families": [
+      "bank_progress",
+      "compact"
+    ],
+    "validation_layout_families": [
+      "enriched"
+    ],
+    "held_out_test_family": "recharge",
+    "status": "never_trained",
+    "explanation": "Fold 4 training was never launched in Phase 7; no checkpoint exists."
+  }
+}

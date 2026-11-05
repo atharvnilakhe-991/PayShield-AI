@@ -1,0 +1,13 @@
+{
+  "batch": 1,
+  "pairs": 100,
+  "screenshots": 200,
+  "clean_masks_black": true,
+  "exact_edited_masks": true,
+  "bounding_boxes": true,
+  "pairing_and_metadata": true,
+  "duplicate_image_count": 0,
+  "duplicates": [],
+  "errors": [],
+  "passed": true
+}

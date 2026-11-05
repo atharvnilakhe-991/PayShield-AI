@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0401",
+  "batch": 5,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "other",
+  "original_fictional_value": "7668",
+  "replacement_fictional_value": "6211",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "fictional bank account suffix",
+  "bounding_boxes_xyxy": [
+    [
+      239,
+      624,
+      279,
+      640
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      57,
+      589,
+      379,
+      667
+    ]
+  ],
+  "random_seed": 20261204401,
+  "width": 379,
+  "height": 1397,
+  "font_scale": 1.077,
+  "spacing_scale": 1.054,
+  "margin": 42,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

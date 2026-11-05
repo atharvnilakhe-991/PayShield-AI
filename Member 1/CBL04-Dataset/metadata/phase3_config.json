@@ -1,0 +1,12 @@
+{
+  "seed": 20261130,
+  "pairs_per_family": 3,
+  "families": [
+    "compact",
+    "enriched",
+    "bank_progress",
+    "recharge"
+  ],
+  "pair_count": 12,
+  "bulk_generation": false
+}

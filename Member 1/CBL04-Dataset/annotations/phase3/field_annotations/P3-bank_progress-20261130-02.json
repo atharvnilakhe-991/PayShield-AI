@@ -1,0 +1,32 @@
+{
+  "source_id": "P3-bank_progress-20261130-02",
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "transaction_id",
+  "original_fictional_value": "DEMO-UPI-82778173",
+  "replacement_fictional_value": "DEMO-UPI-14641645",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      122,
+      828,
+      185,
+      838
+    ]
+  ],
+  "random_seed": 20263132,
+  "allowed_regions_xyxy": [
+    [
+      38,
+      818,
+      394,
+      848
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 432,
+  "height": 1440,
+  "font_scale": 1.0,
+  "spacing_scale": 1.0,
+  "margin": 35
+}

@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0060",
+  "batch": 1,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Tara Iyer",
+  "replacement_fictional_value": "Mira Nair",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      335,
+      141,
+      366,
+      175
+    ],
+    [
+      274,
+      224,
+      429,
+      255
+    ],
+    [
+      108,
+      860,
+      184,
+      881
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      218,
+      93,
+      484,
+      210
+    ],
+    [
+      0,
+      176,
+      702,
+      272
+    ],
+    [
+      14,
+      835,
+      236,
+      900
+    ]
+  ],
+  "random_seed": 20261204060,
+  "width": 702,
+  "height": 1565,
+  "font_scale": 1.028,
+  "spacing_scale": 1.045,
+  "margin": 40,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

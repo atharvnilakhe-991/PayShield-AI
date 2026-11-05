@@ -1,0 +1,32 @@
+{
+  "source_id": "P3-recharge-20261130-02",
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "date_time",
+  "original_fictional_value": "19 Jan 2026, 8:39am",
+  "replacement_fictional_value": "19 Jan 2026, 10:39am",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      184,
+      561,
+      359,
+      577
+    ]
+  ],
+  "random_seed": 20264132,
+  "allowed_regions_xyxy": [
+    [
+      65,
+      548,
+      475,
+      588
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 540,
+  "height": 1600,
+  "font_scale": 1.0,
+  "spacing_scale": 1.0,
+  "margin": 35
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0340",
+  "batch": 4,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "transaction_id",
+  "original_fictional_value": "DEMO-UPI-82351709",
+  "replacement_fictional_value": "DEMO-UPI-44018024",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "transaction_id",
+  "bounding_boxes_xyxy": [
+    [
+      133,
+      744,
+      205,
+      758
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      5,
+      715,
+      587,
+      780
+    ]
+  ],
+  "random_seed": 20261204340,
+  "width": 592,
+  "height": 1499,
+  "font_scale": 1.0,
+  "spacing_scale": 1.021,
+  "margin": 27,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

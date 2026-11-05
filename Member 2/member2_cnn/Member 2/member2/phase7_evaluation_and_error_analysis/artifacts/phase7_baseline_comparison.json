@@ -1,0 +1,99 @@
+{
+  "evaluation_scope": {
+    "dataset": "CBL-04 Synthetic GPay Dark-Theme Held-Out Test Set",
+    "test_screenshots_count": 150,
+    "clean_screenshots_count": 75,
+    "tampered_screenshots_count": 75,
+    "split_leakage_guarantee": "Strict pair-grouped isolation (split_group_id)"
+  },
+  "models_evaluated": {
+    "phase5": {
+      "name": "Phase 5 ResNet-18 Tile Classifier Baseline",
+      "granularity": "Tile-level (256x256 crops)",
+      "parameters": "11.2M",
+      "loss": "Weighted Cross-Entropy"
+    },
+    "phase6": {
+      "name": "Phase 6 Heatmap Reconstruction Baseline",
+      "granularity": "Pixel-level (Gaussian blending of Phase 5 tile scores)",
+      "parameters": "11.2M (Phase 5 CNN) + Blending",
+      "postprocessing": "Decision threshold tau=0.80"
+    },
+    "phase7_improved": {
+      "name": "Phase 7 Improved TileSpatialUNet",
+      "granularity": "Direct Pixel Segmentation + Gaussian Blending + Area Filtering",
+      "parameters": "483k (Lightweight 4-stage U-Net)",
+      "loss": "Combined BCE + Soft-Dice Loss",
+      "postprocessing": "Joint optimal tau=0.80, min_area=50 px"
+    }
+  },
+  "metrics_comparison": {
+    "granularity_level": {
+      "phase5": "Tile-level (300 test tiles)",
+      "phase6": "Pixel-level (150 screenshots, 126.3M pixels)",
+      "phase7_improved": "Pixel & Screenshot levels (150 screenshots)"
+    },
+    "global_accuracy": {
+      "phase5": 0.7766666666666666,
+      "phase6": 0.9942958904828205,
+      "phase7_improved_pixel": 0.9968139308701759,
+      "phase7_improved_screenshot": 0.5066666666666667
+    },
+    "precision": {
+      "phase5_tile": 0.1206896551724138,
+      "phase6_pixel": 0.003342942808343605,
+      "phase7_improved_pixel": 0.12081687813547821,
+      "phase7_improved_screenshot": 0.5035971223021583,
+      "pixel_precision_gain": "+36.1x over Phase 6"
+    },
+    "recall": {
+      "phase5_tile": 0.30434782608695654,
+      "phase6_pixel": 0.01456425581016909,
+      "phase7_improved_pixel": 0.3147624894595914,
+      "phase7_improved_screenshot": 0.9333333333333333,
+      "pixel_recall_gain": "+21.6x over Phase 6"
+    },
+    "global_dice": {
+      "phase5": "N/A (Tile-level classifier; full-canvas pixel Dice is undefined without spatial blending)",
+      "phase6": 0.005437754420074123,
+      "phase7_improved": 0.1746116742885397,
+      "gain": "+32.1x over Phase 6"
+    },
+    "global_iou": {
+      "phase5": "N/A (Tile-level classifier)",
+      "phase6": 0.002726289656853039,
+      "phase7_improved": 0.09565727567611311,
+      "gain": "+35.1x over Phase 6"
+    },
+    "pixel_roc_auc": {
+      "phase5": "N/A (Tile ROC-AUC was 0.7288)",
+      "phase6": 0.8009647139501914,
+      "phase7_improved": 0.980831,
+      "gain": "+0.180 ROC-AUC improvement"
+    },
+    "pixel_pr_auc": {
+      "phase5": "N/A (Tile PR-AUC was 0.1563)",
+      "phase6": 0.00337093367104822,
+      "phase7_improved": 0.089412,
+      "gain": "+26.5x over Phase 6"
+    },
+    "false_positive_pixels": {
+      "phase5": "N/A (Tile-level)",
+      "phase6": 587033,
+      "phase7_improved": 309665,
+      "reduction": "277,368 FP pixels eliminated (-47.25%)"
+    },
+    "true_positive_pixels": {
+      "phase5": "N/A (Tile-level)",
+      "phase6": 1969,
+      "phase7_improved": 42554,
+      "increase": "+40,585 TP pixels detected (+21.6x)"
+    },
+    "mean_tampered_image_dice": {
+      "phase5": "N/A",
+      "phase6": "Near 0.00 (Due to tile-size bleeding on small edits)",
+      "phase7_improved": 0.2115591983823305,
+      "significance": "True region overlap on edited screenshots"
+    }
+  }
+}

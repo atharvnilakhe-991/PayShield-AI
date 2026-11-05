@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0345",
+  "batch": 4,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Anaya Joshi",
+  "replacement_fictional_value": "Tara Iyer",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      285,
+      120,
+      309,
+      149
+    ],
+    [
+      215,
+      147,
+      379,
+      213
+    ],
+    [
+      84,
+      817,
+      174,
+      836
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      178,
+      76,
+      417,
+      181
+    ],
+    [
+      0,
+      147,
+      594,
+      234
+    ],
+    [
+      5,
+      792,
+      210,
+      853
+    ]
+  ],
+  "random_seed": 20261204345,
+  "width": 594,
+  "height": 1380,
+  "font_scale": 1.068,
+  "spacing_scale": 1.008,
+  "margin": 31,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

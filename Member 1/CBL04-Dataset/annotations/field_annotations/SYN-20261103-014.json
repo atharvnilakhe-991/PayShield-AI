@@ -1,0 +1,29 @@
+{
+  "source_id": "SYN-20261103-014",
+  "edited_field": "recipient",
+  "original_synthetic_value": "Mira Nair",
+  "replacement_synthetic_value": "Leela Menon",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      254,
+      129,
+      285,
+      159
+    ],
+    [
+      182,
+      207,
+      357,
+      226
+    ],
+    [
+      94,
+      857,
+      210,
+      872
+    ]
+  ],
+  "seed": 20261117,
+  "template_version": "gpay-dark-demo-v1"
+}

@@ -1,0 +1,73 @@
+{
+  "threshold_used": 0.8,
+  "total_images_evaluated": 150,
+  "clean_images_count": 75,
+  "tampered_images_count": 75,
+  "pixel_metrics": {
+    "global_pixel_accuracy": 0.9942958904828205,
+    "global_pixel_precision": 0.003342942808343605,
+    "global_pixel_recall": 0.01456425581016909,
+    "global_dice": 0.005437754420074123,
+    "global_iou": 0.002726289656853039,
+    "pixel_roc_auc": 0.8009647139501914,
+    "pixel_pr_auc": 0.00337093367104822,
+    "mean_image_dice": 0.38181650388735106,
+    "mean_image_iou": 0.3810278393823131,
+    "mean_image_pixel_acc": 0.9928778594693441,
+    "total_pixels_evaluated": 126270016,
+    "total_tp_pixels": 1969,
+    "total_fp_pixels": 587033,
+    "total_fn_pixels": 133225,
+    "total_tn_pixels": 125547789
+  },
+  "per_family_metrics": {
+    "bank_progress": {
+      "support": 16,
+      "clean_count": 8,
+      "tampered_count": 8,
+      "pixel_accuracy": 0.9705515122163529,
+      "pixel_precision": 0.0011320620071556698,
+      "pixel_recall": 0.050579710144927535,
+      "dice": 0.002214558341555965,
+      "iou": 0.001108506597043559,
+      "mean_image_dice": 0.2510390999002374,
+      "mean_image_iou": 0.25052388575476303
+    },
+    "compact": {
+      "support": 64,
+      "clean_count": 32,
+      "tampered_count": 32,
+      "pixel_accuracy": 0.998718121859776,
+      "pixel_precision": 0.1047875927174646,
+      "pixel_recall": 0.024344774646342802,
+      "dice": 0.039510316158804015,
+      "iou": 0.02015328949928024,
+      "mean_image_dice": 0.44140656423457486,
+      "mean_image_iou": 0.4397323480739175
+    },
+    "enriched": {
+      "support": 66,
+      "clean_count": 33,
+      "tampered_count": 33,
+      "pixel_accuracy": 0.9951266277642762,
+      "pixel_precision": 0.0,
+      "pixel_recall": 0.0,
+      "dice": 0.0,
+      "iou": 0.0,
+      "mean_image_dice": 0.36363636363636365,
+      "mean_image_iou": 0.36363636363636365
+    },
+    "recharge": {
+      "support": 4,
+      "clean_count": 2,
+      "tampered_count": 2,
+      "pixel_accuracy": 0.9682728250345233,
+      "pixel_precision": 0.001080037310379813,
+      "pixel_recall": 0.022103148024112524,
+      "dice": 0.0020594430142756846,
+      "iou": 0.0010307829264864358,
+      "mean_image_dice": 0.25145746842151756,
+      "mean_image_iou": 0.25073086463501065
+    }
+  }
+}

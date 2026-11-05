@@ -1,0 +1,17 @@
+{
+  "checkpoint_path": "member2/phase5_model_training/artifacts/best_model.pt",
+  "tile_size": 256,
+  "stride": 128,
+  "window_type": "gaussian",
+  "gaussian_sigma": 64.0,
+  "hann_min_weight": 0.05,
+  "default_threshold": 0.50,
+  "provisional_threshold_note": "Initial baseline threshold; updated automatically via validation set optimization",
+  "threshold_sweep": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80],
+  "num_val_images_for_threshold": 30,
+  "batch_size": 32,
+  "device": "cpu",
+  "image_level_top_k": 3,
+  "random_seed": 42
+}
+

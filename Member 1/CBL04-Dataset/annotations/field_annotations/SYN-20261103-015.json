@@ -1,0 +1,17 @@
+{
+  "source_id": "SYN-20261103-015",
+  "edited_field": "date_time",
+  "original_synthetic_value": "28 Jul 2025, 11:42am",
+  "replacement_synthetic_value": "28 Jul 2025, 1:42pm",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      180,
+      589,
+      361,
+      609
+    ]
+  ],
+  "seed": 20261118,
+  "template_version": "gpay-dark-demo-v1"
+}

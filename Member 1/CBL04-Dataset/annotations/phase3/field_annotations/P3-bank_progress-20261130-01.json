@@ -1,0 +1,32 @@
+{
+  "source_id": "P3-bank_progress-20261130-01",
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "date_time",
+  "original_fictional_value": "25 Nov 2025, 3:46am",
+  "replacement_fictional_value": "25 Nov 2025, 5:46am",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      265,
+      563,
+      273,
+      576
+    ]
+  ],
+  "random_seed": 20263131,
+  "allowed_regions_xyxy": [
+    [
+      58,
+      553,
+      420,
+      591
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 478,
+  "height": 1599,
+  "font_scale": 0.94,
+  "spacing_scale": 0.96,
+  "margin": 30
+}

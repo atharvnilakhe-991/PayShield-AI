@@ -1,0 +1,20 @@
+{
+  "seed": 20261206,
+  "target_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "actual_split_policy": "whole layout-family template groups; pHash connected components at distance <= 6 are never separated",
+  "perceptual_hash_method": "Phase 5 64-bit grayscale pHash; connected components within family at Hamming <= 6",
+  "family_split_assignment": {
+    "compact": "train",
+    "enriched": "train",
+    "bank_progress": "validation",
+    "recharge": "test"
+  },
+  "real_split": "restricted_real_holdout",
+  "real_labels": "unlabeled; excluded from supervised splits pending verified ground truth and privacy review",
+  "real_duplicate_selection": "first lexicographic path for each unique SHA-256; duplicate copies excluded from phase6 manifest",
+  "previous_pilots": "kept separate; excluded from Phase 6 model splits"
+}

@@ -1,0 +1,50 @@
+{
+  "source_id": "P4-0488",
+  "batch": 5,
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "recipient",
+  "original_fictional_value": "Sample Transit Top-Up",
+  "replacement_fictional_value": "Demo FastTag Service",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      77,
+      94,
+      252,
+      158
+    ],
+    [
+      61,
+      142,
+      267,
+      162
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      77,
+      63,
+      252,
+      158
+    ],
+    [
+      0,
+      124,
+      329,
+      203
+    ]
+  ],
+  "random_seed": 20261204488,
+  "width": 329,
+  "height": 1272,
+  "font_scale": 1.048,
+  "spacing_scale": 0.94,
+  "margin": 32,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

@@ -1,0 +1,57 @@
+{
+  "evaluation_name": "Phase 9 Held-Out Test Evaluation",
+  "evaluation_date": "2026-11-03",
+  "dataset_split": "test",
+  "layout_family": "recharge",
+  "sample_count": 24,
+  "clean_samples_count": 12,
+  "edited_samples_count": 12,
+  "evaluation_provenance": "Strictly one-time held-out evaluation. No tuning occurred after this run.",
+  "statistical_limitation_statement": "The test set comprises exactly N=24 samples (12 clean, 12 edited) from a single layout family (recharge). Observed accuracy of 0.5000 carries an asymptotic 95% confidence interval of [0.3000, 0.7000]. Metrics reflect performance on this specific synthetic template and should not be extrapolated to unconstrained real-world payment screenshots.",
+  "stacker_metrics": {
+    "accuracy": 0.5,
+    "macro_f1": 0.3333,
+    "confidence_interval_95": {
+      "lower": 0.3,
+      "upper": 0.7,
+      "margin": 0.2
+    },
+    "edited_class": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 12
+    },
+    "clean_class": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6667,
+      "support": 12
+    },
+    "confusion_matrix": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "true_negative": 12,
+      "false_negative": 12
+    }
+  },
+  "final_verdict_engine_metrics": {
+    "total_decisions": 24,
+    "inconclusive_count": 19,
+    "inconclusive_rate": 0.7917,
+    "decisive_decisions_count": 5,
+    "decisive_accuracy": 0.4
+  },
+  "branch_failure_rates": {
+    "cnn_failures": 0,
+    "ocr_failures": 0,
+    "semantic_failures": 0
+  },
+  "latency_stats_ms": {
+    "mean_total": 783.21,
+    "median_total": 743.14,
+    "mean_ocr": 782.08,
+    "mean_semantic": 0.09,
+    "mean_stacker": 0.03
+  }
+}

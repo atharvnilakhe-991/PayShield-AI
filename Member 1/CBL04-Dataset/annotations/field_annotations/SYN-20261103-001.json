@@ -1,0 +1,17 @@
+{
+  "source_id": "SYN-20261103-001",
+  "edited_field": "amount",
+  "original_synthetic_value": "999",
+  "replacement_synthetic_value": "1060",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      164,
+      328,
+      378,
+      392
+    ]
+  ],
+  "seed": 20261104,
+  "template_version": "gpay-dark-demo-v1"
+}

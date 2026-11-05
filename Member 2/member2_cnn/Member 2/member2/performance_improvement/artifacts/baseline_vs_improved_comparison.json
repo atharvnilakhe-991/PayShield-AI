@@ -1,0 +1,65 @@
+{
+  "baseline_model": "Phase 5 ResNet-18 Tile Classifier + Gaussian Blending (Phase 6)",
+  "improved_model": "Phase 6 Improvement TileSpatialUNet + Joint Post-Processing",
+  "threshold": {
+    "baseline": 0.8,
+    "improved": 0.8
+  },
+  "min_component_area": {
+    "baseline": 0,
+    "improved": 50
+  },
+  "global_pixel_accuracy": {
+    "baseline": 0.9942958904828205,
+    "improved": 0.9968139308701759,
+    "diff": 0.002518040387355369
+  },
+  "global_pixel_precision": {
+    "baseline": 0.003342942808343605,
+    "improved": 0.12081687813547821,
+    "diff": 0.11747393532713461
+  },
+  "global_pixel_recall": {
+    "baseline": 0.01456425581016909,
+    "improved": 0.3147624894595914,
+    "diff": 0.30019823364942233
+  },
+  "global_pixel_dice": {
+    "baseline": 0.005437754420074123,
+    "improved": 0.1746116742885397,
+    "diff": 0.16917391986846556
+  },
+  "global_pixel_iou": {
+    "baseline": 0.002726289656853039,
+    "improved": 0.09565727567611311,
+    "diff": 0.09293098601926007
+  },
+  "pixel_roc_auc": {
+    "baseline": 0.8009647139501914,
+    "improved": 0.9808310115635743,
+    "diff": 0.1798662976133829
+  },
+  "pixel_pr_auc": {
+    "baseline": 0.00337093367104822,
+    "improved": 0.08941152512984195,
+    "diff": 0.08604059145879372
+  },
+  "total_false_positive_pixels": {
+    "baseline": 587033,
+    "improved": 309665,
+    "reduction": 277368,
+    "reduction_percentage": 47.24913250192068
+  },
+  "total_true_positive_pixels": {
+    "baseline": 1969,
+    "improved": 42554
+  },
+  "mean_image_dice_all": {
+    "baseline": 0.38181650388735106,
+    "improved": 0.10577959919116527
+  },
+  "mean_image_dice_tampered_only": {
+    "baseline": "Near 0.00",
+    "improved": 0.2115591983823305
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "total_test_samples": 150,
+  "clean_test_samples": 75,
+  "tampered_test_samples": 75,
+  "train_samples_count": 700,
+  "val_samples_count": 150,
+  "holdout_samples_count": 387,
+  "group_leak_train_val": 0,
+  "group_leak_train_test": 0,
+  "group_leak_val_test": 0,
+  "phase5_test_matches_phase6": true,
+  "phase5_test_matches_performance_improvement": true,
+  "phase5_test_matches_phase7": true,
+  "sample_id_mismatches_phase6": [],
+  "sample_id_mismatches_perf_imp": [],
+  "sample_id_mismatches_phase7": [],
+  "verification_status": "STRICTLY_VERIFIED_ZERO_LEAKAGE"
+}

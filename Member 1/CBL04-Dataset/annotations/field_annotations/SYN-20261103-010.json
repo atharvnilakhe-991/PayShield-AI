@@ -1,0 +1,29 @@
+{
+  "source_id": "SYN-20261103-010",
+  "edited_field": "recipient",
+  "original_synthetic_value": "Kabir Sharma",
+  "replacement_synthetic_value": "Nina Kapoor",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      258,
+      129,
+      283,
+      159
+    ],
+    [
+      178,
+      207,
+      360,
+      232
+    ],
+    [
+      94,
+      857,
+      216,
+      877
+    ]
+  ],
+  "seed": 20261113,
+  "template_version": "gpay-dark-demo-v1"
+}

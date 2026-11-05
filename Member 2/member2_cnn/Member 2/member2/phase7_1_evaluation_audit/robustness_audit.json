@@ -1,0 +1,29 @@
+{
+  "audit_scope": "14 controlled robustness conditions evaluated on 10-screenshot balanced test subset",
+  "investigated_anomalies": {
+    "50_percent_downsampling_recall_zero": {
+      "observation": "Screenshot recall reported as 0.00% under 50% scale.",
+      "mathematical_root_cause": "At 50% scale, the total detected pixels per image shrunk below the fixed 1,000-pixel screenshot classification threshold (average 472 px per image). Since all 5 tampered images had detected_px < 1000, all were classified as 0 (clean), yielding TP=0 and Recall=0.00%.",
+      "verdict": "CONFIRMED_VALID_BEHAVIOR_OF_FIXED_THRESHOLD"
+    },
+    "gaussian_blur_sigma_1_0_dice_increase": {
+      "observation": "Global Pixel Dice increased from 0.1756 (baseline) to 0.1832 under sigma=1.0 blur.",
+      "mathematical_root_cause": "Mild Gaussian blur acted as a spatial low-pass filter on background sub-pixel typographic noise, cutting false-positive pixels by 55% (from 14,949 to 6,740). The massive reduction in denominator pixels more than offset the drop in TP (from 1,948 to 1,213), mathematically increasing the Dice ratio.",
+      "verdict": "CONFIRMED_VALID_SIGNAL_PROCESSING_PHENOMENON"
+    },
+    "gaussian_blur_sigma_1_5_recall_collapse": {
+      "observation": "Pixel recall collapsed from 36.81% to 9.50% under sigma=1.5 blur.",
+      "mathematical_root_cause": "A Gaussian kernel of sigma=1.5 spans ~9 pixels. For 1-to-2 pixel font strokes (e.g. digits, decimal points), this blur completely diffuses stroke pixel intensity into the dark background, pulling probabilities below the 0.80 cutoff and resulting in 4,789 missed FN pixels.",
+      "verdict": "CONFIRMED_VALID_FORENSIC_DEGRADATION"
+    },
+    "brightness_plus_10_percent_dice_increase": {
+      "observation": "Dice increased slightly from 0.1756 to 0.1785 (+0.0029).",
+      "mathematical_root_cause": "Mild +10% brightness slightly enhanced character stroke contrast against dark gray backgrounds without triggering extra noise, yielding 555 fewer FP pixels while preserving 1,929 TP pixels.",
+      "verdict": "CONFIRMED_VALID_MINOR_NUMERICAL_VARIATION"
+    }
+  },
+  "geometric_alignment_verification": {
+    "resampling_implementation": "apply_resize_resample downscales to scale*size then upscales back to native (w, h). Output canvas matches ground-truth mask shape exactly.",
+    "spatial_integrity": "VERIFIED_ALIGNED"
+  }
+}

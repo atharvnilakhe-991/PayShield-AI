@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0395",
+  "batch": 4,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "other",
+  "original_fictional_value": "9967",
+  "replacement_fictional_value": "7742",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "fictional bank account suffix",
+  "bounding_boxes_xyxy": [
+    [
+      378,
+      640,
+      425,
+      657
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      104,
+      602,
+      713,
+      687
+    ]
+  ],
+  "random_seed": 20261204395,
+  "width": 730,
+  "height": 1479,
+  "font_scale": 0.915,
+  "spacing_scale": 1.014,
+  "margin": 44,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

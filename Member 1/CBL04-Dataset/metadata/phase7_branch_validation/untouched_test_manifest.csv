@@ -1,0 +1,25 @@
+sample_id,pair_id,layout_family,edit_category,split,true_label,cnn_score,cnn_predicted_class,cnn_checkpoint_used,cnn_fold,cnn_oof_status,ocr_engine,ocr_execution_status,semantic_engine_version,semantic_execution_status
+P4-0036_clean,P4-0036,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0036_edited,P4-0036,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0070_clean,P4-0070,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0070_edited,P4-0070,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0141_clean,P4-0141,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0141_edited,P4-0141,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0144_clean,P4-0144,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0144_edited,P4-0144,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0266_clean,P4-0266,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0266_edited,P4-0266,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0327_clean,P4-0327,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0327_edited,P4-0327,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0328_clean,P4-0328,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0328_edited,P4-0328,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0336_clean,P4-0336,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0336_edited,P4-0336,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0362_clean,P4-0362,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0362_edited,P4-0362,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0380_clean,P4-0380,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0380_edited,P4-0380,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0469_clean,P4-0469,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0469_edited,P4-0469,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0488_clean,P4-0488,recharge,none,test,clean,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending
+P4-0488_edited,P4-0488,recharge,none,test,edited,,,,,unavailable_missing_fold,EasyOCR 1.7.2,pending,v1.0.0-phase6,pending

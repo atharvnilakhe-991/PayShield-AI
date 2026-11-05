@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0070",
+  "batch": 1,
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "date_time",
+  "original_fictional_value": "18 Nov 2026, 1:59am",
+  "replacement_fictional_value": "18 Nov 2026, 3:59am",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "date_time",
+  "bounding_boxes_xyxy": [
+    [
+      184,
+      465,
+      191,
+      477
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      0,
+      440,
+      329,
+      504
+    ]
+  ],
+  "random_seed": 20261204070,
+  "width": 329,
+  "height": 1261,
+  "font_scale": 1.001,
+  "spacing_scale": 1.055,
+  "margin": 28,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

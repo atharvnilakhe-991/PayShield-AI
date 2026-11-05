@@ -1,0 +1,97 @@
+{
+  "module": "member2/phase3_tile_extraction",
+  "status": "PASSED",
+  "phase_readiness": "READY_FOR_PHASE_4",
+  "tile_geometry": {
+    "tile_size": [
+      256,
+      256
+    ],
+    "stride": [
+      128,
+      128
+    ],
+    "spatial_overlap": "50% (128 pixels)",
+    "edge_handling": "Boundary-anchored final tile at (W-256, H-256)"
+  },
+  "census": {
+    "phase4_synthetic": {
+      "total_images": 1000,
+      "total_tiles": 43510,
+      "min_tiles_per_image": 18,
+      "max_tiles_per_image": 60,
+      "mean_tiles_per_image": 43.5,
+      "by_layout_family": {
+        "compact": {
+          "image_count": 436,
+          "total_tiles": 21286,
+          "min_tiles": 40,
+          "max_tiles": 60,
+          "mean_tiles": 48.8
+        },
+        "bank_progress": {
+          "image_count": 108,
+          "total_tiles": 3260,
+          "min_tiles": 20,
+          "max_tiles": 36,
+          "mean_tiles": 30.2
+        },
+        "enriched": {
+          "image_count": 432,
+          "total_tiles": 18320,
+          "min_tiles": 27,
+          "max_tiles": 60,
+          "mean_tiles": 42.4
+        },
+        "recharge": {
+          "image_count": 24,
+          "total_tiles": 644,
+          "min_tiles": 18,
+          "max_tiles": 33,
+          "mean_tiles": 26.8
+        }
+      }
+    },
+    "phase6_real_holdout": {
+      "image_count": 387,
+      "total_tiles": 17044,
+      "min_tiles": 18,
+      "max_tiles": 60,
+      "mean_tiles": 44.0
+    },
+    "grand_total_tiles": 60554,
+    "grand_total_images": 1387
+  },
+  "edge_coverage_verification": {
+    "images_verified": 1000,
+    "full_coverage_rate": 1.0,
+    "dropped_pixels_detected": 0
+  },
+  "leakage_prevention_verification": {
+    "pairs_evaluated": 100,
+    "group_id_matches": 100,
+    "tile_count_matches": 100,
+    "leakage_risk_detected": 0
+  },
+  "dimension_and_format_verification": {
+    "samples_extracted": 20,
+    "tiles_inspected": 730,
+    "exact_256x256_matches": 730,
+    "rgb_format_matches": 730
+  },
+  "metadata_schema": [
+    "tile_id",
+    "source_id",
+    "pair_id",
+    "image_path",
+    "tile_x",
+    "tile_y",
+    "tile_width",
+    "tile_height",
+    "tile_index",
+    "original_width",
+    "original_height",
+    "split_group_id"
+  ],
+  "immutability_verified": true
+}

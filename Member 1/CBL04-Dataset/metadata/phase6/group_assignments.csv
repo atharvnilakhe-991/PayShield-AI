@@ -1,0 +1,5 @@
+﻿layout_family,template_group_id,near_duplicate_components_at_hamming_le_6,source_pair_count,assigned_split,component_ids_merged_by_family_group
+compact,TPL-compact,1,218,train,"[""ND-compact-001""]"
+enriched,TPL-enriched,1,216,train,"[""ND-enriched-001""]"
+bank_progress,TPL-bank_progress,1,54,validation,"[""ND-bank_progress-001""]"
+recharge,TPL-recharge,3,12,test,"[""ND-recharge-001"", ""ND-recharge-002"", ""ND-recharge-003""]"

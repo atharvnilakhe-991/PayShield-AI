@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0108",
+  "batch": 2,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Dev Malhotra",
+  "replacement_fictional_value": "Neel Patil",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      299,
+      126,
+      322,
+      155
+    ],
+    [
+      216,
+      194,
+      405,
+      216
+    ],
+    [
+      90,
+      855,
+      190,
+      869
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      188,
+      82,
+      433,
+      192
+    ],
+    [
+      0,
+      159,
+      621,
+      249
+    ],
+    [
+      7,
+      829,
+      222,
+      893
+    ]
+  ],
+  "random_seed": 20261204108,
+  "width": 621,
+  "height": 1528,
+  "font_scale": 1.019,
+  "spacing_scale": 0.974,
+  "margin": 32,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

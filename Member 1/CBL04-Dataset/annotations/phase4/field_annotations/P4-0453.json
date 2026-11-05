@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0453",
+  "batch": 5,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "amount",
+  "original_fictional_value": "999",
+  "replacement_fictional_value": "1104",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "amount",
+  "bounding_boxes_xyxy": [
+    [
+      164,
+      293,
+      369,
+      355
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      16,
+      239,
+      516,
+      372
+    ]
+  ],
+  "random_seed": 20261204453,
+  "width": 532,
+  "height": 1508,
+  "font_scale": 1.039,
+  "spacing_scale": 0.973,
+  "margin": 38,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

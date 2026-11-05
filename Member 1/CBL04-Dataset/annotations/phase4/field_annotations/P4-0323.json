@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0323",
+  "batch": 4,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Rohan Desai",
+  "replacement_fictional_value": "Tara Iyer",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      191,
+      123,
+      364,
+      188
+    ],
+    [
+      191,
+      185,
+      364,
+      211
+    ],
+    [
+      84,
+      822,
+      171,
+      838
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      163,
+      80,
+      393,
+      188
+    ],
+    [
+      0,
+      154,
+      556,
+      243
+    ],
+    [
+      1,
+      798,
+      201,
+      859
+    ]
+  ],
+  "random_seed": 20261204323,
+  "width": 556,
+  "height": 1536,
+  "font_scale": 1.033,
+  "spacing_scale": 0.944,
+  "margin": 34,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

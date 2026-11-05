@@ -1,0 +1,92 @@
+{
+  "total_samples": 300,
+  "clean_samples": 277,
+  "tampered_samples": 23,
+  "accuracy": 0.7766666666666666,
+  "precision": 0.1206896551724138,
+  "recall": 0.30434782608695654,
+  "f1": 0.1728395061728395,
+  "roc_auc": 0.7287709935645895,
+  "pr_auc": 0.15630402531502033,
+  "confusion_matrix": {
+    "tn": 226,
+    "fp": 51,
+    "fn": 16,
+    "tp": 7
+  },
+  "false_positive_rate": 0.18411552346570398,
+  "false_negative_rate": 0.6956521739130435,
+  "per_family": {
+    "bank_progress": {
+      "support": 26,
+      "clean_support": 23,
+      "tampered_support": 3,
+      "accuracy": 0.6538461538461539,
+      "precision": 0.125,
+      "recall": 0.3333333333333333,
+      "f1": 0.18181818181818182,
+      "confusion_matrix": {
+        "tn": 16,
+        "fp": 7,
+        "fn": 2,
+        "tp": 1
+      }
+    },
+    "compact": {
+      "support": 130,
+      "clean_support": 122,
+      "tampered_support": 8,
+      "accuracy": 0.8076923076923077,
+      "precision": 0.09523809523809523,
+      "recall": 0.25,
+      "f1": 0.13793103448275862,
+      "confusion_matrix": {
+        "tn": 103,
+        "fp": 19,
+        "fn": 6,
+        "tp": 2
+      }
+    },
+    "enriched": {
+      "support": 140,
+      "clean_support": 128,
+      "tampered_support": 12,
+      "accuracy": 0.7714285714285715,
+      "precision": 0.14285714285714285,
+      "recall": 0.3333333333333333,
+      "f1": 0.2,
+      "confusion_matrix": {
+        "tn": 104,
+        "fp": 24,
+        "fn": 8,
+        "tp": 4
+      }
+    },
+    "recharge": {
+      "support": 4,
+      "clean_support": 4,
+      "tampered_support": 0,
+      "accuracy": 0.75,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": {
+        "tn": 3,
+        "fp": 1,
+        "fn": 0,
+        "tp": 0
+      }
+    }
+  },
+  "baseline_comparison": {
+    "baseline_overall_accuracy": 0.5046,
+    "tile_model_accuracy": 0.7766666666666666,
+    "accuracy_improvement": 0.27206666666666657,
+    "baseline_overall_f1": 0.5243,
+    "tile_model_f1": 0.1728395061728395,
+    "f1_improvement": -0.3514604938271605,
+    "baseline_model": "ResNet-18 Multi-Task (Global Downsampling)",
+    "baseline_defect": "Global downsampling destroyed text anti-aliasing and micro-artifacts, causing the model to collapse into degenerate majority-class or layout-memorization guessing.",
+    "tile_advantage": "Preserving native resolution (256x256 uncompressed patches) allows the CNN to recognize anti-aliasing distortions, JPEG grid discontinuity, and splice boundaries."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0266",
+  "batch": 3,
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "transaction_id",
+  "original_fictional_value": "DEMO-UPI-66848347",
+  "replacement_fictional_value": "DEMO-UPI-26623984",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "transaction_id",
+  "bounding_boxes_xyxy": [
+    [
+      109,
+      1038,
+      158,
+      1050
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      0,
+      975,
+      399,
+      1116
+    ]
+  ],
+  "random_seed": 20261204266,
+  "width": 399,
+  "height": 1401,
+  "font_scale": 0.963,
+  "spacing_scale": 1.05,
+  "margin": 40,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

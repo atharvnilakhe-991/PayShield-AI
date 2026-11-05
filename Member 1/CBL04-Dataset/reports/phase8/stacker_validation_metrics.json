@@ -1,0 +1,192 @@
+{
+  "model_version": "v1.0.0-phase8",
+  "evaluation_partition": "validation (bank_progress layout family, 108 samples)",
+  "held_out_test_partition_status": "untouched",
+  "candidate_hyperparameters_evaluated": [
+    {
+      "l2_regularization": 0.0001,
+      "train_macro_f1": 0.5057,
+      "val_macro_f1": 0.4509,
+      "val_accuracy": 0.463,
+      "val_confusion": {
+        "tp": 17,
+        "fp": 21,
+        "tn": 33,
+        "fn": 37
+      },
+      "weights_l2_norm": 0.46051620381943953
+    },
+    {
+      "l2_regularization": 0.001,
+      "train_macro_f1": 0.5109,
+      "val_macro_f1": 0.4554,
+      "val_accuracy": 0.4722,
+      "val_confusion": {
+        "tp": 16,
+        "fp": 19,
+        "tn": 35,
+        "fn": 38
+      },
+      "weights_l2_norm": 0.39316285632301684
+    },
+    {
+      "l2_regularization": 0.01,
+      "train_macro_f1": 0.4967,
+      "val_macro_f1": 0.4822,
+      "val_accuracy": 0.5,
+      "val_confusion": {
+        "tp": 17,
+        "fp": 17,
+        "tn": 37,
+        "fn": 37
+      },
+      "weights_l2_norm": 0.17877222549255015
+    },
+    {
+      "l2_regularization": 0.05,
+      "train_macro_f1": 0.5009,
+      "val_macro_f1": 0.4397,
+      "val_accuracy": 0.463,
+      "val_confusion": {
+        "tp": 14,
+        "fp": 18,
+        "tn": 36,
+        "fn": 40
+      },
+      "weights_l2_norm": 0.05994631026873198
+    },
+    {
+      "l2_regularization": 0.1,
+      "train_macro_f1": 0.5011,
+      "val_macro_f1": 0.4471,
+      "val_accuracy": 0.4722,
+      "val_confusion": {
+        "tp": 14,
+        "fp": 17,
+        "tn": 37,
+        "fn": 40
+      },
+      "weights_l2_norm": 0.036097174079768826
+    },
+    {
+      "l2_regularization": 0.5,
+      "train_macro_f1": 0.508,
+      "val_macro_f1": 0.4815,
+      "val_accuracy": 0.5093,
+      "val_confusion": {
+        "tp": 15,
+        "fp": 14,
+        "tn": 40,
+        "fn": 39
+      },
+      "weights_l2_norm": 0.010982680711219148
+    },
+    {
+      "l2_regularization": 1.0,
+      "train_macro_f1": 0.5068,
+      "val_macro_f1": 0.4815,
+      "val_accuracy": 0.5093,
+      "val_confusion": {
+        "tp": 15,
+        "fp": 14,
+        "tn": 40,
+        "fn": 39
+      },
+      "weights_l2_norm": 0.006175139837407651
+    },
+    {
+      "l2_regularization": 5.0,
+      "train_macro_f1": 0.5068,
+      "val_macro_f1": 0.4815,
+      "val_accuracy": 0.5093,
+      "val_confusion": {
+        "tp": 15,
+        "fp": 14,
+        "tn": 40,
+        "fn": 39
+      },
+      "weights_l2_norm": 0.001395251047612424
+    },
+    {
+      "l2_regularization": 10.0,
+      "train_macro_f1": 0.508,
+      "val_macro_f1": 0.4815,
+      "val_accuracy": 0.5093,
+      "val_confusion": {
+        "tp": 15,
+        "fp": 14,
+        "tn": 40,
+        "fn": 39
+      },
+      "weights_l2_norm": 0.0007099653872880875
+    }
+  ],
+  "selected_hyperparameters": {
+    "l2_regularization": 0.01,
+    "operating_threshold": 0.5
+  },
+  "validation_metrics": {
+    "accuracy": 0.5,
+    "macro_f1": 0.4822,
+    "edited_class": {
+      "precision": 0.5,
+      "recall": 0.3148,
+      "f1": 0.3864,
+      "support": 54
+    },
+    "clean_class": {
+      "precision": 0.5,
+      "recall": 0.6852,
+      "f1": 0.5781,
+      "support": 54
+    },
+    "confusion_matrix": {
+      "tp": 17,
+      "fp": 17,
+      "tn": 37,
+      "fn": 37
+    }
+  },
+  "training_metrics": {
+    "accuracy": 0.4988,
+    "macro_f1": 0.4967,
+    "edited_class": {
+      "precision": 0.4987,
+      "recall": 0.4332,
+      "f1": 0.4636,
+      "support": 434
+    },
+    "clean_class": {
+      "precision": 0.499,
+      "recall": 0.5645,
+      "f1": 0.5297,
+      "support": 434
+    },
+    "confusion_matrix": {
+      "tp": 188,
+      "fp": 189,
+      "tn": 245,
+      "fn": 246
+    }
+  },
+  "learned_feature_weights": {
+    "cnn_score": -0.028635,
+    "cnn_pred_class": 0.078964,
+    "ocr_overall_confidence": 0.019859,
+    "ocr_amount_extracted": -2.6e-05,
+    "ocr_recipient_extracted": -2.6e-05,
+    "ocr_ref_id_extracted": -2.6e-05,
+    "ocr_date_extracted": -0.146534,
+    "semantic_manipulation_score": 0.011107,
+    "amount_anomaly": 0.007069,
+    "recipient_anomaly": 0.053377,
+    "date_anomaly": 0.0,
+    "ref_id_anomaly": 0.0,
+    "status_anomaly": 0.0,
+    "upi_handle_anomaly": -0.000329,
+    "missing_critical_fields_count": 0.003886,
+    "branch_cnn_available": -2.6e-05,
+    "branch_ocr_available": -2.6e-05,
+    "branch_semantic_available": -2.6e-05
+  }
+}

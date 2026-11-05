@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0457",
+  "batch": 5,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Anaya Joshi",
+  "replacement_fictional_value": "Sara Rao",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      240,
+      113,
+      388,
+      174
+    ],
+    [
+      240,
+      170,
+      388,
+      194
+    ],
+    [
+      93,
+      687,
+      172,
+      703
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      191,
+      72,
+      438,
+      174
+    ],
+    [
+      0,
+      141,
+      629,
+      225
+    ],
+    [
+      8,
+      663,
+      206,
+      723
+    ]
+  ],
+  "random_seed": 20261204457,
+  "width": 629,
+  "height": 1407,
+  "font_scale": 0.93,
+  "spacing_scale": 0.949,
+  "margin": 41,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

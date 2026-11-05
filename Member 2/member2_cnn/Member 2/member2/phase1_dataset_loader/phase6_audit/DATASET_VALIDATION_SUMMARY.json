@@ -1,0 +1,26 @@
+{
+  "is_valid": true,
+  "manifest_path": "c:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\Hackathon-VIT\\CBL04-Dataset\\metadata\\phase6_manifest.csv",
+  "dataset_root": "C:\\Users\\athar\\OneDrive\\Desktop\\Member 2\\Hackathon-VIT\\CBL04-Dataset",
+  "counts": {
+    "manifest_rows": 1387,
+    "unique_images": 1387,
+    "clean_samples": 500,
+    "edited_samples": 500,
+    "unlabeled_samples": 387,
+    "verified_pairs": 500,
+    "broken_pairs": 0,
+    "masks_registered": 1000,
+    "missing_images": 0,
+    "missing_masks": 0,
+    "duplicate_entries": 0,
+    "duplicate_paths": 0,
+    "corrupt_files": 0,
+    "dimension_mismatches": 0,
+    "unsupported_formats": 0,
+    "invalid_mask_values": 0,
+    "scope_warnings": 0
+  },
+  "errors": [],
+  "warnings": []
+}

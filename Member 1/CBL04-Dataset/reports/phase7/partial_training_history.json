@@ -1,0 +1,170 @@
+{
+  "1": {
+    "checkpoint": "models\\phase7\\fold_1_resnet18_multitask.pt",
+    "best_validation_f1": 0.6666666666666666,
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "loss": 1.522144537223013,
+          "classification_loss": 0.787837100656409,
+          "localization_loss": 1.4686148773159897
+        },
+        "validation": {
+          "loss": 1.4142402940326266,
+          "classification_loss": 0.7019536186147619,
+          "localization_loss": 1.424573403817636
+        },
+        "validation_metrics": {
+          "support": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.6851851851851852,
+          "f1": 0.5781250000000001,
+          "confusion_matrix": {
+            "tn": 17,
+            "fp": 37,
+            "fn": 17,
+            "tp": 37
+          }
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "loss": 1.4218565079203822,
+          "classification_loss": 0.7279437414386816,
+          "localization_loss": 1.3878255371461834
+        },
+        "validation": {
+          "loss": 1.4700351291232638,
+          "classification_loss": 0.7899688680966696,
+          "localization_loss": 1.3601325397138242
+        },
+        "validation_metrics": {
+          "support": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "confusion_matrix": {
+            "tn": 0,
+            "fp": 54,
+            "fn": 0,
+            "tp": 54
+          }
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "loss": 1.4172972754428261,
+          "classification_loss": 0.7392205878307945,
+          "localization_loss": 1.3561533773154544
+        },
+        "validation": {
+          "loss": 1.4012686676449246,
+          "classification_loss": 0.7229416370391846,
+          "localization_loss": 1.3566540921175922
+        },
+        "validation_metrics": {
+          "support": 108,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.018518518518518517,
+          "f1": 0.03571428571428571,
+          "confusion_matrix": {
+            "tn": 53,
+            "fp": 1,
+            "fn": 53,
+            "tp": 1
+          }
+        }
+      }
+    ]
+  },
+  "2": {
+    "checkpoint": "models\\phase7\\fold_2_resnet18_multitask.pt",
+    "best_validation_f1": 0.4,
+    "epochs": [
+      {
+        "epoch": 1,
+        "train": {
+          "loss": 1.45648553090937,
+          "classification_loss": 0.7773059440009734,
+          "localization_loss": 1.3583591790760265
+        },
+        "validation": {
+          "loss": 1.357990066210429,
+          "classification_loss": 0.7059484720230103,
+          "localization_loss": 1.3040831883748372
+        },
+        "validation_metrics": {
+          "support": 24,
+          "accuracy": 0.4583333333333333,
+          "precision": 0.4444444444444444,
+          "recall": 0.3333333333333333,
+          "f1": 0.380952380952381,
+          "confusion_matrix": {
+            "tn": 7,
+            "fp": 5,
+            "fn": 8,
+            "tp": 4
+          }
+        }
+      },
+      {
+        "epoch": 2,
+        "train": {
+          "loss": 1.3974768501870773,
+          "classification_loss": 0.755047668428982,
+          "localization_loss": 1.2848583705285017
+        },
+        "validation": {
+          "loss": 1.3364330927530925,
+          "classification_loss": 0.6935896277427673,
+          "localization_loss": 1.2856868902842205
+        },
+        "validation_metrics": {
+          "support": 24,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25,
+          "confusion_matrix": {
+            "tn": 10,
+            "fp": 2,
+            "fn": 10,
+            "tp": 2
+          }
+        }
+      },
+      {
+        "epoch": 3,
+        "train": {
+          "loss": 1.3700048450161428,
+          "classification_loss": 0.7420868417795967,
+          "localization_loss": 1.2558360012138592
+        },
+        "validation": {
+          "loss": 1.3181150754292805,
+          "classification_loss": 0.6955147981643677,
+          "localization_loss": 1.2452006340026855
+        },
+        "validation_metrics": {
+          "support": 24,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "confusion_matrix": {
+            "tn": 8,
+            "fp": 4,
+            "fn": 8,
+            "tp": 4
+          }
+        }
+      }
+    ]
+  }
+}

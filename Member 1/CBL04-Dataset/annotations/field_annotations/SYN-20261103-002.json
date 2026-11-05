@@ -1,0 +1,29 @@
+{
+  "source_id": "SYN-20261103-002",
+  "edited_field": "recipient",
+  "original_synthetic_value": "Kabir Sharma",
+  "replacement_synthetic_value": "Vikram Sen",
+  "edit_method": "localized field replacement; same deterministic renderer and fixed layout",
+  "bounding_boxes_xyxy": [
+    [
+      257,
+      129,
+      283,
+      159
+    ],
+    [
+      178,
+      207,
+      360,
+      226
+    ],
+    [
+      90,
+      857,
+      216,
+      872
+    ]
+  ],
+  "seed": 20261105,
+  "template_version": "gpay-dark-demo-v1"
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0251",
+  "batch": 3,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "date_time",
+  "original_fictional_value": "11 Apr 2026, 2:46am",
+  "replacement_fictional_value": "11 Apr 2026, 4:46am",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "date_time",
+  "bounding_boxes_xyxy": [
+    [
+      244,
+      478,
+      253,
+      491
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      6,
+      452,
+      441,
+      517
+    ]
+  ],
+  "random_seed": 20261204251,
+  "width": 447,
+  "height": 1370,
+  "font_scale": 0.983,
+  "spacing_scale": 0.95,
+  "margin": 37,
+  "show_pay_again": false,
+  "show_action_strip": true,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

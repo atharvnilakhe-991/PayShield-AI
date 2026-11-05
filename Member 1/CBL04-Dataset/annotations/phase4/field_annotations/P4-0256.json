@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0256",
+  "batch": 3,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "other",
+  "original_fictional_value": "9960",
+  "replacement_fictional_value": "1128",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "fictional bank account suffix",
+  "bounding_boxes_xyxy": [
+    [
+      307,
+      656,
+      358,
+      674
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      91,
+      617,
+      711,
+      705
+    ]
+  ],
+  "random_seed": 20261204256,
+  "width": 711,
+  "height": 1565,
+  "font_scale": 0.977,
+  "spacing_scale": 0.982,
+  "margin": 30,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

@@ -1,0 +1,120 @@
+{
+  "server": "http://127.0.0.1:8080",
+  "checks": [
+    {
+      "name": "health",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "checkpoint": "models\\phase7\\fold_1_resnet18_multitask.pt",
+        "device": "cpu"
+      }
+    },
+    {
+      "name": "asset /",
+      "status": 200,
+      "mime": "text/html"
+    },
+    {
+      "name": "asset /styles.css",
+      "status": 200,
+      "mime": "text/css"
+    },
+    {
+      "name": "asset /app.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "JPEG image upload",
+      "status": 200,
+      "result": "experimental_guess"
+    },
+    {
+      "name": "WEBP image upload",
+      "status": 200,
+      "result": "experimental_guess"
+    },
+    {
+      "name": "unsupported format rejection",
+      "status": 400,
+      "body": {
+        "error": "The uploaded file is not a readable supported image."
+      }
+    },
+    {
+      "name": "invalid image rejection",
+      "status": 400,
+      "body": {
+        "error": "The uploaded file is not a readable supported image."
+      }
+    }
+  ],
+  "samples": [
+    {
+      "family": "compact",
+      "label": "clean",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.75008,
+      "threshold": 0.601796
+    },
+    {
+      "family": "compact",
+      "label": "edited",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.755839,
+      "threshold": 0.601796
+    },
+    {
+      "family": "enriched",
+      "label": "clean",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.705659,
+      "threshold": 0.601796
+    },
+    {
+      "family": "enriched",
+      "label": "edited",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.705614,
+      "threshold": 0.601796
+    },
+    {
+      "family": "bank_progress",
+      "label": "clean",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.710968,
+      "threshold": 0.601796
+    },
+    {
+      "family": "bank_progress",
+      "label": "edited",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.711154,
+      "threshold": 0.601796
+    },
+    {
+      "family": "recharge",
+      "label": "clean",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.674147,
+      "threshold": 0.601796
+    },
+    {
+      "family": "recharge",
+      "label": "edited",
+      "status": 200,
+      "guess": "edited",
+      "raw_score_uncalibrated": 0.673219,
+      "threshold": 0.601796
+    }
+  ],
+  "result": "PASS"
+}

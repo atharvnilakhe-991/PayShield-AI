@@ -1,0 +1,1242 @@
+{
+  "evaluation_summary": {
+    "total_validation_images": 108,
+    "clean_images": 54,
+    "edited_images": 54,
+    "matched_pairs": 54,
+    "layout_family": "bank_progress"
+  },
+  "strategy_benchmarks": {
+    "strategy_a_ocr_only": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.466,
+      "pr_auc": 0.5513,
+      "overall_accuracy": 0.3426,
+      "overall_accuracy_fraction": "37/108",
+      "decisive_accuracy": 0.4868,
+      "decisive_accuracy_fraction": "37/76",
+      "decisive_coverage": 0.7037,
+      "decisive_coverage_fraction": "76/108",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/54",
+      "specificity": 0.6852,
+      "specificity_fraction": "37/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.7222,
+      "fnr_fraction": "39/54",
+      "macro_f1": 0.2846,
+      "clean_mean": 0.2547,
+      "clean_std": 0.1691,
+      "edited_mean": 0.239,
+      "edited_std": 0.1647,
+      "mean_diff": -0.0156,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 37,
+        "fn": 39,
+        "inconclusive_clean": 17,
+        "inconclusive_edited": 15,
+        "total_inconclusive": 32
+      }
+    },
+    "strategy_b_semantic_only": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.5,
+      "pr_auc": 0.5093,
+      "overall_accuracy": 0.3426,
+      "overall_accuracy_fraction": "37/108",
+      "decisive_accuracy": 0.4868,
+      "decisive_accuracy_fraction": "37/76",
+      "decisive_coverage": 0.7037,
+      "decisive_coverage_fraction": "76/108",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/54",
+      "specificity": 0.6852,
+      "specificity_fraction": "37/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.7222,
+      "fnr_fraction": "39/54",
+      "macro_f1": 0.2846,
+      "clean_mean": 0.013,
+      "clean_std": 0.0661,
+      "edited_mean": 0.013,
+      "edited_std": 0.0661,
+      "mean_diff": 0.0,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 37,
+        "fn": 39,
+        "inconclusive_clean": 17,
+        "inconclusive_edited": 15,
+        "total_inconclusive": 32
+      }
+    },
+    "strategy_c_crop_only": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.5362,
+      "pr_auc": 0.5473,
+      "overall_accuracy": 0.25,
+      "overall_accuracy_fraction": "27/108",
+      "decisive_accuracy": 0.551,
+      "decisive_accuracy_fraction": "27/49",
+      "decisive_coverage": 0.4537,
+      "decisive_coverage_fraction": "49/108",
+      "clean_fpr": 0.3704,
+      "clean_fpr_fraction": "20/54",
+      "edited_recall": 0.4444,
+      "edited_recall_fraction": "24/54",
+      "specificity": 0.0556,
+      "specificity_fraction": "3/54",
+      "precision": 0.5455,
+      "precision_fraction": "24/44",
+      "fnr": 0.037,
+      "fnr_fraction": "2/54",
+      "macro_f1": 0.2957,
+      "clean_mean": 0.6776,
+      "clean_std": 0.1215,
+      "edited_mean": 0.6909,
+      "edited_std": 0.132,
+      "mean_diff": 0.0133,
+      "confusion_matrix": {
+        "tp": 24,
+        "fp": 20,
+        "tn": 3,
+        "fn": 2,
+        "inconclusive_clean": 31,
+        "inconclusive_edited": 28,
+        "total_inconclusive": 59
+      }
+    },
+    "strategy_d_semantic_guided_fusion": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.4813,
+      "pr_auc": 0.4901,
+      "overall_accuracy": 0.3148,
+      "overall_accuracy_fraction": "34/108",
+      "decisive_accuracy": 0.4857,
+      "decisive_accuracy_fraction": "34/70",
+      "decisive_coverage": 0.6481,
+      "decisive_coverage_fraction": "70/108",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/54",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.6667,
+      "fnr_fraction": "36/54",
+      "macro_f1": 0.2742,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.2186,
+      "edited_std": 0.1744,
+      "mean_diff": -0.0148,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 36,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 18,
+        "total_inconclusive": 38
+      }
+    },
+    "strategy_e_ablation_blind_max": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.512,
+      "pr_auc": 0.5158,
+      "overall_accuracy": 0.037,
+      "overall_accuracy_fraction": "4/108",
+      "decisive_accuracy": 0.5,
+      "decisive_accuracy_fraction": "4/8",
+      "decisive_coverage": 0.0741,
+      "decisive_coverage_fraction": "8/108",
+      "clean_fpr": 0.037,
+      "clean_fpr_fraction": "2/54",
+      "edited_recall": 0.037,
+      "edited_recall_fraction": "2/54",
+      "specificity": 0.037,
+      "specificity_fraction": "2/54",
+      "precision": 0.5,
+      "precision_fraction": "2/4",
+      "fnr": 0.037,
+      "fnr_fraction": "2/54",
+      "macro_f1": 0.069,
+      "clean_mean": 0.4806,
+      "clean_std": 0.0503,
+      "edited_mean": 0.4805,
+      "edited_std": 0.0505,
+      "mean_diff": -0.0001,
+      "confusion_matrix": {
+        "tp": 2,
+        "fp": 2,
+        "tn": 2,
+        "fn": 2,
+        "inconclusive_clean": 50,
+        "inconclusive_edited": 50,
+        "total_inconclusive": 100
+      }
+    },
+    "strategy_f_ablation_no_crop": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.5,
+      "pr_auc": 0.5093,
+      "overall_accuracy": 0.3426,
+      "overall_accuracy_fraction": "37/108",
+      "decisive_accuracy": 0.4868,
+      "decisive_accuracy_fraction": "37/76",
+      "decisive_coverage": 0.7037,
+      "decisive_coverage_fraction": "76/108",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/54",
+      "specificity": 0.6852,
+      "specificity_fraction": "37/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.7222,
+      "fnr_fraction": "39/54",
+      "macro_f1": 0.2846,
+      "clean_mean": 0.013,
+      "clean_std": 0.0661,
+      "edited_mean": 0.013,
+      "edited_std": 0.0661,
+      "mean_diff": 0.0,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 37,
+        "fn": 39,
+        "inconclusive_clean": 17,
+        "inconclusive_edited": 15,
+        "total_inconclusive": 32
+      }
+    }
+  },
+  "paired_analysis_strategy_d": {
+    "total_pairs": 54,
+    "e_gt_c": 3,
+    "e_eq_c": 46,
+    "c_gt_e": 5,
+    "mean_delta": -0.0148,
+    "std_delta": 0.0929,
+    "median_delta": 0.0,
+    "min_delta": -0.3959,
+    "max_delta": 0.2349,
+    "pairs": [
+      {
+        "pair_id": "P4-0002",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0005",
+        "edit_category": "other",
+        "clean_score": 0.3378,
+        "edited_score": 0.3378,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0006",
+        "edit_category": "transaction_id",
+        "clean_score": 0.4033,
+        "edited_score": 0.4033,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0008",
+        "edit_category": "transaction_id",
+        "clean_score": 0.468,
+        "edited_score": 0.468,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0009",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0024",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0027",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0037",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0041",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0044",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0049",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0076",
+        "edit_category": "recipient",
+        "clean_score": 0.4959,
+        "edited_score": 0.1,
+        "delta": -0.3959,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [
+          "receiver"
+        ],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0079",
+        "edit_category": "other",
+        "clean_score": 0.455,
+        "edited_score": 0.455,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "receiver"
+        ],
+        "edited_routed": [
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0084",
+        "edit_category": "transaction_id",
+        "clean_score": 0.4502,
+        "edited_score": 0.4502,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0093",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.2628,
+        "delta": 0.1628,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": [
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0110",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0116",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0129",
+        "edit_category": "date_time",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0135",
+        "edit_category": "recipient",
+        "clean_score": 0.2657,
+        "edited_score": 0.1,
+        "delta": -0.1657,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [
+          "receiver"
+        ],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0142",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0150",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0153",
+        "edit_category": "amount",
+        "clean_score": 0.417,
+        "edited_score": 0.1,
+        "delta": -0.317,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0168",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0170",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0187",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0189",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0205",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0206",
+        "edit_category": "date_time",
+        "clean_score": 0.4411,
+        "edited_score": 0.4411,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0210",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0212",
+        "edit_category": "date_time",
+        "clean_score": 0.2877,
+        "edited_score": 0.2877,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0221",
+        "edit_category": "transaction_id",
+        "clean_score": 0.623,
+        "edited_score": 0.623,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0230",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0236",
+        "edit_category": "date_time",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0246",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0249",
+        "edit_category": "recipient",
+        "clean_score": 0.4725,
+        "edited_score": 0.4916,
+        "delta": 0.0191,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0250",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0251",
+        "edit_category": "date_time",
+        "clean_score": 0.6601,
+        "edited_score": 0.6601,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0279",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0293",
+        "edit_category": "amount",
+        "clean_score": 0.4878,
+        "edited_score": 0.4832,
+        "delta": -0.0046,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0332",
+        "edit_category": "other",
+        "clean_score": 0.4851,
+        "edited_score": 0.4851,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount",
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0337",
+        "edit_category": "other",
+        "clean_score": 0.4504,
+        "edited_score": 0.4504,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0365",
+        "edit_category": "recipient",
+        "clean_score": 0.2627,
+        "edited_score": 0.4976,
+        "delta": 0.2349,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "receiver"
+        ],
+        "edited_routed": [
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0383",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0401",
+        "edit_category": "other",
+        "clean_score": 0.4507,
+        "edited_score": 0.4507,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0418",
+        "edit_category": "other",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0446",
+        "edit_category": "transaction_id",
+        "clean_score": 0.4711,
+        "edited_score": 0.4711,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      },
+      {
+        "pair_id": "P4-0449",
+        "edit_category": "amount",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0460",
+        "edit_category": "amount",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0466",
+        "edit_category": "transaction_id",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0473",
+        "edit_category": "amount",
+        "clean_score": 0.4866,
+        "edited_score": 0.153,
+        "delta": -0.3336,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "receiver"
+        ]
+      },
+      {
+        "pair_id": "P4-0475",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0477",
+        "edit_category": "recipient",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0480",
+        "edit_category": "date_time",
+        "clean_score": 0.1,
+        "edited_score": 0.1,
+        "delta": 0.0,
+        "clean_verdict": "CLEAN",
+        "edited_verdict": "CLEAN",
+        "clean_routed": [],
+        "edited_routed": []
+      },
+      {
+        "pair_id": "P4-0482",
+        "edit_category": "recipient",
+        "clean_score": 0.4352,
+        "edited_score": 0.4352,
+        "delta": 0.0,
+        "clean_verdict": "INCONCLUSIVE",
+        "edited_verdict": "INCONCLUSIVE",
+        "clean_routed": [
+          "amount",
+          "receiver"
+        ],
+        "edited_routed": [
+          "amount"
+        ]
+      }
+    ]
+  },
+  "category_breakdown_strategy_d": {
+    "amount": {
+      "n": 59,
+      "n_pos": 5,
+      "n_neg": 54,
+      "roc_auc": 0.4833,
+      "pr_auc": 0.079,
+      "overall_accuracy": 0.5763,
+      "overall_accuracy_fraction": "34/59",
+      "decisive_accuracy": 0.9189,
+      "decisive_accuracy_fraction": "34/37",
+      "decisive_coverage": 0.6271,
+      "decisive_coverage_fraction": "37/59",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/5",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.6,
+      "fnr_fraction": "3/5",
+      "macro_f1": 0.3736,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.1872,
+      "edited_std": 0.1494,
+      "mean_diff": -0.0462,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 3,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 2,
+        "total_inconclusive": 22
+      }
+    },
+    "date_time": {
+      "n": 60,
+      "n_pos": 6,
+      "n_neg": 54,
+      "roc_auc": 0.5525,
+      "pr_auc": 0.2173,
+      "overall_accuracy": 0.5667,
+      "overall_accuracy_fraction": "34/60",
+      "decisive_accuracy": 0.9189,
+      "decisive_accuracy_fraction": "34/37",
+      "decisive_coverage": 0.6167,
+      "decisive_coverage_fraction": "37/60",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/6",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.5,
+      "fnr_fraction": "3/6",
+      "macro_f1": 0.3736,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.2815,
+      "edited_std": 0.2112,
+      "mean_diff": 0.048,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 3,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 3,
+        "total_inconclusive": 23
+      }
+    },
+    "other": {
+      "n": 70,
+      "n_pos": 16,
+      "n_neg": 54,
+      "roc_auc": 0.4595,
+      "pr_auc": 0.1966,
+      "overall_accuracy": 0.4857,
+      "overall_accuracy_fraction": "34/70",
+      "decisive_accuracy": 0.7556,
+      "decisive_accuracy_fraction": "34/45",
+      "decisive_coverage": 0.6429,
+      "decisive_coverage_fraction": "45/70",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/16",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.6875,
+      "fnr_fraction": "11/16",
+      "macro_f1": 0.3434,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.2049,
+      "edited_std": 0.1582,
+      "mean_diff": -0.0285,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 11,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 5,
+        "total_inconclusive": 25
+      }
+    },
+    "recipient": {
+      "n": 68,
+      "n_pos": 14,
+      "n_neg": 54,
+      "roc_auc": 0.4517,
+      "pr_auc": 0.1868,
+      "overall_accuracy": 0.5,
+      "overall_accuracy_fraction": "34/68",
+      "decisive_accuracy": 0.7556,
+      "decisive_accuracy_fraction": "34/45",
+      "decisive_coverage": 0.6618,
+      "decisive_coverage_fraction": "45/68",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/14",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.7857,
+      "fnr_fraction": "11/14",
+      "macro_f1": 0.3434,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.1919,
+      "edited_std": 0.154,
+      "mean_diff": -0.0415,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 11,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 3,
+        "total_inconclusive": 23
+      }
+    },
+    "transaction_id": {
+      "n": 67,
+      "n_pos": 13,
+      "n_neg": 54,
+      "roc_auc": 0.5064,
+      "pr_auc": 0.1947,
+      "overall_accuracy": 0.5075,
+      "overall_accuracy_fraction": "34/67",
+      "decisive_accuracy": 0.8095,
+      "decisive_accuracy_fraction": "34/42",
+      "decisive_coverage": 0.6269,
+      "decisive_coverage_fraction": "42/67",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/13",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.6154,
+      "fnr_fraction": "8/13",
+      "macro_f1": 0.3542,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.2474,
+      "edited_std": 0.192,
+      "mean_diff": 0.0139,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 8,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 5,
+        "total_inconclusive": 25
+      }
+    }
+  },
+  "candidate_telemetry": {
+    "candidate_availability": {
+      "amount": {
+        "count": 108,
+        "percentage": 100.0,
+        "fraction": "108/108"
+      },
+      "receiver": {
+        "count": 108,
+        "percentage": 100.0,
+        "fraction": "108/108"
+      },
+      "transaction_id": {
+        "count": 108,
+        "percentage": 100.0,
+        "fraction": "108/108"
+      },
+      "date": {
+        "count": 86,
+        "percentage": 79.63,
+        "fraction": "86/108"
+      },
+      "status": {
+        "count": 108,
+        "percentage": 100.0,
+        "fraction": "108/108"
+      }
+    },
+    "edited_field_localization": {
+      "total_edited": 54,
+      "iou_ge_05": {
+        "count": 3,
+        "fraction": "3/54",
+        "percentage": 5.56
+      },
+      "iou_ge_01": {
+        "count": 20,
+        "fraction": "20/54",
+        "percentage": 37.04
+      },
+      "gt_center_contained": {
+        "count": 24,
+        "fraction": "24/54",
+        "percentage": 44.44
+      }
+    }
+  },
+  "comparison_with_prior_baselines": {
+    "phase15_global_cnn": {
+      "roc_auc": 0.4938,
+      "pr_auc": 0.5028,
+      "clean_fpr": 1.0,
+      "clean_mean": 0.7,
+      "edited_mean": 0.6995,
+      "mean_diff": -0.0005
+    },
+    "phase17_target_field_crop_oracle": {
+      "roc_auc": 0.6677,
+      "pr_auc": 0.6551,
+      "clean_fpr": 0.3519,
+      "clean_mean": 0.3759,
+      "edited_mean": 0.5697,
+      "mean_diff": 0.1938
+    },
+    "phase17_blind_max_crop": {
+      "roc_auc": 0.5117,
+      "pr_auc": 0.5079,
+      "clean_fpr": 1.0,
+      "clean_mean": 0.9483,
+      "edited_mean": 0.948,
+      "mean_diff": -0.0003
+    },
+    "phase18_strategy_d_fusion": {
+      "n": 108,
+      "n_pos": 54,
+      "n_neg": 54,
+      "roc_auc": 0.4813,
+      "pr_auc": 0.4901,
+      "overall_accuracy": 0.3148,
+      "overall_accuracy_fraction": "34/108",
+      "decisive_accuracy": 0.4857,
+      "decisive_accuracy_fraction": "34/70",
+      "decisive_coverage": 0.6481,
+      "decisive_coverage_fraction": "70/108",
+      "clean_fpr": 0.0,
+      "clean_fpr_fraction": "0/54",
+      "edited_recall": 0.0,
+      "edited_recall_fraction": "0/54",
+      "specificity": 0.6296,
+      "specificity_fraction": "34/54",
+      "precision": 0.0,
+      "precision_fraction": "0/0",
+      "fnr": 0.6667,
+      "fnr_fraction": "36/54",
+      "macro_f1": 0.2742,
+      "clean_mean": 0.2335,
+      "clean_std": 0.1776,
+      "edited_mean": 0.2186,
+      "edited_std": 0.1744,
+      "mean_diff": -0.0148,
+      "confusion_matrix": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 34,
+        "fn": 36,
+        "inconclusive_clean": 20,
+        "inconclusive_edited": 18,
+        "total_inconclusive": 38
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>CBL-04 | Screenshot Integrity Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">C</span><span>CBL-04 <small>RESEARCH DEMO</small></span></a><span class="local-pill"><i></i> Local processing</span></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">UPI SCREENSHOT INTEGRITY · EXPERIMENTAL</div>
+      <h1>A closer look at<br><em>screenshot integrity.</em></h1>
+      <p class="lead">Explore an experimental model that examines synthetic Google Pay dark-theme transaction screenshots for visual differences.</p>
+      <div class="safety-note"><span class="shield">!</span><span><strong>Research prototype, not a payment verifier.</strong> It cannot confirm a transaction or prove fraud. Use fictional demo images only.</span></div>
+    </section>
+    <section class="workspace" aria-label="Screenshot analysis demo">
+      <div class="panel upload-panel">
+        <div class="panel-heading"><div><span class="step">01</span><h2>Choose a screenshot</h2></div><span class="format-label">PNG · JPG · WEBP</span></div>
+        <label class="dropzone" id="dropzone" for="fileInput">
+          <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp">
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <strong>Drop a demo image here</strong><span>or <u>browse files</u></span>
+          <small>Up to 15 MB · Files are processed in memory and not saved</small>
+        </label>
+        <div class="preview-wrap hidden" id="previewWrap"><div class="preview-meta"><span id="fileName">Selected image</span><button class="text-button" id="clearButton" type="button">Remove</button></div><img id="preview" alt="Selected screenshot preview"></div>
+        <button id="analyzeButton" class="primary-button" disabled type="button">Analyze screenshot <span>→</span></button>
+        <p class="privacy-footnote">Please avoid uploading real payment screenshots or personal information.</p>
+      </div>
+      <div class="panel result-panel" aria-live="polite">
+        <div class="panel-heading"><div><span class="step">02</span><h2>Model output</h2></div><span class="experimental-tag">EXPERIMENTAL</span></div>
+        <div id="emptyState" class="empty-state"><div class="scan-icon"><span></span></div><strong>Waiting for an image</strong><p>Choose a fictional demo screenshot to see the model's experimental output.</p></div>
+        <div id="loadingState" class="empty-state hidden"><div class="spinner"></div><strong>Examining image…</strong><p>Running the saved CPU model locally.</p></div>
+        <div id="resultState" class="result-state hidden">
+          <div class="result-label"><span class="result-dot"></span><div><small>UNVERIFIED MODEL GUESS</small><h3 id="guess">Unable to determine</h3></div></div>
+          <div class="score-card"><div class="score-row"><span>Raw edited-class score</span><strong id="score">—</strong></div><div class="score-track"><span id="scoreBar"></span></div><p id="scoreNote">Uncalibrated output; not a verified probability or fraud likelihood.</p></div>
+          <div class="detail-box"><span class="detail-icon">⌖</span><div><strong>Region highlighting unavailable</strong><p id="localizationNote">The model's audited localization was not reliable enough to mark suspicious areas.</p></div></div>
+          <div class="warning-box"><strong>Do not use this result to make payment decisions.</strong><p id="warningText">An edited guess does not prove tampering; a clean guess does not establish authenticity.</p></div>
+          <p class="image-dimensions" id="dimensions"></p>
+        </div>
+        <div id="errorState" class="error-state hidden" role="alert"></div>
+      </div>
+    </section>
+    <section class="evidence-strip"><div><span class="evidence-value">50.5%</span><span class="evidence-label">Partial test accuracy</span></div><div><span class="evidence-value">2 / 4</span><span class="evidence-label">Layout families tested</span></div><div><span class="evidence-value">0.059</span><span class="evidence-label">Mask localization IoU</span></div><p>Metrics are synthetic-only and combine two different fold models. They do not represent real-world performance.</p></section>
+    <footer><span>CBL-04 · UPI Screenshot Tampering Research</span><span>Prototype only · No real payment evidence</span></footer>
+  </main>
+</body>
+</html>

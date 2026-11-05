@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0135",
+  "batch": 2,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "recipient",
+  "original_fictional_value": "Sara Rao",
+  "replacement_fictional_value": "Mira Nair",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      205,
+      129,
+      226,
+      153
+    ],
+    [
+      163,
+      209,
+      269,
+      227
+    ],
+    [
+      64,
+      900,
+      115,
+      912
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      116,
+      87,
+      315,
+      201
+    ],
+    [
+      0,
+      167,
+      431,
+      259
+    ],
+    [
+      0,
+      878,
+      169,
+      942
+    ]
+  ],
+  "random_seed": 20261204135,
+  "width": 431,
+  "height": 1499,
+  "font_scale": 0.912,
+  "spacing_scale": 1.039,
+  "margin": 33,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

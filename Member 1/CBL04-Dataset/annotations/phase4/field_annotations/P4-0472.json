@@ -1,0 +1,38 @@
+{
+  "source_id": "P4-0472",
+  "batch": 5,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "date_time",
+  "original_fictional_value": "17 Feb 2025, 8:39am",
+  "replacement_fictional_value": "17 Feb 2025, 10:39am",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "date_time",
+  "bounding_boxes_xyxy": [
+    [
+      229,
+      575,
+      403,
+      595
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      28,
+      550,
+      603,
+      621
+    ]
+  ],
+  "random_seed": 20261204472,
+  "width": 631,
+  "height": 1499,
+  "font_scale": 0.909,
+  "spacing_scale": 1.049,
+  "margin": 30,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

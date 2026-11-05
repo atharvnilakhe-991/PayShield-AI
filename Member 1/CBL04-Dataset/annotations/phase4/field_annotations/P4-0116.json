@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0116",
+  "batch": 2,
+  "layout_family": "bank_progress",
+  "layout_family_title": "Bank payment-progress timeline",
+  "edited_field": "recipient",
+  "original_fictional_value": "Kabir Sharma",
+  "replacement_fictional_value": "Dev Malhotra",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      180,
+      120,
+      197,
+      144
+    ],
+    [
+      118,
+      189,
+      248,
+      206
+    ],
+    [
+      60,
+      845,
+      134,
+      857
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      95,
+      80,
+      281,
+      187
+    ],
+    [
+      0,
+      153,
+      376,
+      241
+    ],
+    [
+      0,
+      823,
+      188,
+      885
+    ]
+  ],
+  "random_seed": 20261204116,
+  "width": 376,
+  "height": 1447,
+  "font_scale": 1.005,
+  "spacing_scale": 0.996,
+  "margin": 30,
+  "show_pay_again": true,
+  "show_action_strip": true,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

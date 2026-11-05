@@ -1,0 +1,56 @@
+{
+  "source_id": "P3-enriched-20261130-03",
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Rohan Desai",
+  "replacement_fictional_value": "Dev Malhotra",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      260,
+      132,
+      282,
+      162
+    ],
+    [
+      181,
+      209,
+      359,
+      229
+    ],
+    [
+      90,
+      879,
+      182,
+      894
+    ]
+  ],
+  "random_seed": 20262133,
+  "allowed_regions_xyxy": [
+    [
+      205,
+      102,
+      335,
+      183
+    ],
+    [
+      30,
+      181,
+      510,
+      240
+    ],
+    [
+      48,
+      869,
+      184,
+      902
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 540,
+  "height": 1478,
+  "font_scale": 1.06,
+  "spacing_scale": 1.04,
+  "margin": 39
+}

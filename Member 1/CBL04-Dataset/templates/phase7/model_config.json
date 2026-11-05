@@ -1,0 +1,55 @@
+{
+  "model_name": "gpay_tamper_resnet18_multitask",
+  "architecture": {
+    "encoder": "torchvision.models.resnet18",
+    "pretrained": false,
+    "pretrained_weights": "ResNet18_Weights.DEFAULT when explicitly enabled",
+    "classification_head": {
+      "classes": ["clean", "edited"],
+      "class_to_index": {
+        "clean": 0,
+        "edited": 1
+      },
+      "pooling": "adaptive average pooling",
+      "dropout": 0.2
+    },
+    "localization_head": {
+      "type": "lightweight U-Net-style skip decoder",
+      "output_channels": 1,
+      "output_resolution": "same height and width as input",
+      "output": "raw mask logits; apply sigmoid for probabilities"
+    }
+  },
+  "input": {
+    "channels": 3,
+    "dtype": "float32",
+    "range_before_normalization": [0.0, 1.0],
+    "normalization": {
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225]
+    },
+    "resize_policy": "preserve aspect ratio; pad consistently with masks before batching",
+    "mask_resize_interpolation": "nearest"
+  },
+  "outputs": {
+    "logits": "[batch, 2], raw clean/edited classification logits",
+    "mask_logits": "[batch, 1, input_height, input_width], raw tamper-mask logits"
+  },
+  "suggested_losses": {
+    "classification": "CrossEntropyLoss",
+    "localization": "BCEWithLogitsLoss",
+    "classification_weight": 1.0,
+    "localization_weight": 1.0,
+    "notes": "Optionally add Dice loss for localization; clean masks are all-zero."
+  },
+  "dataset_constraints": {
+    "training_source": "Phase 6 synthetic train manifest only",
+    "real_images": "restricted unlabeled holdout; never assign clean labels",
+    "pair_grouping": "keep clean/edited pair and layout/pHash group in one split",
+    "pretrained_downloads": "disabled by default; enabling pretrained explicitly may fetch weights"
+  },
+  "reproducibility": {
+    "split_seed": 20261206,
+    "model_seed": 20261207
+  }
+}

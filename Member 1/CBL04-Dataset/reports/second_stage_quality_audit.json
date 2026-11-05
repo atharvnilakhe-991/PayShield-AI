@@ -1,0 +1,27 @@
+{
+  "unique_real_classified": 387,
+  "real_classifications": {
+    "Google Pay dark theme — in scope": 387,
+    "Google Pay light theme — out of scope": 0,
+    "Other UPI application — out of scope": 0,
+    "Uncertain — requires manual review": 0,
+    "Corrupted/unreadable — unusable": 0
+  },
+  "pilot_clean_images": 20,
+  "pilot_edited_images": 20,
+  "edit_field_counts": {
+    "Amount": 5,
+    "Recipient name": 5,
+    "Date/time": 5,
+    "Transaction ID": 5,
+    "Other fields": 0
+  },
+  "validation": {
+    "images": 40,
+    "pairs": 20,
+    "errors": [],
+    "passed": true
+  },
+  "layout_variation": "One fixed 540x1600 dark template. Field anchors, layout, dimensions, and typography are fixed; exact mask and box extents vary with changed text pixels.",
+  "mask_policy": "Edited masks are exact changed RGB pixels; annotation boxes enclose every changed pixel."
+}

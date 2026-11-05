@@ -1,0 +1,38 @@
+{
+  "manifest_path": "experiments/phase19_local_branch_redevelopment/data/crop_dataset_manifest.csv",
+  "manifest_sha256": "41c08e557109321f3b73b5c2f4719ff7921b0fb6d75dfd708a5210388499399c",
+  "total_manifest_crops": 3701,
+  "total_train_crops": 3291,
+  "total_val_crops": 410,
+  "train_crop_counts_by_field": {
+    "amount": 868,
+    "receiver": 868,
+    "transaction_id": 866,
+    "date": 689
+  },
+  "train_crop_counts_by_label": {
+    "clean": 2957,
+    "tampered": 333,
+    "ambiguous": 1
+  },
+  "train_crop_counts_by_layout": {
+    "enriched": 1628,
+    "compact": 1663
+  },
+  "ambiguous_crops_excluded": 1,
+  "edited_screenshots_evaluated": 434,
+  "edited_screenshots_routed_hits": 333,
+  "edited_screenshots_routed_misses": 101,
+  "routing_recall_overall": 0.7673,
+  "routing_hits_by_category": {
+    "date_time": 75,
+    "amount": 91,
+    "transaction_id": 83,
+    "recipient": 84
+  },
+  "routing_misses_by_category": {
+    "other": 84,
+    "date_time": 16,
+    "recipient": 1
+  }
+}

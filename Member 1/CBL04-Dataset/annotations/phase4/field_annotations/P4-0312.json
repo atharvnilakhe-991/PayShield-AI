@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0312",
+  "batch": 4,
+  "layout_family": "enriched",
+  "layout_family_title": "Merchant/context-enriched details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Sara Rao",
+  "replacement_fictional_value": "Rohan Desai",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      347,
+      119,
+      379,
+      180
+    ],
+    [
+      280,
+      146,
+      453,
+      201
+    ],
+    [
+      102,
+      808,
+      196,
+      822
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      231,
+      76,
+      503,
+      180
+    ],
+    [
+      0,
+      146,
+      734,
+      232
+    ],
+    [
+      17,
+      782,
+      256,
+      843
+    ]
+  ],
+  "random_seed": 20261204312,
+  "width": 734,
+  "height": 1413,
+  "font_scale": 0.961,
+  "spacing_scale": 0.976,
+  "margin": 38,
+  "show_pay_again": false,
+  "show_action_strip": false,
+  "context_chip": true,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

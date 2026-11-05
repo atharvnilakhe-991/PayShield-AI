@@ -1,0 +1,216 @@
+{
+  "scope": "completed fold 1 and fold 2 test families only; folds 3 and 4 have no checkpoints",
+  "threshold": 0.5,
+  "evaluated_samples": 868,
+  "evaluated_families": [
+    "compact",
+    "enriched"
+  ],
+  "not_evaluated_families": [
+    "bank_progress",
+    "recharge"
+  ],
+  "overall": {
+    "support": 868,
+    "accuracy": 0.5046082949308756,
+    "precision": 0.5042553191489362,
+    "recall": 0.5460829493087558,
+    "f1": 0.5243362831858406,
+    "confusion_matrix": {
+      "tn": 201,
+      "fp": 233,
+      "fn": 197,
+      "tp": 237
+    }
+  },
+  "per_family": {
+    "compact": {
+      "support": 436,
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "confusion_matrix": {
+        "tn": 0,
+        "fp": 218,
+        "fn": 0,
+        "tp": 218
+      }
+    },
+    "enriched": {
+      "support": 432,
+      "accuracy": 0.5092592592592593,
+      "precision": 0.5588235294117647,
+      "recall": 0.08796296296296297,
+      "f1": 0.152,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 15,
+        "fn": 197,
+        "tp": 19
+      }
+    }
+  },
+  "per_family_localization": {
+    "compact": {
+      "precision": 0.0559529663055604,
+      "recall": 0.3639771632961893,
+      "dice": 0.0969951928584849,
+      "iou": 0.05096949439879789,
+      "tp_pixels": 10583,
+      "fp_pixels": 178558,
+      "fn_pixels": 18493
+    },
+    "enriched": {
+      "precision": 0.07572619047619047,
+      "recall": 0.4235160957422018,
+      "dice": 0.12847974388883,
+      "iou": 0.06864993497628388,
+      "tp_pixels": 12722,
+      "fp_pixels": 155278,
+      "fn_pixels": 17317
+    }
+  },
+  "per_edit_category": {
+    "amount": {
+      "support": 525,
+      "accuracy": 0.4742857142857143,
+      "precision": 0.1708185053380783,
+      "recall": 0.5274725274725275,
+      "f1": 0.25806451612903225,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 233,
+        "fn": 43,
+        "tp": 48
+      },
+      "edited_support": 91,
+      "clean_negative_support": 434
+    },
+    "date_time": {
+      "support": 525,
+      "accuracy": 0.4838095238095238,
+      "precision": 0.1853146853146853,
+      "recall": 0.5824175824175825,
+      "f1": 0.28116710875331563,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 233,
+        "fn": 38,
+        "tp": 53
+      },
+      "edited_support": 91,
+      "clean_negative_support": 434
+    },
+    "other": {
+      "support": 518,
+      "accuracy": 0.48841698841698844,
+      "precision": 0.1824561403508772,
+      "recall": 0.6190476190476191,
+      "f1": 0.28184281842818426,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 233,
+        "fn": 32,
+        "tp": 52
+      },
+      "edited_support": 84,
+      "clean_negative_support": 434
+    },
+    "recipient": {
+      "support": 519,
+      "accuracy": 0.4624277456647399,
+      "precision": 0.14338235294117646,
+      "recall": 0.4588235294117647,
+      "f1": 0.2184873949579832,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 233,
+        "fn": 46,
+        "tp": 39
+      },
+      "edited_support": 85,
+      "clean_negative_support": 434
+    },
+    "transaction_id": {
+      "support": 517,
+      "accuracy": 0.4758220502901354,
+      "precision": 0.1618705035971223,
+      "recall": 0.5421686746987951,
+      "f1": 0.2493074792243767,
+      "confusion_matrix": {
+        "tn": 201,
+        "fp": 233,
+        "fn": 38,
+        "tp": 45
+      },
+      "edited_support": 83,
+      "clean_negative_support": 434
+    }
+  },
+  "per_fold": [
+    {
+      "fold": 1,
+      "test_family": "compact",
+      "checkpoint": "models/phase7/fold_1_resnet18_multitask.pt",
+      "training_epochs": 3,
+      "best_validation_f1": 0.6666666666666666,
+      "metrics": {
+        "support": 436,
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 218,
+          "fn": 0,
+          "tp": 218
+        }
+      },
+      "localization": {
+        "precision": 0.0559529663055604,
+        "recall": 0.3639771632961893,
+        "dice": 0.0969951928584849,
+        "iou": 0.05096949439879789,
+        "tp_pixels": 10583,
+        "fp_pixels": 178558,
+        "fn_pixels": 18493
+      }
+    },
+    {
+      "fold": 2,
+      "test_family": "enriched",
+      "checkpoint": "models/phase7/fold_2_resnet18_multitask.pt",
+      "training_epochs": 3,
+      "best_validation_f1": 0.4,
+      "metrics": {
+        "support": 432,
+        "accuracy": 0.5092592592592593,
+        "precision": 0.5588235294117647,
+        "recall": 0.08796296296296297,
+        "f1": 0.152,
+        "confusion_matrix": {
+          "tn": 201,
+          "fp": 15,
+          "fn": 197,
+          "tp": 19
+        }
+      },
+      "localization": {
+        "precision": 0.07572619047619047,
+        "recall": 0.4235160957422018,
+        "dice": 0.12847974388883,
+        "iou": 0.06864993497628388,
+        "tp_pixels": 12722,
+        "fp_pixels": 155278,
+        "fn_pixels": 17317
+      }
+    }
+  ],
+  "false_positive_count": 233,
+  "false_negative_count": 197,
+  "synthetic_only": true,
+  "real_images_used": false,
+  "pretrained": false
+}

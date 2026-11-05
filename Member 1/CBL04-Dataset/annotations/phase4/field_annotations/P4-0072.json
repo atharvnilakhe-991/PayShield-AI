@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0072",
+  "batch": 1,
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Rohan Desai",
+  "replacement_fictional_value": "Kabir Sharma",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "recipient",
+  "bounding_boxes_xyxy": [
+    [
+      302,
+      136,
+      317,
+      165
+    ],
+    [
+      223,
+      217,
+      389,
+      238
+    ],
+    [
+      84,
+      819,
+      175,
+      833
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      184,
+      91,
+      428,
+      208
+    ],
+    [
+      0,
+      174,
+      612,
+      268
+    ],
+    [
+      6,
+      794,
+      239,
+      859
+    ]
+  ],
+  "random_seed": 20261204072,
+  "width": 612,
+  "height": 1556,
+  "font_scale": 0.924,
+  "spacing_scale": 1.037,
+  "margin": 30,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

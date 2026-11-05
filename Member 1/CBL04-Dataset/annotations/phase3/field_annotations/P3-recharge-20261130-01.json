@@ -1,0 +1,44 @@
+{
+  "source_id": "P3-recharge-20261130-01",
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "recipient",
+  "original_fictional_value": "Demo Mobile Service",
+  "replacement_fictional_value": "Sample Transit Top-Up",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      208,
+      109,
+      225,
+      132
+    ],
+    [
+      107,
+      167,
+      326,
+      187
+    ]
+  ],
+  "random_seed": 20264131,
+  "allowed_regions_xyxy": [
+    [
+      164,
+      91,
+      268,
+      164
+    ],
+    [
+      24,
+      162,
+      408,
+      216
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 432,
+  "height": 1440,
+  "font_scale": 0.94,
+  "spacing_scale": 0.96,
+  "margin": 30
+}

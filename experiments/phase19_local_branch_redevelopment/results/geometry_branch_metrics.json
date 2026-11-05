@@ -1,0 +1,17 @@
+{
+  "train_oof_roc_auc": 0.5086,
+  "train_oof_pr_auc": 0.5147,
+  "train_rule_score_roc_auc": 0.5019,
+  "val_roc_auc": 0.5,
+  "val_pr_auc": 0.5003,
+  "learned_weights": {
+    "char_height_mean": 0.0136,
+    "char_height_std": -0.0276,
+    "char_aspect_variance": -0.0216,
+    "baseline_deviation_variance": 0.051,
+    "inter_word_gap_variance": -0.0561,
+    "font_ratio_amount_payee": 0.0286,
+    "font_ratio_amount_txnid": 0.0147
+  },
+  "bias": -0.0
+}

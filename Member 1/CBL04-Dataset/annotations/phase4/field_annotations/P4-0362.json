@@ -1,0 +1,62 @@
+{
+  "source_id": "P4-0362",
+  "batch": 4,
+  "layout_family": "recharge",
+  "layout_family_title": "Recharge/utility detail summary",
+  "edited_field": "amount",
+  "original_fictional_value": "337.52",
+  "replacement_fictional_value": "374.52",
+  "edit_method": "same family renderer and configuration; one field edit",
+  "edit_component": "amount",
+  "bounding_boxes_xyxy": [
+    [
+      189,
+      284,
+      248,
+      331
+    ],
+    [
+      365,
+      606,
+      377,
+      619
+    ],
+    [
+      376,
+      681,
+      390,
+      694
+    ]
+  ],
+  "allowed_regions_xyxy": [
+    [
+      6,
+      247,
+      443,
+      382
+    ],
+    [
+      268,
+      578,
+      449,
+      656
+    ],
+    [
+      268,
+      663,
+      449,
+      748
+    ]
+  ],
+  "random_seed": 20261204362,
+  "width": 449,
+  "height": 1449,
+  "font_scale": 0.921,
+  "spacing_scale": 1.044,
+  "margin": 33,
+  "show_pay_again": true,
+  "show_action_strip": false,
+  "context_chip": false,
+  "template_version": "gpay-dark-v2",
+  "is_synthetic": true
+}

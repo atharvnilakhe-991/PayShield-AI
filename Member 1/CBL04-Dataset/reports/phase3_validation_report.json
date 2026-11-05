@@ -1,0 +1,37 @@
+{
+  "screenshots": 24,
+  "matched_pairs": 12,
+  "pairs_per_family": {
+    "compact": 3,
+    "enriched": 3,
+    "bank_progress": 3,
+    "recharge": 3
+  },
+  "edited_field_counts": {
+    "amount": 3,
+    "recipient": 3,
+    "date_time": 3,
+    "transaction_id": 3
+  },
+  "unique_dimensions": [
+    "432x1440",
+    "478x1599",
+    "540x1324",
+    "540x1478",
+    "540x1600",
+    "600x1600",
+    "637x1600"
+  ],
+  "font_scales": [
+    0.94,
+    1.0,
+    1.06
+  ],
+  "spacing_scales": [
+    0.96,
+    1.0,
+    1.04
+  ],
+  "errors": [],
+  "passed": true
+}

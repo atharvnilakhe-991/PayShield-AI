@@ -1,0 +1,56 @@
+{
+  "source_id": "P3-compact-20261130-02",
+  "layout_family": "compact",
+  "layout_family_title": "Compact transaction details",
+  "edited_field": "recipient",
+  "original_fictional_value": "Anaya Joshi",
+  "replacement_fictional_value": "Isha Kulkarni",
+  "edit_method": "same family renderer and variant; field replacement only",
+  "bounding_boxes_xyxy": [
+    [
+      258,
+      136,
+      281,
+      162
+    ],
+    [
+      186,
+      212,
+      354,
+      236
+    ],
+    [
+      83,
+      814,
+      174,
+      828
+    ]
+  ],
+  "random_seed": 20261132,
+  "allowed_regions_xyxy": [
+    [
+      205,
+      106,
+      335,
+      190
+    ],
+    [
+      30,
+      188,
+      510,
+      250
+    ],
+    [
+      48,
+      803,
+      180,
+      836
+    ]
+  ],
+  "template_version": "gpay-dark-v2",
+  "width": 540,
+  "height": 1600,
+  "font_scale": 1.0,
+  "spacing_scale": 1.0,
+  "margin": 35
+}

@@ -1,0 +1,57 @@
+{
+  "heatmap_probability_threshold_tau": {
+    "value": 0.8,
+    "provenance": "member2/performance_improvement/artifacts/validation_tuning_results.json",
+    "split_used": "Phase 5 Validation Partition ONLY (val_samples, max=30)",
+    "search_space": [
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8
+    ],
+    "validation_dice_achieved": 0.12503807136330625,
+    "test_set_peeking": false,
+    "leakage_status": "CLEAN_ZERO_LEAKAGE"
+  },
+  "minimum_connected_component_area_A_min": {
+    "value": 50,
+    "provenance": "member2/performance_improvement/artifacts/validation_tuning_results.json",
+    "split_used": "Phase 5 Validation Partition ONLY (val_samples, max=30)",
+    "search_space": [
+      0,
+      5,
+      10,
+      16,
+      25,
+      50
+    ],
+    "validation_dice_achieved": 0.12503807136330625,
+    "test_set_peeking": false,
+    "leakage_status": "CLEAN_ZERO_LEAKAGE"
+  },
+  "screenshot_classification_pixel_threshold": {
+    "value": 1000,
+    "provenance": "member2/phase7_evaluation_and_error_analysis/config.json",
+    "split_used": "Ad-hoc heuristic / Exploratory (Not formally tuned on validation set)",
+    "test_set_peeking": false,
+    "leakage_status": "HEURISTIC_EXPOSURE",
+    "audit_comment": "The 1,000-pixel threshold was introduced in Phase 7 config as an exploratory rule to evaluate whether whole-screenshot area cutoffs improve specificity over Rule 1. It was not tuned via validation grid search. At 1,000 pixels, specificity is only 8.00%. The report must clearly document this as an illustrative heuristic rather than an optimal tuned classifier."
+  },
+  "tile_size_and_stride": {
+    "tile_size": 256,
+    "stride": 128,
+    "provenance": "Phase 3 Architecture Specification",
+    "leakage_status": "FIXED_ARCHITECTURAL_CONSTANT"
+  },
+  "overall_audit_verdict": "NO_TEST_SET_CONTAMINATION"
+}
